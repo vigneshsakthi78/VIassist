@@ -81,10 +81,11 @@ In Render → your API service → Environment:
 Set:
 
 ```text
-RAG_CORS_ORIGINS=https://random-name-123.netlify.app,http://localhost:4200
+RAG_CORS_ORIGINS=https://YOUR-SITE.netlify.app,https://*.netlify.app,http://localhost:4200
 ```
 
-Save → Render redeploys automatically.
+Save → Render redeploys automatically.  
+(`https://*.netlify.app` covers preview/prod Netlify hosts via Spring `allowedOriginPatterns`.)
 
 Then open your Netlify URL and chat.
 

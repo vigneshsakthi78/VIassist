@@ -25,4 +25,5 @@ langchain4j:
 
 rag:
   docs-path: ${DOCS_PATH:}
-  cors-origins: ${RAG_CORS_ORIGINS:http://localhost:4200,http://127.0.0.1:4200}
+  # allowedOriginPatterns: wildcards ok (e.g. https://*.netlify.app)
+  cors-origins: ${RAG_CORS_ORIGINS:http://localhost:4200,http://127.0.0.1:4200,https://*.netlify.app}
