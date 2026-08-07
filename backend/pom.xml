@@ -50,10 +50,10 @@
             <artifactId>langchain4j-google-ai-gemini-spring-boot-starter</artifactId>
             <version>${langchain4j.beta.version}</version>
         </dependency>
+        <!-- Core only: avoid easy-rag ONNX embeddings (OOM on Render free tier) -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-easy-rag</artifactId>
-            <version>${langchain4j.beta.version}</version>
+            <artifactId>langchain4j</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

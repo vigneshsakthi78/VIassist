@@ -2,9 +2,11 @@ package com.example.rag.config;
 
 import dev.langchain4j.data.document.Document;
 import dev.langchain4j.data.document.loader.FileSystemDocumentLoader;
+import dev.langchain4j.data.document.splitter.DocumentSplitters;
 import dev.langchain4j.data.segment.TextSegment;
 import dev.langchain4j.memory.ChatMemory;
 import dev.langchain4j.memory.chat.MessageWindowChatMemory;
+import dev.langchain4j.model.embedding.EmbeddingModel;
 import dev.langchain4j.rag.content.retriever.ContentRetriever;
 import dev.langchain4j.rag.content.retriever.EmbeddingStoreContentRetriever;
 import dev.langchain4j.store.embedding.EmbeddingStore;
@@ -36,33 +38,40 @@ public class RagConfig {
     private static final Logger log = LoggerFactory.getLogger(RagConfig.class);
 
     @Bean
-    EmbeddingStore<TextSegment> embeddingStore(RagProperties properties) throws IOException {
+    EmbeddingStore<TextSegment> embeddingStore(RagProperties properties, EmbeddingModel embeddingModel)
+            throws IOException {
         List<Document> documents = loadDocuments(properties);
         if (documents.isEmpty()) {
             throw new IllegalStateException("No documents found to ingest for RAG");
         }
 
-        log.info("Ingesting {} document(s) into in-memory embedding store", documents.size());
+        log.info("Ingesting {} document(s) with Gemini embeddings (no local ONNX model)", documents.size());
         InMemoryEmbeddingStore<TextSegment> store = new InMemoryEmbeddingStore<>();
-        EmbeddingStoreIngestor.ingest(documents, store);
+
+        // Use Gemini EmbeddingModel so Render free tier does not OOM loading ONNX weights.
+        EmbeddingStoreIngestor.builder()
+                .embeddingStore(store)
+                .embeddingModel(embeddingModel)
+                .documentSplitter(DocumentSplitters.recursive(500, 50))
+                .build()
+                .ingest(documents);
+
         log.info("RAG ingestion complete");
         return store;
     }
 
     @Bean
-    ContentRetriever contentRetriever(EmbeddingStore<TextSegment> embeddingStore) {
-        // Keep retrieval small so LangChain4j demo key (5k token limit) still works.
-        // With a real OPENAI_API_KEY you can raise maxResults.
+    ContentRetriever contentRetriever(EmbeddingStore<TextSegment> embeddingStore, EmbeddingModel embeddingModel) {
         return EmbeddingStoreContentRetriever.builder()
                 .embeddingStore(embeddingStore)
+                .embeddingModel(embeddingModel)
                 .maxResults(1)
-                .minScore(0.55)
+                .minScore(0.4)
                 .build();
     }
 
     @Bean
     ChatMemory chatMemory() {
-        // Small memory reduces tokens and helps stay under Gemini free-tier limits.
         return MessageWindowChatMemory.withMaxMessages(2);
     }
 
@@ -75,7 +84,6 @@ public class RagConfig {
                         .map(String::trim)
                         .filter(s -> !s.isEmpty())
                         .toArray(String[]::new);
-                // allowedOriginPatterns supports https://*.vercel.app for previews
                 registry.addMapping("/api/**")
                         .allowedOriginPatterns(origins)
                         .allowedMethods("GET", "POST", "OPTIONS")

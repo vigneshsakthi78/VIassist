@@ -5,23 +5,23 @@ spring:
   application:
     name: langchain4j-rag-backend
 
-# Google Gemini (AI Studio API key)
+# Google Gemini chat + embeddings (API-based; safe for small Render memory)
 # Get a key: https://aistudio.google.com/apikey
-#   $env:GEMINI_API_KEY = "..."
 langchain4j:
   google-ai-gemini:
     chat-model:
       api-key: ${GEMINI_API_KEY}
-      # flash-lite is usually friendlier on free-tier RPM/quota
       model-name: ${GEMINI_MODEL:gemini-2.0-flash-lite}
       temperature: 0.2
-      # Keep answers complete (teaching + daily tasks). Raise if responses still truncate.
       max-output-tokens: 2048
+      max-retries: 2
+      log-requests-and-responses: false
+    embedding-model:
+      api-key: ${GEMINI_API_KEY}
+      model-name: ${GEMINI_EMBEDDING_MODEL:text-embedding-004}
       max-retries: 2
       log-requests-and-responses: false
 
 rag:
   docs-path: ${DOCS_PATH:}
-  # Comma-separated. Include your Vercel URL in production, e.g.
-  # https://vicky-assist.vercel.app,http://localhost:4200
   cors-origins: ${RAG_CORS_ORIGINS:http://localhost:4200,http://127.0.0.1:4200}
