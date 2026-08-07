@@ -1,0 +1,52 @@
+Vicky Assist FAANG Training — Java Topics for Backend Interviews
+
+Java language topics that show up in FAANG loops
+- equals / hashCode contract
+- Immutability and final
+- Generics and type erasure basics
+- Concurrency: synchronized, volatile, locks, concurrent collections
+- Thread pools and ExecutorService
+- GC basics and memory leaks symptoms
+- Exceptions and try-with-resources
+- Streams vs loops trade-offs in interview code (prefer clarity)
+
+Collections interview hits
+- ArrayList vs LinkedList
+- HashMap internals (buckets, collisions, treeify threshold conceptually)
+- ConcurrentHashMap vs Hashtable
+- PriorityQueue ordering
+- ArrayDeque for stack/queue
+
+Concurrency scenarios
+- Producer-consumer with BlockingQueue
+- Avoid race conditions with atomic updates
+- Deadlock conditions and prevention
+- Happens-before intuition at a practical level
+
+Spring / backend concepts for domain rounds
+- REST idempotency
+- Transactions and isolation (read phenomena at high level)
+- Caching strategies (cache-aside)
+- Pagination and filtering APIs
+- AuthN/AuthZ basics (sessions vs JWT)
+- Observability: metrics, logs, traces
+
+SQL / data interview
+- Indexes and when they help
+- Explain query plan intuition
+- Transactions, ACID
+- Normalization vs denormalization trade-offs
+- N+1 query problem
+
+How Java candidates should code in interviews
+- Clear class/method names
+- Handle null/empty early
+- Use helper methods
+- Avoid clever one-liners that hide bugs
+- Narrate as you type
+
+Sample follow-ups interviewers ask after coding
+- How would you parallelize this?
+- How does this behave with duplicates?
+- Can you improve space complexity?
+- How would you productionize this as an API?

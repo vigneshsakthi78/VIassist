@@ -1,0 +1,11 @@
+﻿backend/target/
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+.tools/
+.env
+*.log
+.idea/
+*.iml
+.vscode/
+.DS_Store

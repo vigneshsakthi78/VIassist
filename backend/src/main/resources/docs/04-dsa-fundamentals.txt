@@ -1,0 +1,79 @@
+Vicky Assist FAANG Training — System Design Interview
+
+When system design appears
+- Usually mid-level and above
+- Juniors may get lighter "design a parking lot / class design" variants
+- Seniors: scale, reliability, multi-region, trade-offs
+
+45–60 minute structure
+1. Requirements (functional + non-functional) — 5 min
+2. Back-of-envelope estimates — 5 min
+3. High-level architecture — 10 min
+4. Deep dive core components — 20 min
+5. Bottlenecks, scaling, failure modes — 10 min
+6. Wrap-up trade-offs — 5 min
+
+Clarify first
+- Users/day, read/write ratio, latency targets
+- Consistency needs (strong vs eventual)
+- Storage retention, compliance
+- Mobile vs web clients
+- Online vs offline requirements
+
+Core building blocks
+- Load balancer
+- App / API servers (stateless)
+- Cache (Redis/Memcached)
+- Database (SQL vs NoSQL)
+- Object storage (S3-like)
+- Message queue / streams
+- CDN
+- Search index
+- Rate limiter
+- Monitoring / logging / alerting
+
+Canonical designs to practice
+1. URL shortener
+2. News feed / timeline
+3. Chat / messaging
+4. Rate limiter
+5. Unique ID generator
+6. Web crawler
+7. YouTube / video streaming (high level)
+8. Ride sharing matching (high level)
+9. Search autocomplete
+10. Notification system
+
+URL shortener sketch
+- API: createShort(url), redirect(code)
+- Key concerns: collision-free IDs, low latency redirect, analytics
+- Options: base62 IDs from counter/snowflake; cache hot redirects
+- DB: key-value mapping code -> long URL
+- Scale reads with cache + CDN for branded pages
+
+Feed design sketch
+- Fan-out on write vs fan-out on read
+- Celebrity problem: hybrid fan-out
+- Cache timelines, store posts separately
+- Ranking: recency + relevance signals
+
+Consistency & storage choices
+- SQL: relational integrity, joins, transactions
+- NoSQL: high scale flexible docs/wide columns
+- Cache aside for read-heavy paths
+- Queues to absorb spikes and decouple writers
+
+Reliability topics interviewers love
+- Replication and failover
+- Idempotency for retries
+- Exactly-once vs at-least-once processing
+- Circuit breakers / timeouts / retries with backoff
+- Data partitioning / sharding keys
+- Hot partitions and how to mitigate
+
+Senior signals
+- Start simple, then scale intentionally
+- Quantify: QPS, storage/year, bandwidth
+- Call out trade-offs explicitly
+- Mention observability and operability
+- Avoid buzzword soup without justification

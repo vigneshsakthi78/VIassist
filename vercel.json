@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "installCommand": "npm install --prefix frontend",
+  "buildCommand": "npm run vercel-build --prefix frontend",
+  "outputDirectory": "frontend/dist/frontend/browser",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

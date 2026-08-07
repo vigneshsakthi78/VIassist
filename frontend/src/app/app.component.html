@@ -1,0 +1,43 @@
+<main class="shell">
+  <header class="hero">
+    <p class="brand">Vicky Assist</p>
+    <h1>FAANG coding tutor</h1>
+    <p class="lede">Learn patterns with me, then practice on Take U Forward A2Z sheet.</p>
+  </header>
+
+  <section class="chat" aria-label="Chat">
+    <div #thread class="thread" role="log" aria-live="polite">
+      @for (message of messages; track $index) {
+        <article class="bubble" [class.user]="message.role === 'user'" [class.assistant]="message.role === 'assistant'">
+          <span class="role">{{ message.role === 'user' ? 'You' : 'Vicky Assist' }}</span>
+          <p>{{ message.text }}</p>
+        </article>
+      }
+
+      @if (loading) {
+        <article class="bubble assistant pending">
+          <span class="role">Vicky Assist</span>
+          <p>Preparing a teaching answer…</p>
+        </article>
+      }
+
+      @if (error) {
+        <p class="error">{{ error }}</p>
+      }
+    </div>
+
+    <form class="composer" (ngSubmit)="send()">
+      <label class="sr-only" for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="2"
+        [(ngModel)]="draft"
+        (keydown)="onKeydown($event)"
+        placeholder="e.g. Teach sliding window, then give me TUF practice tasks"
+        [disabled]="loading"
+      ></textarea>
+      <button type="submit" [disabled]="loading || !draft.trim()">Ask</button>
+    </form>
+  </section>
+</main>

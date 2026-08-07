@@ -1,0 +1,64 @@
+Vicky Assist FAANG Training — Behavioral Interviews and STAR Stories
+
+Why behavioral rounds matter
+Top companies reject strong coders for weak ownership, collaboration, or leadership signals.
+
+STAR method
+- Situation: brief context
+- Task: your responsibility
+- Action: what YOU did (most important)
+- Result: measurable outcome + lesson
+
+Story bank themes to prepare (8–12 stories)
+1. Leadership without authority
+2. Conflict with a teammate or manager
+3. Failure / mistake and recovery
+4. Tight deadline delivery
+5. Ambiguous requirements
+6. Mentoring or unblocking others
+7. Disagree and commit
+8. Customer obsession / user impact
+9. Diving deep into a production issue
+10. Invent and simplify (reduce complexity)
+
+Amazon Leadership Principles (high-yield themes)
+- Customer Obsession
+- Ownership
+- Dive Deep
+- Bias for Action
+- Earn Trust
+- Deliver Results
+- Invent and Simplify
+- Have Backbone; Disagree and Commit
+Map each story to 1–2 principles.
+
+Answer tips
+- Keep Situation short (2–3 sentences)
+- Use "I" more than "we" for your actions
+- Include numbers: latency -40%, errors -70%, revenue +X, time saved
+- End with learning applied later
+- Prepare follow-ups: "What would you do differently?"
+
+Sample conflict skeleton
+Situation: Frontend and backend disagreed on API contract before launch.
+Task: Align teams without delaying release.
+Action: Facilitated a short design review, proposed versioned endpoint, wrote migration plan, got sign-off.
+Result: Shipped on time; reduced integration bugs; later reused the versioning checklist.
+
+Sample failure skeleton
+Situation: Deployed a config change that raised error rates.
+Task: Restore service and prevent recurrence.
+Action: Rolled back, added canary + config validation, wrote postmortem.
+Result: MTTR under 20 minutes; similar incidents did not recur next quarter.
+
+Questions to ask interviewers
+- How is success measured in the first 6 months?
+- What does the on-call / quality culture look like?
+- How are design reviews run on this team?
+- What are the biggest technical challenges now?
+
+Anti-patterns
+- Blaming others without ownership
+- Vague stories with no result
+- Memorized buzzwords with no specifics
+- Speaking only about team wins with no personal actions

@@ -1,0 +1,59 @@
+Vicky Assist FAANG Training — Trees, Graphs, DP, Tries (A2Z aligned)
+
+Binary Trees
+Traversals: inorder, preorder, postorder, level order
+Must-know problems:
+- Maximum depth / diameter
+- Balanced binary tree
+- Symmetric tree
+- Lowest Common Ancestor
+- Path sum variants
+- Zigzag level order
+- Serialize / deserialize (strong follow-up)
+
+Binary Search Trees
+- Search / insert / delete concepts
+- Validate BST
+- LCA in BST
+- Kth small/large in BST
+- BST from preorder (pattern)
+
+Graphs
+Representations: adjacency list (default interview choice)
+Algorithms:
+- BFS / DFS
+- Cycle detection (directed/undirected)
+- Topological sort (Kahn + DFS)
+- Shortest path unweighted (BFS)
+- Dijkstra for non-negative weights
+- Number of islands / flood fill
+- Bipartite check
+- Union-Find for components
+
+Dynamic Programming patterns
+1. 1D DP (climbing stairs, house robber)
+2. Grid DP (unique paths, min path sum)
+3. Knapsack family
+4. Subsequence DP (LIS, LCS)
+5. String DP (edit distance, palindrome partition)
+6. Stock DP variants
+7. Partition DP
+Framework every time:
+state definition -> transition -> base cases -> computation order -> answer
+
+Tries
+Use for prefix problems:
+- Insert / search / startsWith
+- Word dictionary
+- Count prefix occurrences
+- Autocomplete intuition
+
+Interview strategy for hard topics
+- Trees: recurse with return values (height/gain), not only void DFS
+- Graphs: clarify directed/undirected/weighted first
+- DP: speak brute force recursion + memo before tabulation
+- Tries: mention memory trade-off vs hashing
+
+TUF practice recommendation
+Complete Trees + Graphs + DP modules thoroughly on the A2Z sheet.
+These three modules create the biggest jump in FAANG coding confidence.

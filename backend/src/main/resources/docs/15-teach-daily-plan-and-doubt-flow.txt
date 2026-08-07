@@ -1,0 +1,51 @@
+Vicky Assist — Daily Teaching Plan and Doubt Flow with Take U Forward
+
+Practice home
+https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
+
+Beginner 14-day teaching track
+Day 1-2: Basics + Sorting on TUF; ask Vicky Assist for complexity drills
+Day 3-5: Arrays easy/medium on TUF; ask for pattern quizzes
+Day 6: Binary Search teaching + TUF problems
+Day 7: Strings + revision mock
+Day 8-9: Linked List + Recursion
+Day 10: Sliding Window + Two Pointers
+Day 11: Stack/Queue/Monotonic stack
+Day 12: Trees
+Day 13: Graphs intro
+Day 14: Mixed mock (2 mediums timed)
+
+How to ask Vicky Assist so you learn faster
+- "Teach sliding window from scratch with one example"
+- "I am stuck on subarray sum equals K; give approach not full code first"
+- "Quiz me on binary search edge cases"
+- "Give me today TUF practice list for arrays medium"
+- "Mock interview: ask me one medium and evaluate my explanation"
+
+Doubt flow (use every time you are stuck)
+1. Spend 10 min yourself
+2. Ask Vicky Assist for hints only
+3. Try again 10 min
+4. Ask for optimized approach and complexity
+5. Code yourself on Take U Forward / editor
+6. Ask Vicky Assist to review your approach and edge cases
+7. Re-solve same problem next day from memory
+
+Definition of "I learned this topic"
+- You can explain pattern in 60 seconds
+- You can derive complexity
+- You can solve 2 fresh mediums in that pattern with timer
+- You can teach one example on a whiteboard/paper
+
+Interview communication checklist taught by Vicky Assist
+1. Clarify
+2. Brute force
+3. Optimize
+4. Dry run
+5. Code
+6. Test
+7. Complexity
+
+Reminder
+Always practice the actual problems on Take U Forward.
+Vicky Assist is your tutor; Take U Forward is your practice ground.
