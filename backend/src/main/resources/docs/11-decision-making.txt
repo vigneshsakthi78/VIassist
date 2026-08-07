@@ -1,0 +1,29 @@
+Faster workplace decisions
+
+Decision types
+- Type 1: hard to reverse — slow down, get more input
+- Type 2: easy to reverse — decide quickly with a small group
+
+Decision brief template
+- Decision needed
+- Deadline
+- Options (2–3)
+- Recommendation
+- Trade-offs
+- Who must agree
+- Who to inform after
+
+DACI / RACI lite
+- Driver: runs the process
+- Approver: final yes/no
+- Contributors: provide input
+- Informed: get the outcome
+
+Avoid decision drag
+- No meeting without a decision owner
+- Timebox analysis
+- Prefer reversible experiments
+- Write the decision down
+
+Disagreement without deadlock
+"We disagree on approach. Proposal: run option A for two weeks with these success metrics; revisit on [date]. If metrics miss, switch to option B."

@@ -1,0 +1,30 @@
+Deep work and time blocking for enterprise roles
+
+Problem
+Constant meetings, chat pings, and email destroy focus. Productivity drops even when the calendar looks full.
+
+Protect focus blocks
+- Schedule 90–120 minute deep-work blocks on recurring calendar
+- Label them as busy (not free)
+- Batch chat checks 2–4 times/day instead of continuous monitoring
+- Keep one "office hours" window for quick questions
+
+Daily rhythm example (IC)
+- Morning: 15 min plan + triage
+- Mid-morning: deep work block on top priority
+- Midday: meetings / collaboration
+- Afternoon: second deep block or implementation
+- End of day: 10 min shutdown note (done / next / blockers)
+
+Context switching cost
+Every tool or topic switch has a restart tax. Group similar work:
+- Coding / analysis together
+- Reviews together
+- Admin / expenses / forms together
+- Messaging replies together
+
+If your calendar is meeting-heavy
+- Decline or shorten meetings without agenda
+- Ask for async update instead of attendance
+- Combine status meetings into one weekly sync
+- Protect at least one no-meeting half-day per week when possible

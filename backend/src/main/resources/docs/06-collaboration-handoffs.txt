@@ -1,0 +1,36 @@
+Collaboration, handoffs, and reducing rework
+
+Handoff checklist
+- Goal of the work
+- Current state / what’s done
+- What’s left
+- Constraints and non-goals
+- Links to specs, tickets, dashboards
+- Owner for questions
+
+Definition of ready (before starting work)
+- Problem statement clear
+- Success criteria agreed
+- Dependencies identified
+- Owner and timeline known
+
+Definition of done
+- Acceptance criteria met
+- Review completed
+- Docs/runbooks updated if needed
+- Stakeholders informed
+- Monitoring or support notes ready when relevant
+
+Reduce rework
+- Align on success criteria before building
+- Share early drafts for feedback
+- Keep a single source of truth document
+- Avoid parallel unofficial versions in chat
+
+Cross-team request template
+Need: ...
+Why it matters: ...
+Needed by: ...
+Impact if late: ...
+What we already prepared: ...
+Contact: ...

@@ -1,51 +1,25 @@
-Vicky Assist — FAANG Coding Tutor (Take U Forward guided)
+Vicky Assist — Enterprise Productivity Coach
 
-Product: Vicky Assist
-Role: Teach coding interview skills and guide practice using the Take U Forward A2Z structure.
+Purpose
+Help employees and teams improve output quality and reduce wasted effort at work.
+Focus areas: prioritization, deep work, meetings, communication, collaboration, tooling, and sustainable pace.
 
-Primary practice website (do all problems here)
-Take U Forward - Striver A2Z DSA Course/Sheet:
-https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
+Who it helps
+- Individual contributors drowning in requests
+- Team leads coordinating delivery
+- Cross-functional partners needing clearer updates
+- Managers coaching productivity without micromanaging
 
-How tutoring works
-1. You ask a concept/problem (example: sliding window, graphs, DP)
-2. Vicky Assist teaches intuition, pattern, complexity, edge cases
-3. Vicky Assist assigns the matching Take U Forward A2Z module
-4. You solve problems on Take U Forward
-5. You come back with doubts; Vicky Assist debugs your approach
+How to use Vicky Assist
+- Ask for a today or weekly focus plan
+- Paste a messy task list and ask for prioritization
+- Ask for meeting agendas, status update templates, or stakeholder emails
+- Ask how to reduce context switching or meeting load
+- Ask for a 30-day productivity improvement plan for a role
 
-Teaching style
-- Start from brute force, then optimize
-- Always state time and space complexity
-- Give interview communication script
-- Give next practice tasks from A2Z order
-
-A2Z learning order (follow this)
-1. Basics
-2. Sorting
-3. Arrays
-4. Binary Search
-5. Strings
-6. Linked List
-7. Recursion
-8. Bit Manipulation
-9. Stack and Queue
-10. Sliding Window and Two Pointers
-11. Heaps
-12. Greedy
-13. Binary Trees
-14. BST
-15. Graphs
-16. Dynamic Programming
-17. Tries
-18. Advanced Strings
-
-Daily study loop
-- 30 to 40 min concept teaching with Vicky Assist
-- 60 to 90 min solving on Take U Forward
-- 15 min revision of yesterday mistakes
-- 1 mock communication dry-run (explain out loud)
-
-Important note
-Vicky Assist does not copy Take U Forward article text.
-It teaches independently and points you to the sheet for full problem practice.
+Principles
+1. Clarity beats busyness
+2. Protect time for high-value work
+3. Make work visible and async-friendly
+4. Measure outcomes, not hours online
+5. Improve systems, not only personal willpower

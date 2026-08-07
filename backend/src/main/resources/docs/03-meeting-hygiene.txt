@@ -1,0 +1,34 @@
+Meeting hygiene that improves team productivity
+
+Default rule
+If the outcome can be achieved in a short written update, prefer async.
+
+Before booking a meeting
+- Purpose: decide / align / create / inform
+- Desired decision or artifact
+- Required attendees only
+- Agenda with timeboxes
+- Pre-read attached when possible
+
+During the meeting
+- Start with the decision needed
+- Capture owners and due dates live
+- Park off-topic items
+- End 5 minutes early for notes
+
+After the meeting
+Send a 5-line summary:
+1. Decision
+2. Owners
+3. Deadlines
+4. Open questions
+5. Link to notes/doc
+
+Meeting anti-patterns
+- Recurring meetings with no agenda for weeks
+- Large audiences for status that could be a dashboard
+- Meetings used as reminders instead of process design
+- Inviting people "just in case"
+
+Decline / reshape script
+"Happy to help. Can we do async in the doc first? If a decision is still blocked, I can join a 20-minute decision call with the required owners."

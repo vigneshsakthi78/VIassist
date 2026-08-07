@@ -1,0 +1,35 @@
+Manager playbook: improve team productivity without micromanaging
+
+Manager leverage points
+- Clear priorities and trade-offs
+- Healthy meeting load
+- Fast decisions
+- Skill growth and unblocking
+- Psychological safety for raising risks early
+
+1:1 agenda that improves output
+- Wins and energy
+- Top priorities and risks
+- Where I can remove friction
+- Career / skill growth note
+- Commitments both ways
+
+Team operating system
+- Weekly priorities visible to all
+- Single intake for new requests
+- Explicit WIP limits
+- Retrospectives that change one process each time
+
+Anti-micromanagement
+- Manage outcomes and interfaces, not every keystroke
+- Ask for demos and written updates on cadence
+- Intervene on blockers and conflicting priorities
+- Coach judgment with questions, not only instructions
+
+Capacity conversations
+When load is too high, help the team choose:
+- Stop
+- Delay
+- Shrink scope
+- Add help
+Do not silently accept impossible plans.

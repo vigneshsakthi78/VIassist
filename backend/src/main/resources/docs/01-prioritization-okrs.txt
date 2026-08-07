@@ -1,0 +1,29 @@
+Enterprise prioritization and OKR-style focus
+
+Goal
+Help employees choose the few outcomes that matter and defer the rest.
+
+Daily triage questions
+1. What outcome moves the team/business this week?
+2. What is urgent but not important (can batch or decline)?
+3. What can wait until next planning cycle?
+4. What needs a decision from someone else before I can proceed?
+
+Simple ranking method
+- P0: must finish today / blocks others
+- P1: high value this week
+- P2: useful but interruptible
+- P3: backlog / park with a revisit date
+
+OKR-style framing for knowledge workers
+- Objective: qualitative outcome (example: "Ship billing reliability improvements")
+- Key results: measurable signals (example: "Reduce failed payments from 3% to 1%")
+- Tasks: actions that support key results (not the goals themselves)
+
+Request intake script
+"Thanks — to prioritize this with current commitments: What is the deadline, business impact, and who is blocked without it?"
+
+When everything is P0
+- Surface capacity: list current P0s and ask stakeholder which one to demote
+- Offer options: scope cut, date move, or extra help
+- Avoid silent overload; invisible work creates missed deadlines

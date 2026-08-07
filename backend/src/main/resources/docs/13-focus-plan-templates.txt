@@ -1,0 +1,31 @@
+Focus plan templates for Vicky Assist responses
+
+Today Focus Plan (busy employee)
+1) Outcome today: one sentence
+2) Top 3 tasks ranked P0/P1/P2
+3) Deep-work blocks: start-end times
+4) Meetings to protect or shorten
+5) Async updates to send
+6) Shutdown note prompt
+
+Weekly Focus Plan
+1) Three outcomes for the week
+2) Calendar: maker vs meeting hours target
+3) Dependencies to unblock by Wednesday
+4) One process improvement
+5) Risk watchlist
+6) Friday review questions
+
+Meeting reduction plan
+1) Meeting inventory
+2) Candidates for async
+3) Agenda upgrades for keepers
+4) Stakeholder communication about changes
+5) Two-week experiment and review
+
+Overloaded inbox recovery
+1) Triage into Action / Waiting / Reference / Delete
+2) Timebox processing
+3) Create templates for common replies
+4) Set expectation for response SLAs
+5) Schedule two processing windows daily

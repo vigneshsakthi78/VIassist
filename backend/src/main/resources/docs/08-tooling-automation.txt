@@ -1,0 +1,30 @@
+Tooling and lightweight automation for employee productivity
+
+Mindset
+Automate repeated low-judgment work. Keep human attention for decisions and creative problem solving.
+
+Good automation candidates
+- Status report assembly from tickets
+- Reminder cadences for recurring checks
+- Templates for common emails and incident notes
+- Checklist bots for release or onboarding steps
+- Calendar holds for focus time
+
+Before buying another tool
+Ask:
+1. What process failure are we solving?
+2. Who owns the data and hygiene?
+3. Will this reduce meetings or create more updates?
+4. Can an existing tool cover 80%?
+
+Documentation that saves time
+- One-page runbooks for recurring tasks
+- FAQ for common teammate questions
+- Decision logs for important choices
+- Onboarding path for new joiners
+
+AI assistant usage at work
+- Draft updates, agendas, and summaries
+- Brainstorm options, then apply company judgment
+- Never paste secrets/credentials into tools
+- Verify facts before sending externally

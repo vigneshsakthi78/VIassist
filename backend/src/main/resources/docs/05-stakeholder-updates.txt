@@ -1,0 +1,28 @@
+Stakeholder management and crisp updates
+
+Audience mapping
+- Executives: outcomes, risk, ask
+- Peers: coordination details and handoffs
+- Customers/internal users: impact, timing, what changed for them
+
+Executive update skeleton
+1. Outcome
+2. Status (On track / At risk / Off track)
+3. What changed
+4. Risks and mitigation
+5. Decision needed (if any)
+
+Escalation without drama
+- State impact in business terms
+- Show what you already tried
+- Propose 2 options with a recommendation
+- Ask for a clear decision by date
+
+Pushback on unrealistic deadlines
+"Given current scope and dependencies, Friday full delivery is at risk. Options: (A) ship MVP Friday and phase 2 next week, (B) keep full scope and move date to next Wednesday. I recommend A."
+
+Trust builders
+- No surprise misses — raise risk early
+- Keep promises small and reliable
+- Document decisions
+- Close the loop when an ask is completed

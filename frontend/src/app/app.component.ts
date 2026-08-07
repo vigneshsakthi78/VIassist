@@ -21,7 +21,7 @@ export class AppComponent {
   messages: ChatMessage[] = [
     {
       role: 'assistant',
-      text: 'Hi, I am Vicky Assist. I will teach coding patterns and guide your practice on Take U Forward A2Z. Try: "Teach sliding window and give TUF tasks".',
+      text: 'Hi, I am Vicky Assist — your enterprise productivity coach. Ask for a weekly focus plan, meeting cleanup, stakeholder update, or how to protect deep work. Try: "Help me prioritize this week and reduce meeting load".',
     },
   ];
   draft = '';

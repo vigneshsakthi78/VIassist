@@ -12,7 +12,7 @@ public class HomeController {
     public Map<String, String> home() {
         return Map.of(
                 "app", "Vicky Assist",
-                "message", "Backend is running. Open the Angular UI at http://localhost:4200",
+                "message", "Enterprise productivity API is running. Open the Angular UI for the chat coach.",
                 "health", "/api/health",
                 "chat", "POST /api/chat"
         );

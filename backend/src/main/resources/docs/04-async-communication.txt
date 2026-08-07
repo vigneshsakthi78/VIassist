@@ -1,0 +1,32 @@
+Async communication for faster enterprise delivery
+
+Why async matters
+Distributed teams and busy calendars need updates that do not require everyone online at once.
+
+Good status update template
+- Context (1 line)
+- Progress since last update
+- Plan next
+- Risks / blockers
+- Ask (decision or help needed)
+
+Example
+Context: Migrating invoice export to the new pipeline
+Progress: Staging validation complete; 2 edge cases fixed
+Next: Prod rollout Thursday 10:00 with monitoring
+Risk: Legacy clients still on v1 format — rollback plan ready
+Ask: Approve communication note to finance ops?
+
+Chat channel etiquette
+- Use threads for topics
+- Put decisions in docs, not only chat history
+- Prefer links over pasted walls of text
+- Mark urgency honestly (FYI / Action needed / Blocker)
+
+Email subject clarity
+- [Action by Fri] Approve vendor renewal
+- [Decision] Choose option A or B for onboarding flow
+- [FYI] Incident summary — no action needed
+
+Reduce ping-pong
+Include options and a recommendation in the first message so people can reply with approve / tweak instead of restarting the discussion.

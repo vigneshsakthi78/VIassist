@@ -1,14 +1,14 @@
 # LangChain4j RAG — Spring Boot + Angular (standalone)
 
-Standalone project: **Vicky Assist** — Spring Boot REST API + Angular chat UI, powered by LangChain4j Easy RAG and OpenAI.
+Standalone project: **Vicky Assist** — Spring Boot REST API + Angular chat UI for **enterprise employee productivity**.
 
-Knowledge base topics (FAANG interview training):
-- Interview process and rounds
-- Coding / DSA patterns
-- System design
-- Behavioral STAR + leadership themes
-- Java backend interview topics
-- 8-week study plan
+Knowledge base topics:
+- Prioritization and OKR-style focus
+- Deep work and time blocking
+- Meeting hygiene and async communication
+- Stakeholder updates and decisions
+- Team / manager productivity habits
+- 30-day improvement plans
 
 ```text
 langchain4j-rag-spring-angular/
@@ -65,7 +65,7 @@ $env:GEMINI_API_KEY = "your-gemini-api-key"
 ### API
 
 - `GET  /api/health` → `{ "status": "ok" }`
-- `POST /api/chat` with `{ "message": "Explain sliding window for FAANG interviews" }`  
+- `POST /api/chat` with `{ "message": "Help me prioritize this week and cut low-value meetings" }`  
   → `{ "answer": "..." }`
 
 Sample knowledge base: [`backend/src/main/resources/docs`](backend/src/main/resources/docs)
@@ -104,5 +104,5 @@ Angular UI → POST /api/chat → Assistant (@AiService)
                               ↓
                      ContentRetriever (in-memory embeddings)
                               ↓
-                     OpenAI gpt-4o-mini → grounded answer
+                     Gemini chat model → grounded productivity answer
 ```

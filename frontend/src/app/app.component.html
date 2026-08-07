@@ -1,8 +1,8 @@
 <main class="shell">
   <header class="hero">
     <p class="brand">Vicky Assist</p>
-    <h1>FAANG coding tutor</h1>
-    <p class="lede">Learn patterns with me, then practice on Take U Forward A2Z sheet.</p>
+    <h1>Enterprise productivity coach</h1>
+    <p class="lede">Sharper priorities, fewer meeting drains, clearer updates — built for how real teams work.</p>
   </header>
 
   <section class="chat" aria-label="Chat">
@@ -17,7 +17,7 @@
       @if (loading) {
         <article class="bubble assistant pending">
           <span class="role">Vicky Assist</span>
-          <p>Preparing a teaching answer…</p>
+          <p>Building a practical playbook…</p>
         </article>
       }
 
@@ -34,7 +34,7 @@
         rows="2"
         [(ngModel)]="draft"
         (keydown)="onKeydown($event)"
-        placeholder="e.g. Teach sliding window, then give me TUF practice tasks"
+        placeholder="e.g. Build my weekly focus plan and cut low-value meetings"
         [disabled]="loading"
       ></textarea>
       <button type="submit" [disabled]="loading || !draft.trim()">Ask</button>

@@ -1,0 +1,31 @@
+Personal kanban and weekly operating rhythm
+
+Board columns (simple)
+- Inbox
+- This week
+- Doing (limit 1–3)
+- Waiting on others
+- Done
+
+WIP limits
+Keep "Doing" small. Starting more work often reduces finishing rate.
+
+Weekly planning (30–45 min)
+1. Review last week: finished, slipped, learned
+2. Choose 3 outcomes for this week
+3. Schedule deep-work blocks around meetings
+4. Identify dependencies and ask early
+5. Park nice-to-haves explicitly
+
+Daily shutdown (5–10 min)
+- Capture unfinished thoughts
+- Set tomorrow’s first task
+- Clear or snooze inbox noise
+- Note blockers to raise tomorrow
+
+Metrics that matter for ICs
+- Cycle time for important tasks
+- Number of unfinished commitments
+- Meeting hours vs maker hours
+- Interruptions during focus blocks
+Avoid vanity metrics like messages sent.
