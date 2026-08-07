@@ -11,7 +11,7 @@ langchain4j:
   google-ai-gemini:
     chat-model:
       api-key: ${GEMINI_API_KEY}
-      model-name: ${GEMINI_MODEL:gemini-2.0-flash-lite}
+      model-name: ${GEMINI_MODEL:gemini-3.6-flash}
       temperature: 0.2
       max-output-tokens: 2048
       max-retries: 2

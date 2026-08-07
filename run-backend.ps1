@@ -38,13 +38,13 @@ if (-not $env:GEMINI_API_KEY) {
     Write-Host "2) Then run:"
     Write-Host '   $env:GEMINI_API_KEY = "your-key-here"'
     Write-Host "3) Optional model override:"
-    Write-Host '   $env:GEMINI_MODEL = "gemini-2.0-flash"'
+    Write-Host '   $env:GEMINI_MODEL = "gemini-3.6-flash"'
     Write-Host "4) Start again: .\run-backend.ps1"
     exit 1
 }
 
 if (-not $env:GEMINI_MODEL) {
-    $env:GEMINI_MODEL = "gemini-2.0-flash-lite"
+    $env:GEMINI_MODEL = "gemini-3.6-flash"
 }
 if (-not $env:GEMINI_API_KEY -or $env:GEMINI_API_KEY.Trim().Length -eq 0) {
     Write-Host "ERROR: GEMINI_API_KEY is empty. Set a real key before starting."

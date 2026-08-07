@@ -79,14 +79,14 @@ public class ChatController {
         if (message.contains("RESOURCE_EXHAUSTED") || message.contains("429")
                 || message.toLowerCase().contains("quota") || message.toLowerCase().contains("rate")) {
             return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS).body(new ChatResponse(
-                    "Gemini free-tier quota/rate limit hit.\n"
+                    "Gemini quota/rate limit hit for the current API key (any model).\n"
                             + "Try:\n"
                             + "1) Wait 1-2 minutes, then ask again\n"
-                            + "2) Use a lighter model and restart backend:\n"
-                            + "   $env:GEMINI_MODEL = \"gemini-2.0-flash-lite\"\n"
-                            + "   .\\run-backend.ps1\n"
+                            + "2) Confirm GEMINI_MODEL on the host that serves /api/chat "
+                            + "(Render for https://viassist.netlify.app — local $env only affects local runs)\n"
                             + "3) Check quota: https://aistudio.google.com/usage\n"
-                            + "4) Ask shorter questions and avoid rapid clicks"
+                            + "4) Ask shorter questions and avoid rapid clicks\n"
+                            + "5) Optional: temporarily use a lighter model if free-tier RPM is exhausted"
             ));
         }
         return ResponseEntity.status(HttpStatus.BAD_GATEWAY)
