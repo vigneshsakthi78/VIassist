@@ -40,7 +40,8 @@ public class ChatController {
 
         String userMessage = request.message().trim();
         Exception last = null;
-        for (int attempt = 1; attempt <= 3; attempt++) {
+        // Single attempt on quota errors — retries burn the free-tier allowance faster.
+        for (int attempt = 1; attempt <= 2; attempt++) {
             try {
                 String answer = assistant.chat(userMessage);
                 return ResponseEntity.ok(new ChatResponse(answer));
@@ -51,11 +52,12 @@ public class ChatController {
                         || message.contains("429")
                         || message.toLowerCase().contains("quota")
                         || message.toLowerCase().contains("rate");
-                if (rateLimited && attempt < 3) {
-                    long sleepMs = attempt * 2000L;
-                    log.warn("Gemini rate/quota hit (attempt {}). Retrying in {} ms...", attempt, sleepMs);
+                if (rateLimited) {
+                    break;
+                }
+                if (attempt < 2) {
                     try {
-                        Thread.sleep(sleepMs);
+                        Thread.sleep(1000L);
                     } catch (InterruptedException ie) {
                         Thread.currentThread().interrupt();
                         break;
@@ -79,14 +81,14 @@ public class ChatController {
         if (message.contains("RESOURCE_EXHAUSTED") || message.contains("429")
                 || message.toLowerCase().contains("quota") || message.toLowerCase().contains("rate")) {
             return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS).body(new ChatResponse(
-                    "Gemini quota/rate limit hit for the current API key (any model).\n"
-                            + "Try:\n"
-                            + "1) Wait 1-2 minutes, then ask again\n"
-                            + "2) Confirm GEMINI_MODEL on the host that serves /api/chat "
-                            + "(Render for https://viassist.netlify.app — local $env only affects local runs)\n"
-                            + "3) Check quota: https://aistudio.google.com/usage\n"
-                            + "4) Ask shorter questions and avoid rapid clicks\n"
-                            + "5) Optional: temporarily use a lighter model if free-tier RPM is exhausted"
+                    "Gemini free-tier quota exhausted for this Google AI project.\n"
+                            + "This is a Google limit (RPM/RPD), not a Vicky Assist bug.\n"
+                            + "Fix options:\n"
+                            + "1) Wait for daily reset (midnight Pacific Time), then try again\n"
+                            + "2) Check live usage: https://aistudio.google.com/usage\n"
+                            + "3) Enable billing / upgrade tier for higher limits: "
+                            + "https://ai.google.dev/gemini-api/docs/rate-limits\n"
+                            + "4) Avoid rapid clicks; each chat + cold-start embedding uses quota"
             ));
         }
         return ResponseEntity.status(HttpStatus.BAD_GATEWAY)

@@ -28,7 +28,10 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.HexFormat;
 import java.util.List;
 
 @Configuration
@@ -45,10 +48,22 @@ public class RagConfig {
             throw new IllegalStateException("No documents found to ingest for RAG");
         }
 
+        String docsHash = hashDocuments(documents);
+        Path storePath = resolveStorePath();
+        Path hashPath = Paths.get(storePath.toString() + ".hash");
+
+        if (Files.isRegularFile(storePath) && Files.isRegularFile(hashPath)) {
+            String previousHash = Files.readString(hashPath, StandardCharsets.UTF_8).trim();
+            if (docsHash.equals(previousHash)) {
+                log.info("Loading cached embedding store from {} (skip Gemini embed calls)", storePath);
+                return InMemoryEmbeddingStore.fromFile(storePath);
+            }
+            log.info("Document set changed; rebuilding embedding store");
+        }
+
         log.info("Ingesting {} document(s) with Gemini embeddings (no local ONNX model)", documents.size());
         InMemoryEmbeddingStore<TextSegment> store = new InMemoryEmbeddingStore<>();
 
-        // Use Gemini EmbeddingModel so Render free tier does not OOM loading ONNX weights.
         EmbeddingStoreIngestor.builder()
                 .embeddingStore(store)
                 .embeddingModel(embeddingModel)
@@ -56,7 +71,10 @@ public class RagConfig {
                 .build()
                 .ingest(documents);
 
-        log.info("RAG ingestion complete");
+        Files.createDirectories(storePath.getParent() == null ? Paths.get(".") : storePath.getParent());
+        store.serializeToFile(storePath);
+        Files.writeString(hashPath, docsHash, StandardCharsets.UTF_8);
+        log.info("RAG ingestion complete; cached store at {}", storePath);
         return store;
     }
 
@@ -91,6 +109,27 @@ public class RagConfig {
                         .allowCredentials(false);
             }
         };
+    }
+
+    private Path resolveStorePath() {
+        String configured = System.getenv("EMBEDDING_STORE_PATH");
+        if (configured != null && !configured.isBlank()) {
+            return Paths.get(configured);
+        }
+        return Paths.get(System.getProperty("java.io.tmpdir"), "vicky-assist-embeddings.json");
+    }
+
+    private String hashDocuments(List<Document> documents) {
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            for (Document document : documents) {
+                digest.update(document.text().getBytes(StandardCharsets.UTF_8));
+                digest.update((byte) 0);
+            }
+            return HexFormat.of().formatHex(digest.digest());
+        } catch (NoSuchAlgorithmException e) {
+            throw new IllegalStateException("SHA-256 not available", e);
+        }
     }
 
     private List<Document> loadDocuments(RagProperties properties) throws IOException {
