@@ -18,7 +18,8 @@ langchain4j:
       log-requests-and-responses: false
     embedding-model:
       api-key: ${GEMINI_API_KEY}
-      model-name: ${GEMINI_EMBEDDING_MODEL:text-embedding-004}
+      # text-embedding-004 is not available on Gemini API v1beta embedContent
+      model-name: ${GEMINI_EMBEDDING_MODEL:gemini-embedding-001}
       max-retries: 2
       log-requests-and-responses: false
 
