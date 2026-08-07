@@ -1,30 +1,29 @@
 MACK DMS — Getting started
 
-Typical navigation
-1. Log in to MACK / NiBiKi with your company credentials
-2. Open Manual & Info Sharing (or the DMS entry configured for your profile)
-3. Choose the module you need, for example:
-   - SMS & Circulars
-   - Manuals / controlled manuals
-   - Bulletins
-   - Forms / checklists (where enabled)
-4. Use search or folder tree to locate the document
-5. Open Quick View or download/view according to your role and permissions
+Source: ONESEA/KLNG DMS Admin Training (SharePoint DMS Training Material)
 
-Before you start work
-- Confirm you are in the correct company / fleet / environment
-- Confirm your role can view or edit the target module (PAM / User Level Security)
-- Prefer searching by Document ID when you have it (example pattern: DMSDOC#####)
-- Prefer folder path when browsing (example: SMS → SMS-Ship → Chapter …)
+Login
+1. Use Chrome browser
+2. Open your company MACK URL (example pattern used in training: https://<customer>.macksvm.com/)
+3. Sign in with provided username and password
+4. If your account has multiple roles, use Switch Profile instead of logging in again
 
-Document identity basics
-- Document ID: stable reference used in support and audits
-- Title / subject: human-readable name
-- Folder / category path: where the document lives in the hierarchy
-- Version / revision: which controlled issue is current
-- Distribution: which vessels or offices should receive it
+MACK layout items users commonly use
+- Download Manager
+- Chat / Alerts / Notifications / Tasks
+- Language toggle, fullscreen, minimize module menu
+- Quick Access / Management / Resources
+- Personalization (images)
+- Calendar, clocks, news/events on home page
 
-Good daily habits
-- Always open the latest controlled version, not a personal copy from email
-- After office publishes a change, confirm vessel sync/receipt if your process requires it
-- Do not overwrite controlled content outside the approved DMS edit flow
+Open DMS
+1. From MACK modules, open DMS
+2. Use the folder tree on the left to browse
+3. Use Search or Advanced Search to find by title, content/page, or Document ID
+4. Open a document to use the right-side utility bar
+
+Daily reader habits
+- Prefer latest published controlled document in DMS over email copies
+- Add frequently used manuals to Favourites
+- Use Quick Navigate inside long documents
+- Check Bell notifications for workflow / published items relevant to you

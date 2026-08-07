@@ -1,37 +1,39 @@
-MACK DMS — Common issues, FAQ, and support ticket quality
+MACK DMS — FAQ and support ticket quality
+
+Source: combined from SharePoint DMS Training Material + support practice
 
 FAQ
-Q: Where do I start in DMS?
-A: Manual & Info Sharing / SMS & Circulars (as configured). Search by Document ID when known.
+Q: How do I find a document quickly?
+A: Use Search or Advanced Search by Document Title, Content/Page, or Document ID.
 
-Q: Quick View is blank
-A: Note Document ID, module, office vs vessel, browser. Try another document. Then raise support with screenshots.
+Q: Where do SMS attachments come from?
+A: Training guidance: SMS attachments via Document Manager; Circulars may upload from local folder.
 
-Q: Vessel cannot see a newly published document
-A: Check distribution vessel list and sync. Confirm office can see it first.
+Q: Document missing on vessel after office publish?
+A: Confirm Published status, visibility/distribution, then check Data Sync Report / SSC Comparison Report for mismatches.
 
-Q: Attachment looks old after an update
-A: Confirm the correct revision was saved/distributed. Check comparison/report tools if available. Raise support with before/after evidence.
+Q: What is Cancelled in Trash?
+A: For published circulars overridden by a new version, the old version can appear under Cancelled.
 
-Q: User manuals flagged or blocked
-A: Security scanners may flag PDFs. Provide exact file names/Document IDs and whether office and vessel behave differently.
+Q: How do templates help?
+A: Create templates in Template Master, then Insert Template while editing a page for consistent SMS/Circular formatting.
 
-Q: How do I ask Vicky Assist for help?
-A: Example prompts:
-- "How do I find a document in DMS by Document ID?"
-- "Steps to distribute an SMS circular to selected vessels"
-- "Checklist when Quick View is blank on vessel"
-- "Draft a support ticket for missing DMS document on SAILS"
+Q: How do conditional variables help?
+A: Show different text/details based on conditions such as Vessel Type.
+
+Example prompts for Vicky Assist
+- "Steps to create a folder and assign workflow in DMS"
+- "How do I attach an SMS document using Document Manager?"
+- "Explain DMS publish workflow from create to approve"
+- "What is SSC Comparison Report used for?"
+- "Draft a support ticket for vessel not seeing published circular"
 
 Support ticket template
-1. Module: (SMS & Circulars / Manual & Info Sharing / Bulletin / other)
-2. Environment: (Prod / Test)
-3. Company / vessel
+1. Customer / company / environment
+2. Shore or vessel (vessel name if ship)
+3. Module / screen (DMS tree, Document Manager, SSC report, etc.)
 4. Document ID + title + folder path
-5. Expected result
-6. Actual result
-7. Office vs vessel behavior
-8. Timestamp
-9. Screenshots / HAR if performance or page rendering issue
-
-Raise tickets in the correct company support desk project, with clear priority based on operational impact.
+5. Expected vs actual
+6. Workflow status (draft/review/approve/published)
+7. Screenshots
+8. Sync/SSC evidence if shore vs ship mismatch

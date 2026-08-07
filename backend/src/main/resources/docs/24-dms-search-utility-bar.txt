@@ -1,0 +1,46 @@
+MACK DMS — Search, menus, and side utility bar
+
+Source: Seaspan Quick Guide + Admin Training
+
+Search
+1. Basic Search: search word/phrase/context in document parts
+2. Advanced Search criteria commonly include:
+   - Document Title
+   - Content / Page
+   - Document ID
+Content can be searched inside documents and attachments.
+
+Side utility bar (on an open document)
+- Comments
+- View Attachment
+- Refresh
+- Favourites
+- User Version
+- View Page Properties
+- Download
+- Print
+- Workflow Activity (where available)
+- Quick Navigate to sections
+
+Top menu / trash concepts
+Show Trash lets users view:
+1. Cancelled — published circulars overridden by a new version
+2. Deleted — deleted by a workflow user
+3. Ready to Delete — published docs deleted but waiting higher-authority delete approval
+
+Other top/common actions
+- New, Delete, Mark as Favorite, Filter
+- Navigation pane expand/collapse
+- Notifications / Download Manager / Refresh
+- Security Control (admin): add group/user access gateways
+- Template Master: create reusable templates
+
+Overall screen orientation (Quick Guide)
+1. New/Delete/Favorite/Filter
+2. Navigation pane
+3. Expand/collapse panels
+4. Menus
+5. Search / Advanced Search / Notification / Download Manager / Refresh
+6. User profile
+7. Welcome content expand/collapse
+8. Page/document details

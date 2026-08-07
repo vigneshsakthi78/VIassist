@@ -1,0 +1,37 @@
+MACK DMS — Masters, tools, and reports (Admin)
+
+Source: ONESEA/KLNG DMS Admin Training (SharePoint)
+
+Admin masters (examples)
+- Variable: reusable text/content (ranks, dates, logos). Manual ref section 3.2
+- Template: pre-formatted styles for SMS/Circulars/Crew consistency. Section 3.3
+- Security Control: role/group gateway permissions. Section 3.6
+- Workflows: review/approve chains. Section 3.13
+- Group Mapping: group users under one group name. Section 3.7
+- Document Type: types of documents transacted. Section 3.9
+- Vessel Type (DMS): grouping for DMS (Liquid/Bulk/Container etc.), may differ from vessel master. Section 3.16
+- Region / Category: properties for filtering/labeling. Sections 3.11 / 3.12
+- Status: view/edit status names (cannot create new statuses). Section 3.10
+- Reference Number: auto pattern by document type/company. Section 3.15
+  Training note: reference-number order is often not ideal in maritime publishing sequence.
+
+Functional tools
+- Image Manager: upload/store/manage images. Section 3.4
+- Document Manager: upload/store/manage documents. Section 3.5
+  Tip: mirror main tree folder structure; store master-linked files thoughtfully
+- Bulk/Offline: transfer many documents via media, skipping normal shore-ship communication. Section 3.18
+- Activity Log: chronological security-relevant transaction history. Section 3.8
+- Guest User Access: read access for guests. Section 3.22
+- External Publish Gate: share across companies/clients
+- Visibility Update: share visibility of multiple documents to shore/company/department/ranks
+
+Technical / sync tools
+- Data Sync Report: document transition status ship ↔ shore. Section 3.14
+- SSC Comparison Report: mismatch counts due to Shore-Ship Communication issues. Section 3.17
+
+Reports
+- DMS Efficiency Report: read/unread, frequently viewed/revised analysis
+- DMS Report Shore: published-document analysis, SSC discrepancies, recent documents, bulk/offline status
+
+Global Author note from training
+Global Author role can publish multi-company (where configured).

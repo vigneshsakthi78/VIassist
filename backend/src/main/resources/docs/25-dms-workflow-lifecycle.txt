@@ -1,0 +1,47 @@
+MACK DMS — Workflow and document lifecycle (create → publish)
+
+Source: ONESEA/KLNG DMS Admin Training + Seaspan Quick Guide
+
+What is workflow?
+A workflow is the process a page/document passes from initiation to completion.
+It is a chain of users who review, approve, or reject a document.
+Workflow is usually defined by category and assigned at folder/document level.
+
+Recommended creation-to-publish flow
+1. Create folder and assign hierarchy in tree
+2. Assign folder properties
+3. Create document/page in the folder
+4. Populate content (edit page, import, variables, images, templates)
+5. Assign page properties
+6. Assign / confirm workflow
+7. Submit for Review
+8. Submit for Approval
+9. Publish
+
+Right-click actions often available on folder/document
+- Change icon
+- Assign Workflow
+- Rename
+- Manage Visibility
+- Submit to next stage
+
+After publish
+- Shore users can receive email when status becomes Published
+- Workflow users get mail alerts when status changes
+- Bell icon shows in-app notifications for relevant documents
+
+Deleting documents
+Ways to delete:
+1. Select document in tree → bin icon on top of tree
+2. Right-click document → Delete
+
+Trash sections after Show Trash
+- Cancelled: old published circular replaced/overridden
+- Deleted: removed by workflow user
+- Ready to Delete: published doc deleted but awaiting higher approval
+
+Security Control
+1. Top menu → Security Control
+2. Add
+3. Select Group/User and grant access
+Security Control customizes what each user/group can do.

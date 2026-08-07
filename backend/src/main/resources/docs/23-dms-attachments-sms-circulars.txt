@@ -1,0 +1,24 @@
+MACK DMS — Attachments for SMS vs Circulars
+
+Source: Seaspan DMS Quick Guide — Attachment (Use Document Manager for SMS)
+
+Attach a file to a page
+1. Open the page under the folder
+2. Click Edit Page
+3. Click Page Properties
+4. In Distribution, add the Attachment
+
+Important rule from training
+- For SMS: upload the file from Document Manager / Download Manager path (controlled repository), not casually from an uncontrolled local copy when the process requires Document Manager
+- For Circular: can upload from local folder
+
+Why this matters
+SMS attachments are controlled company manuals. Using Document Manager keeps repository structure aligned with the tree and master-slave linked documents.
+Circulars are often issued as newer versions; cancelled published circulars can move to Trash → Cancelled when overridden.
+
+Practical tip
+If vessel users cannot open an SMS attachment after publish, verify:
+1. Attachment was added in Page Properties / Distribution correctly
+2. File exists in Document Manager
+3. Document was submitted through workflow and Published
+4. Shore vs ship sync / SSC comparison does not show mismatch

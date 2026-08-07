@@ -1,0 +1,45 @@
+MACK DMS — Folder, page, and content creation (Quick Guide steps)
+
+Source: Seaspan 2022 Training — DMS Quick Guide (v1.1)
+
+Folder creation
+1. Click New icon
+2. Add Document Type dialog appears
+3. Create a folder with a valid name
+
+Assign workflow to folder
+1. Right-click the folder
+2. Click Workflow
+3. Search and select the workflow
+4. Assign the workflow
+Note: By default, child documents inherit the parent folder workflow, but a different workflow can be assigned.
+
+Create new page/document under a folder
+1. Click the target folder
+2. Click New on top
+3. Add the page under the folder
+4. Confirm the page appears under that folder
+
+Import document into a page
+1. Open the page under the folder
+2. Click Edit Page
+3. Click Import and import the document
+
+Hyperlink document
+1. Open page → Edit Page
+2. Click Hyperlink
+3. From Hyperlink Document screen, select and insert the hyperlink
+
+Link page
+1. Open page → Edit Page
+2. Click Link Page
+3. Select the page to link
+4. Selected page appears/linked
+
+Populate content extras (edit page tools)
+- Insert Variable: reusable text/logo/content pieces
+- Insert Sticky: notes
+- Insert Image: from Image Manager
+- Quick Image Upload: from local folder
+- Insert Template: apply a saved template
+- Conditional Variable: show content by conditions such as Vessel Type

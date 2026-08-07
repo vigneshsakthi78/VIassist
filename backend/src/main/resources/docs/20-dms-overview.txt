@@ -1,24 +1,25 @@
-MACK DMS — How to use (overview)
+MACK DMS — Overview (from official training materials)
 
-What is DMS?
-DMS (Document Management System) in MACK / NiBiKi is the controlled library for company manuals, SMS documents, circulars, bulletins, forms, and related controlled information. It is commonly accessed under areas such as Manual & Info Sharing and SMS & Circulars.
+Source: MACK-DMS SharePoint → Documents → DMS Training Material
+(Seaspan DMS Quick Guide; ONESEA/KLNG DMS Admin Training)
 
-Who uses it
-- Shore office users: create, revise, distribute, and control documents
-- Vessel / shipboard users (e.g. SAILS side): receive, view, acknowledge, and use the latest controlled documents
-- Support / admins: access mapping (PAM / User Level Security), distribution, and troubleshooting
+What is MACK DMS?
+MACK DMS is Solverminds’ Document Management System for controlled maritime documents
+such as SMS manuals, circulars, and related company information used by shore and ship users.
 
-What DMS is for
-- Keep one controlled source of truth for SMS / manuals / circulars
-- Distribute the right documents to the right vessels or offices
-- Preserve version control and auditability of document changes
-- Support audits, vetting, and management-system compliance
+Typical landing areas in MACK
+- New / Delete / Mark as Favorite / Filter
+- Navigation pane (folder tree)
+- Search / Advanced Search / Notifications / Download Manager / Refresh
+- Side utility bar on a document (comments, attachments, favourites, page properties, download, print)
+- Admin / Functional / Technical tools for masters, managers, and reports
 
-What Vicky Assist can help with
-- Explain DMS modules and typical user flows
-- Give step-by-step “how to” for common tasks
-- Suggest what to check before raising a support ticket
-- Draft clear support descriptions (module, document ID, vessel, screenshot notes)
+Who does what (role summary)
+- Super Admin (shore): cross-company setup, mapping, masters
+- Local Admin (shore): users and functional roles within own company
+- Vessel Admin / Master (ship): vessel-side admin actions
+- Normal users: view and work within company / vessel scope
 
-Important
-Company-specific screens, folder names, and permissions vary by customer configuration. Always follow your company SMS / document-control procedure if it differs from this general guide.
+Core idea
+Documents live in a folder tree, move through workflow (create → review → approve → publish),
+and become visible to the intended shore/ship audience based on visibility, security, and sync.

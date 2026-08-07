@@ -13,9 +13,13 @@ Who it helps
 
 How to use Vicky Assist
 - Ask for a today or weekly focus plan
-- Ask DMS questions, e.g. find by Document ID, distribute circulars, blank Quick View checklist
+- Ask DMS how-tos grounded in MACK training (folder/page create, workflow publish, SMS attachments, search, SSC/sync)
 - Ask for meeting agendas, status templates, or stakeholder emails
 - Ask for a support-ticket draft with module, vessel, Document ID, and expected vs actual
+
+DMS knowledge source
+SharePoint site MACK-DMS → Shared Documents → DMS Training Material
+(Seaspan Quick Guide; ONESEA/KLNG Admin Training decks)
 
 Principles
 1. Clarity beats busyness
