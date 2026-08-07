@@ -1,0 +1,39 @@
+MACK DMS — SMS & Circulars how to use
+
+Purpose
+SMS & Circulars is used to manage Safety Management System documents and circulars, including folder structure, HTML/PDF controlled content, attachments, and vessel distribution.
+
+Common office tasks
+1) Find a document
+- Open SMS & Circulars
+- Browse folder levels (example: SMS → SMS-Ship → Chapter)
+- Or search by title / Document ID
+
+2) Create or revise a controlled document (high level)
+- Create or open the document in the correct folder
+- Update content / attachment through the approved edit flow
+- Set metadata required by your company (category, applicability, effective date if used)
+- Save / submit according to your approval workflow
+- Distribute to the intended vessels / offices
+- Confirm recipients can open the latest version
+
+3) Distribute to vessels
+- Select the document or folder intended for distribution
+- Choose distribution vessels carefully (include only intended ships)
+- Publish / distribute
+- Verify the vessel can see the document after sync
+- If a vessel should not keep an old copy, follow your company withdraw/replace process
+
+4) Compare / check differences (where SSC comparison or similar reports exist)
+- Use comparison/report tools to check SMS & Circular attachment mismatches
+- Investigate blank Quick View, missing attachments, or wrong vessel targeting
+
+Vessel-side expectations
+- Open the document from DMS / SAILS, not from an unofficial email copy
+- If document is missing or blank, note Document ID, vessel name, module, and whether Quick View or download fails
+- Raise support with those details
+
+Tips that prevent rework
+- Keep folder taxonomy clean (main/sub category structure matters)
+- Do not manually bypass distribution when vessels need the controlled copy
+- After editing, validate both office view and vessel view

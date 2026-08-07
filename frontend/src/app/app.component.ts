@@ -21,7 +21,7 @@ export class AppComponent {
   messages: ChatMessage[] = [
     {
       role: 'assistant',
-      text: 'Hi, I am Vicky Assist — your enterprise productivity coach. Ask for a weekly focus plan, meeting cleanup, stakeholder update, or how to protect deep work. Try: "Help me prioritize this week and reduce meeting load".',
+      text: 'Hi, I am Vicky Assist — enterprise productivity + MACK DMS coach. Ask for a focus plan, or DMS help like finding a document, distributing SMS circulars, or blank Quick View checks. Try: "How do I distribute an SMS circular to selected vessels?"',
     },
   ];
   draft = '';

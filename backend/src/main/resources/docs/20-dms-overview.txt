@@ -1,0 +1,24 @@
+MACK DMS — How to use (overview)
+
+What is DMS?
+DMS (Document Management System) in MACK / NiBiKi is the controlled library for company manuals, SMS documents, circulars, bulletins, forms, and related controlled information. It is commonly accessed under areas such as Manual & Info Sharing and SMS & Circulars.
+
+Who uses it
+- Shore office users: create, revise, distribute, and control documents
+- Vessel / shipboard users (e.g. SAILS side): receive, view, acknowledge, and use the latest controlled documents
+- Support / admins: access mapping (PAM / User Level Security), distribution, and troubleshooting
+
+What DMS is for
+- Keep one controlled source of truth for SMS / manuals / circulars
+- Distribute the right documents to the right vessels or offices
+- Preserve version control and auditability of document changes
+- Support audits, vetting, and management-system compliance
+
+What Vicky Assist can help with
+- Explain DMS modules and typical user flows
+- Give step-by-step “how to” for common tasks
+- Suggest what to check before raising a support ticket
+- Draft clear support descriptions (module, document ID, vessel, screenshot notes)
+
+Important
+Company-specific screens, folder names, and permissions vary by customer configuration. Always follow your company SMS / document-control procedure if it differs from this general guide.

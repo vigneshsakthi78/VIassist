@@ -1,0 +1,37 @@
+MACK DMS — Common issues, FAQ, and support ticket quality
+
+FAQ
+Q: Where do I start in DMS?
+A: Manual & Info Sharing / SMS & Circulars (as configured). Search by Document ID when known.
+
+Q: Quick View is blank
+A: Note Document ID, module, office vs vessel, browser. Try another document. Then raise support with screenshots.
+
+Q: Vessel cannot see a newly published document
+A: Check distribution vessel list and sync. Confirm office can see it first.
+
+Q: Attachment looks old after an update
+A: Confirm the correct revision was saved/distributed. Check comparison/report tools if available. Raise support with before/after evidence.
+
+Q: User manuals flagged or blocked
+A: Security scanners may flag PDFs. Provide exact file names/Document IDs and whether office and vessel behave differently.
+
+Q: How do I ask Vicky Assist for help?
+A: Example prompts:
+- "How do I find a document in DMS by Document ID?"
+- "Steps to distribute an SMS circular to selected vessels"
+- "Checklist when Quick View is blank on vessel"
+- "Draft a support ticket for missing DMS document on SAILS"
+
+Support ticket template
+1. Module: (SMS & Circulars / Manual & Info Sharing / Bulletin / other)
+2. Environment: (Prod / Test)
+3. Company / vessel
+4. Document ID + title + folder path
+5. Expected result
+6. Actual result
+7. Office vs vessel behavior
+8. Timestamp
+9. Screenshots / HAR if performance or page rendering issue
+
+Raise tickets in the correct company support desk project, with clear priority based on operational impact.

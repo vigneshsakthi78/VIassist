@@ -1,8 +1,8 @@
 <main class="shell">
   <header class="hero">
     <p class="brand">Vicky Assist</p>
-    <h1>Enterprise productivity coach</h1>
-    <p class="lede">Sharper priorities, fewer meeting drains, clearer updates — built for how real teams work.</p>
+    <h1>Enterprise productivity + DMS coach</h1>
+    <p class="lede">Priorities, meetings, and MACK DMS how-tos — so shore and vessel teams move faster with less rework.</p>
   </header>
 
   <section class="chat" aria-label="Chat">
@@ -34,7 +34,7 @@
         rows="2"
         [(ngModel)]="draft"
         (keydown)="onKeydown($event)"
-        placeholder="e.g. Build my weekly focus plan and cut low-value meetings"
+        placeholder="e.g. How do I find a DMS document by ID and distribute it?"
         [disabled]="loading"
       ></textarea>
       <button type="submit" [disabled]="loading || !draft.trim()">Ask</button>
