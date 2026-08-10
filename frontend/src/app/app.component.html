@@ -2,7 +2,7 @@
   <header class="hero">
     <p class="brand">Vicky Assist</p>
     <h1>Enterprise productivity + DMS coach</h1>
-    <p class="lede">Priorities, meetings, and MACK DMS how-tos — so shore and vessel teams move faster with less rework.</p>
+    <p class="lede">Priorities, meetings, and MACK DMS how-tos — with screenshots when you need them.</p>
   </header>
 
   <section class="chat" aria-label="Chat">
@@ -10,7 +10,18 @@
       @for (message of messages; track $index) {
         <article class="bubble" [class.user]="message.role === 'user'" [class.assistant]="message.role === 'assistant'">
           <span class="role">{{ message.role === 'user' ? 'You' : 'Vicky Assist' }}</span>
-          <p>{{ message.text }}</p>
+          @for (part of parts(message.text); track $index) {
+            @if (part.type === 'text') {
+              <p>{{ part.text }}</p>
+            } @else {
+              <figure class="shot">
+                <img [src]="part.src" [alt]="part.alt" loading="lazy" />
+                @if (part.alt) {
+                  <figcaption>{{ part.alt }}</figcaption>
+                }
+              </figure>
+            }
+          }
         </article>
       }
 
@@ -34,7 +45,7 @@
         rows="2"
         [(ngModel)]="draft"
         (keydown)="onKeydown($event)"
-        placeholder="e.g. How do I find a DMS document by ID and distribute it?"
+        placeholder="e.g. Show DMS home screenshot and steps to open Image Manager"
         [disabled]="loading"
       ></textarea>
       <button type="submit" [disabled]="loading || !draft.trim()">Ask</button>

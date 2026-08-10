@@ -1,0 +1,30 @@
+MACK DMS Shore V4.3 — Screenshots available in Vicky Assist
+
+When explaining DMS Shore UI steps, include markdown images so the chat UI can show them.
+Use paths exactly like this (leading slash):
+
+![short label](/screenshots/dms-shore-v43/shot-XX.png)
+
+Available screenshots (from Shore Office User Guide V4.3 media):
+
+shot-01.png — Image Manager window (folder tree + image thumbnails, upload/add toolbar)
+shot-03.png — DMS home / Welcome landing with document grid, Document ID (DMSDOC…), Image Manager & Document Manager buttons, left folder tree (SMS, Circulars, manuals)
+shot-16.png — Open document page view with Edit Page, Image Manager, Document Manager, breadcrumb, hamburger utility menu callout
+
+Other shots (shot-02, shot-04 … shot-40) are additional Shore UI screens from the same guide
+(publish dialogs, properties, managers, trees, reports). Prefer a clearly matching shot when known;
+otherwise use shot-03 for general navigation and shot-01 for Image Manager topics.
+
+Example answer fragment:
+
+## Open DMS home
+1) Log in to MACK Shore and open DMS.
+2) Use the left folder tree (SMS / Circulars / manuals).
+3) Use Image Manager / Document Manager from the landing actions.
+
+![DMS home grid](/screenshots/dms-shore-v43/shot-03.png)
+
+Rules
+- Always use markdown image syntax so the UI can render pictures.
+- Do not invent screenshot filenames that are not listed above.
+- One or two screenshots per answer is enough; pick the most relevant.

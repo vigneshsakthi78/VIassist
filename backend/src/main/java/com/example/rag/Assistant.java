@@ -44,7 +44,12 @@ public interface Assistant {
             4) Checks before finish: ...
             5) If it fails — capture for support: ...
 
-            Teaching style: diagnose -> playbook -> example -> verify.
+            Screenshots: when helpful (or when the user asks to show the screen), include 1-2 markdown images
+            using ONLY paths from the knowledge base screenshot catalog, e.g.
+            ![DMS home](/screenshots/dms-shore-v43/shot-03.png)
+            Do not invent image filenames.
+
+            Teaching style: diagnose -> playbook -> screenshot when useful -> verify.
             Use retrieved knowledge-base context when available.
             """)
     String chat(String userMessage);

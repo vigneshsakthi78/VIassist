@@ -1,11 +1,16 @@
 import { Component, ElementRef, ViewChild, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ChatService } from './chat.service';
+import { environment } from '../environments/environment';
 
 interface ChatMessage {
   role: 'user' | 'assistant';
   text: string;
 }
+
+type MessagePart =
+  | { type: 'text'; text: string }
+  | { type: 'image'; src: string; alt: string };
 
 @Component({
   selector: 'app-root',
@@ -21,7 +26,8 @@ export class AppComponent {
   messages: ChatMessage[] = [
     {
       role: 'assistant',
-      text: 'Hi, I am Vicky Assist — enterprise productivity + MACK DMS coach. Ask for a focus plan, or DMS help like finding a document, distributing SMS circulars, or blank Quick View checks. Try: "How do I distribute an SMS circular to selected vessels?"',
+      text:
+        'Hi, I am Vicky Assist — enterprise productivity + MACK DMS coach. Ask for DMS how-tos with screenshots, e.g. "Show me the DMS home screen and how to open Image Manager".',
     },
   ];
   draft = '';
@@ -65,6 +71,41 @@ export class AppComponent {
       event.preventDefault();
       this.send();
     }
+  }
+
+  /** Parse markdown images so assistant answers can show DMS screenshots. */
+  parts(text: string): MessagePart[] {
+    const pattern = /!\[([^\]]*)\]\(([^)]+)\)/g;
+    const parts: MessagePart[] = [];
+    let last = 0;
+    let match: RegExpExecArray | null;
+    while ((match = pattern.exec(text)) !== null) {
+      if (match.index > last) {
+        parts.push({ type: 'text', text: text.slice(last, match.index) });
+      }
+      parts.push({
+        type: 'image',
+        alt: match[1] || 'Screenshot',
+        src: this.resolveImageUrl(match[2]),
+      });
+      last = match.index + match[0].length;
+    }
+    if (last < text.length) {
+      parts.push({ type: 'text', text: text.slice(last) });
+    }
+    return parts.length ? parts : [{ type: 'text', text }];
+  }
+
+  private resolveImageUrl(url: string): string {
+    const trimmed = url.trim();
+    if (/^https?:\/\//i.test(trimmed)) {
+      return trimmed;
+    }
+    const base = (environment.apiBaseUrl || '').replace(/\/$/, '');
+    if (trimmed.startsWith('/')) {
+      return `${base}${trimmed}`;
+    }
+    return `${base}/${trimmed}`;
   }
 
   private scrollToBottom(): void {
