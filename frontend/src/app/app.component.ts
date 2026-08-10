@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ChatService } from './chat.service';
 import { environment } from '../environments/environment';
 
@@ -9,7 +10,7 @@ interface ChatMessage {
 }
 
 type MessagePart =
-  | { type: 'text'; text: string }
+  | { type: 'text'; html: SafeHtml }
   | { type: 'image'; src: string; alt: string };
 
 @Component({
@@ -20,6 +21,7 @@ type MessagePart =
 })
 export class AppComponent {
   private readonly chatService = inject(ChatService);
+  private readonly sanitizer = inject(DomSanitizer);
 
   @ViewChild('thread') threadRef?: ElementRef<HTMLElement>;
 
@@ -73,7 +75,7 @@ export class AppComponent {
     }
   }
 
-  /** Parse markdown images so assistant answers can show DMS screenshots. */
+  /** Split images out, then render lightweight markdown (**bold**, *italic*, headings). */
   parts(text: string): MessagePart[] {
     const pattern = /!\[([^\]]*)\]\(([^)]+)\)/g;
     const parts: MessagePart[] = [];
@@ -81,7 +83,7 @@ export class AppComponent {
     let match: RegExpExecArray | null;
     while ((match = pattern.exec(text)) !== null) {
       if (match.index > last) {
-        parts.push({ type: 'text', text: text.slice(last, match.index) });
+        parts.push({ type: 'text', html: this.toSafeHtml(text.slice(last, match.index)) });
       }
       parts.push({
         type: 'image',
@@ -91,9 +93,36 @@ export class AppComponent {
       last = match.index + match[0].length;
     }
     if (last < text.length) {
-      parts.push({ type: 'text', text: text.slice(last) });
+      parts.push({ type: 'text', html: this.toSafeHtml(text.slice(last)) });
     }
-    return parts.length ? parts : [{ type: 'text', text }];
+    return parts.length ? parts : [{ type: 'text', html: this.toSafeHtml(text) }];
+  }
+
+  private toSafeHtml(raw: string): SafeHtml {
+    let html = this.escapeHtml(raw);
+
+    // Headings: ### / ## / #
+    html = html.replace(/^###\s+(.+)$/gm, '<strong class="md-h">$1</strong>');
+    html = html.replace(/^##\s+(.+)$/gm, '<strong class="md-h">$1</strong>');
+    html = html.replace(/^#\s+(.+)$/gm, '<strong class="md-h">$1</strong>');
+
+    // Bold then italic (** before *)
+    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    html = html.replace(/(^|[\s(])\*(?!\s)(.+?)(?!\s)\*(?=[\s).,!?:;]|$)/g, '$1<em>$2</em>');
+
+    // Inline code
+    html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+
+    return this.sanitizer.bypassSecurityTrustHtml(html);
+  }
+
+  private escapeHtml(value: string): string {
+    return value
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
   }
 
   private resolveImageUrl(url: string): string {

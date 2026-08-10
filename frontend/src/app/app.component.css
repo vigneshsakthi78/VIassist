@@ -98,6 +98,31 @@
   line-height: 1.5;
 }
 
+.bubble p.md strong {
+  font-weight: 700;
+}
+
+.bubble p.md em {
+  font-style: italic;
+}
+
+.bubble p.md .md-h {
+  display: inline;
+  font-weight: 700;
+}
+
+.bubble p.md code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  padding: 0.1em 0.35em;
+  border-radius: 0.3rem;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+.bubble.user p.md code {
+  background: color-mix(in srgb, #f4f7f4 18%, transparent);
+}
+
 .bubble p + p,
 .bubble p + .shot,
 .bubble .shot + p {

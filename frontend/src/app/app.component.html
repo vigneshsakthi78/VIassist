@@ -12,7 +12,7 @@
           <span class="role">{{ message.role === 'user' ? 'You' : 'Vicky Assist' }}</span>
           @for (part of parts(message.text); track $index) {
             @if (part.type === 'text') {
-              <p>{{ part.text }}</p>
+              <p class="md" [innerHTML]="part.html"></p>
             } @else {
               <figure class="shot">
                 <img [src]="part.src" [alt]="part.alt" loading="lazy" />
