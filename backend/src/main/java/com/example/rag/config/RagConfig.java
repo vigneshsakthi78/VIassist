@@ -14,6 +14,7 @@ import dev.langchain4j.store.embedding.EmbeddingStoreIngestor;
 import dev.langchain4j.store.embedding.inmemory.InMemoryEmbeddingStore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,16 +34,21 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.HexFormat;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 @Configuration
 @EnableConfigurationProperties(RagProperties.class)
 public class RagConfig {
 
     private static final Logger log = LoggerFactory.getLogger(RagConfig.class);
+    private static final String CLASSPATH_STORE = "classpath:rag/embedding-store.json";
+
+    /** Larger chunks = fewer Gemini embed calls (free tier embed RPM is very low). */
+    private static final int CHUNK_SIZE = 2500;
+    private static final int CHUNK_OVERLAP = 200;
 
     @Bean
-    EmbeddingStore<TextSegment> embeddingStore(RagProperties properties, EmbeddingModel embeddingModel)
-            throws IOException {
+    InMemoryEmbeddingStore<TextSegment> embeddingStore(RagProperties properties) throws IOException {
         List<Document> documents = loadDocuments(properties);
         if (documents.isEmpty()) {
             throw new IllegalStateException("No documents found to ingest for RAG");
@@ -50,7 +56,12 @@ public class RagConfig {
 
         String docsHash = hashDocuments(documents);
         Path storePath = resolveStorePath();
-        Path hashPath = Paths.get(storePath.toString() + ".hash");
+        Path hashPath = Paths.get(storePath + ".hash");
+
+        InMemoryEmbeddingStore<TextSegment> fromClasspath = loadClasspathStore(docsHash);
+        if (fromClasspath != null) {
+            return fromClasspath;
+        }
 
         if (Files.isRegularFile(storePath) && Files.isRegularFile(hashPath)) {
             String previousHash = Files.readString(hashPath, StandardCharsets.UTF_8).trim();
@@ -58,28 +69,37 @@ public class RagConfig {
                 log.info("Loading cached embedding store from {} (skip Gemini embed calls)", storePath);
                 return InMemoryEmbeddingStore.fromFile(storePath);
             }
-            log.info("Document set changed; rebuilding embedding store");
         }
 
-        log.info("Ingesting {} document(s) with Gemini embeddings (no local ONNX model)", documents.size());
-        InMemoryEmbeddingStore<TextSegment> store = new InMemoryEmbeddingStore<>();
-
-        EmbeddingStoreIngestor.builder()
-                .embeddingStore(store)
-                .embeddingModel(embeddingModel)
-                .documentSplitter(DocumentSplitters.recursive(500, 50))
-                .build()
-                .ingest(documents);
-
-        Files.createDirectories(storePath.getParent() == null ? Paths.get(".") : storePath.getParent());
-        store.serializeToFile(storePath);
-        Files.writeString(hashPath, docsHash, StandardCharsets.UTF_8);
-        log.info("RAG ingestion complete; cached store at {}", storePath);
-        return store;
+        // Empty store — filled asynchronously so Tomcat can bind before embed quota work.
+        log.warn("No prebuilt/cached embeddings found. App will start, then ingest in background.");
+        return new InMemoryEmbeddingStore<>();
     }
 
     @Bean
-    ContentRetriever contentRetriever(EmbeddingStore<TextSegment> embeddingStore, EmbeddingModel embeddingModel) {
+    ApplicationRunner embeddingIngestRunner(
+            InMemoryEmbeddingStore<TextSegment> embeddingStore,
+            EmbeddingModel embeddingModel,
+            RagProperties properties) {
+        AtomicBoolean started = new AtomicBoolean(false);
+        return args -> {
+            if (!started.compareAndSet(false, true)) {
+                return;
+            }
+            if (!embeddingStore.isEmpty()) {
+                log.info("Embedding store already loaded ({} entries). Skipping ingest.", embeddingStore.size());
+                return;
+            }
+
+            Thread t = new Thread(() -> ingestWithRateLimit(embeddingStore, embeddingModel, properties), "rag-ingest");
+            t.setDaemon(true);
+            t.start();
+        };
+    }
+
+    @Bean
+    ContentRetriever contentRetriever(
+            EmbeddingStore<TextSegment> embeddingStore, EmbeddingModel embeddingModel) {
         return EmbeddingStoreContentRetriever.builder()
                 .embeddingStore(embeddingStore)
                 .embeddingModel(embeddingModel)
@@ -109,6 +129,97 @@ public class RagConfig {
                         .allowCredentials(false);
             }
         };
+    }
+
+    private void ingestWithRateLimit(
+            InMemoryEmbeddingStore<TextSegment> store,
+            EmbeddingModel embeddingModel,
+            RagProperties properties) {
+        try {
+            List<Document> documents = loadDocuments(properties);
+            String docsHash = hashDocuments(documents);
+            Path storePath = resolveStorePath();
+            Path hashPath = Paths.get(storePath + ".hash");
+
+            log.info("Background ingest of {} document(s) with large chunks to respect embed free-tier RPM",
+                    documents.size());
+
+            // One document at a time + pause keeps us under ~100 embed RPM free tier.
+            for (int i = 0; i < documents.size(); i++) {
+                Document document = documents.get(i);
+                ingestOneDocumentWithRetry(store, embeddingModel, document, i + 1, documents.size());
+                Thread.sleep(1500L);
+            }
+
+            Files.createDirectories(storePath.getParent() == null ? Paths.get(".") : storePath.getParent());
+            store.serializeToFile(storePath);
+            Files.writeString(hashPath, docsHash, StandardCharsets.UTF_8);
+            log.info("Background RAG ingest complete ({} entries). Cached at {}", store.size(), storePath);
+        } catch (Exception e) {
+            log.error("Background RAG ingest failed: {}", e.getMessage(), e);
+        }
+    }
+
+    private void ingestOneDocumentWithRetry(
+            InMemoryEmbeddingStore<TextSegment> store,
+            EmbeddingModel embeddingModel,
+            Document document,
+            int index,
+            int total) throws InterruptedException {
+        int attempts = 0;
+        while (true) {
+            attempts++;
+            try {
+                EmbeddingStoreIngestor.builder()
+                        .embeddingStore(store)
+                        .embeddingModel(embeddingModel)
+                        .documentSplitter(DocumentSplitters.recursive(CHUNK_SIZE, CHUNK_OVERLAP))
+                        .build()
+                        .ingest(document);
+                log.info("Ingested document {}/{}", index, total);
+                return;
+            } catch (Exception ex) {
+                String message = ex.getMessage() == null ? "" : ex.getMessage();
+                boolean rateLimited = message.contains("RESOURCE_EXHAUSTED")
+                        || message.contains("429")
+                        || message.toLowerCase().contains("quota");
+                if (rateLimited && attempts <= 8) {
+                    long waitMs = 65_000L;
+                    log.warn("Embed quota hit on doc {}/{} (attempt {}). Waiting {}s then retrying...",
+                            index, total, attempts, waitMs / 1000);
+                    Thread.sleep(waitMs);
+                    continue;
+                }
+                throw ex;
+            }
+        }
+    }
+
+    private InMemoryEmbeddingStore<TextSegment> loadClasspathStore(String docsHash) {
+        try {
+            PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+            Resource storeResource = resolver.getResource(CLASSPATH_STORE);
+            Resource hashResource = resolver.getResource("classpath:rag/embedding-store.hash");
+            if (!storeResource.exists() || !hashResource.exists()) {
+                return null;
+            }
+            String previousHash = new String(hashResource.getInputStream().readAllBytes(), StandardCharsets.UTF_8).trim();
+            if (!docsHash.equals(previousHash)) {
+                log.info("Classpath embedding store hash mismatch; will rebuild in background");
+                return null;
+            }
+            Path tmp = Files.createTempFile("vicky-assist-classpath-store", ".json");
+            try (InputStream in = storeResource.getInputStream()) {
+                Files.write(tmp, in.readAllBytes());
+            }
+            log.info("Loaded prebuilt classpath embedding store (no Gemini embed calls at startup)");
+            InMemoryEmbeddingStore<TextSegment> loaded = InMemoryEmbeddingStore.fromFile(tmp);
+            Files.deleteIfExists(tmp);
+            return loaded;
+        } catch (Exception e) {
+            log.warn("Could not load classpath embedding store: {}", e.getMessage());
+            return null;
+        }
     }
 
     private Path resolveStorePath() {
