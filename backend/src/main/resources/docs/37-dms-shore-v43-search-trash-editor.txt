@@ -1,0 +1,44 @@
+MACK DMS Shore V4.3 — Search, trash, utility bar, and page editor
+
+Elastic Search / ATC Search Engine
+Search keywords across documents, files, pages, folders, and attachments.
+1. Type keyword → Search
+2. Review result count and hits
+3. Simple Search vs Advance Search available
+4. Keywords can highlight inside attachments; use Attachment tab to inspect hits
+
+Recent Search
+Shows recently searched records with search text highlighted.
+
+Show Trash (shore)
+Click Show Trash to open Cancelled / Deleted / Ready to Delete:
+- Cancelled: published circulars cancelled/overridden by newer version
+- Deleted: deleted by workflow user
+- Ready to Delete: published docs deleted pending higher-authority delete approval
+
+Utility bar (open document)
+Quick access: Comments, View Attachment, Refresh, Favourites, User Version,
+Page Properties, Download, Print, Workflow Activity (as available).
+Comments: enter remarks → Submit.
+
+Page editor toolbar (edit page — write permission required)
+- Insert Variable
+- Link Page
+- Insert Sticky
+- Hyperlink Document (from Document Manager)
+- Quick Image Upload (local)
+- Conditional Variable
+- Document History
+- Insert Template
+- Import (local document)
+- Ruler on/off
+- Insert Image (Image Manager)
+- Reference linkage to Safety & Instruction modules
+- Insert Video (link or media source / Video Manager)
+- Preview / Print
+- Tracking options for change tracking
+- Align images; edit header & footer
+- Highlight and Comparison features available for comparison workflows
+
+Download access enablement
+Privileged configuration can enable download access for groups when restriction policies require it.

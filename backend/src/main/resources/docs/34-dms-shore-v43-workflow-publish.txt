@@ -1,0 +1,47 @@
+MACK DMS Shore V4.3 — Workflow, submit, publish, republish, cancel circular
+
+Workflow purpose
+Defines the lifecycle from initiation to completion: review, approve, or reject.
+Usually assigned at folder level and inherited by child pages/files.
+
+Assign workflow
+1. Right-click folder/page → Workflow / Assign Workflow
+2. Search and select workflow
+3. Assign
+If editing properties before workflow assignment, system asks to assign workflow first.
+
+Submit
+Right-click → Submit moves the item to the next workflow stage based on role.
+Company selection in Page Properties must be valid; selecting another company incorrectly can block submit with a validation message.
+
+Publish (after approval)
+1. Select approved document
+2. Right-click → Publish
+3. Confirm vessel list shown in the publish dialog (Yes/No)
+4. Document is published to listed vessels via SSC for the company
+
+Republish
+Use when a published Page/Document/File has text/content changes and updates must reach vessels again.
+1. Open published document
+2. Optionally retain current version via checkbox, or revert to previous version
+3. Save changes
+4. Click Republish and confirm vessel list
+Rules from V4.3:
+- Republish is for text/content changes on an existing published document
+- Only privileged users can republish
+- Copy-paste of content is not permitted while updating for republication
+
+Cancel published circulars
+1. Select published circular
+2. Right-click → Cancel Circular
+3. Enter Reason for cancel
+4. Submit
+Cancelled published circulars appear under Show Trash → Cancelled when overridden/cancelled.
+
+Workflow access recommendations (office staff)
+1. Create a role-specific group
+2. Add users to the group
+3. Assign Security Control rights to the group
+4. Configure workflow roles by Document Type
+DRAFT access and visibility/edit rights follow the Visibility and Edit Rights Matrix in the Shore guide.
+Only Admin and Workflow users can edit page content unless the user is granted workflow/admin rights.

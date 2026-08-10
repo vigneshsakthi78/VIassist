@@ -17,9 +17,9 @@ How to use Vicky Assist
 - Ask for meeting agendas, status templates, or stakeholder emails
 - Ask for a support-ticket draft with module, vessel, Document ID, and expected vs actual
 
-DMS knowledge source
-SharePoint site MACK-DMS → Shared Documents → DMS Training Material
-(Seaspan Quick Guide; ONESEA/KLNG Admin Training decks)
+DMS knowledge sources
+1) MACK DMS Shore Office User Guide V4.3 (July 2026) — primary shore vertical how-tos
+2) SharePoint MACK-DMS → DMS Training Material (Seaspan Quick Guide; ONESEA/KLNG Admin Training)
 
 Principles
 1. Clarity beats busyness

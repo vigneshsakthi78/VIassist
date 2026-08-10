@@ -1,0 +1,31 @@
+MACK DMS Shore V4.3 — Getting started and home screen
+
+Login
+1. Open Chrome and navigate to the customer MACK shore URL
+2. Sign in with assigned username/password
+3. Ensure user access is granted for DMS
+4. Navigate to MACK DMS from the application modules
+
+Home / landing orientation (shore)
+Common top controls:
+- Search / Advanced Search
+- Notifications
+- Download Manager
+- Refresh
+- Show Trash
+- Variable Switch
+- Recent Search
+
+Navigation pane shows the folder tree (document types and hierarchy).
+Landing grids (AG Grid) appear on DMS welcome and folder dashboards.
+Users can export lists to Excel, create New folder/page/file, and adjust column Settings / Set View.
+
+Basic GUI terms users should know
+- Folder tree / navigation pane
+- Page (HTML document), PDF document, nested folder
+- Page Properties (Document + Distribution tabs)
+- Utility bar on open documents
+- Workflow status (draft → review → approve → publish)
+
+Switching context
+Variable Switch lets a shore user configure document access view by Company and Vessel Type for preview/context.

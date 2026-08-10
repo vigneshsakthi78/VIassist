@@ -1,0 +1,36 @@
+MACK DMS Shore V4.3 — SSC sync, comparison, and Bulk/Offline transfer
+
+Data Sync Report
+Shows document/data transition status between ship and shore.
+
+SSC Comparison Report
+Helps find mismatch counts when Shore–Ship Communication causes differences.
+Use when vessel cannot see an attachment/page that shore published.
+
+Typical mismatch categories called out in shore ops
+- Visibility changed
+- Folder version mismatched (folder exists both sides but versions differ)
+- Attachment added via page property missing on ship
+- Attachment mismatch online (published online, missing on ship)
+- Attachment mismatch offline (published offline path, missing on ship)
+
+SSC Request for Comparison
+Request/generate comparison runs from the Request for Comparison tab, then review Report tab details.
+
+Bulk / Offline transfer
+Used to move large document sets via media, skipping normal Shore–Ship Communication online path.
+Shore tab generates transfer packets (.mck):
+- Bulk ID auto-generated
+- Status: Requested / In-progress / Completed / Failed
+- Shows vessel flag/type/company filters, requested user/dates
+- Download .mck to local, then share via share path or USB
+- Download for Mobile App option exists for mobile sync (.mck / variables.mck)
+
+Ship tab / Bulk Offline Import
+Ship side imports the .mck package to sync content offline.
+Access Bulk/Offline Import at ship after receiving media.
+
+When to use which tool
+- Few docs, online connectivity OK → normal Publish via SSC
+- Many docs or poor connectivity → Bulk/Offline Gate
+- Suspect missing ship content after publish → SSC Comparison + Data Sync Report

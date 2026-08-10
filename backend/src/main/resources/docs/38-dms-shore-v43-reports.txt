@@ -1,0 +1,43 @@
+MACK DMS Shore V4.3 — Reports (shore and related ship views)
+
+DMS Report Shore
+Shore-side analysis of published documents and related metrics.
+
+Published Documents
+List/analysis of published controlled documents.
+
+Detail Data
+Detailed published/document data views for investigation.
+
+SSC Discrepancy
+Shore report entry point into SSC mismatch analysis.
+
+Recent Documents
+Recently touched/published documents for quick follow-up.
+
+Bulk / Offline Status
+Track bulk transfer jobs (Requested / In-progress / Completed / Failed).
+
+Document Manager Versioning
+Version awareness for files managed in Document Manager.
+
+DMS Efficiency Report (shore)
+Tabs commonly include:
+- Read/Unread Shore
+- Read/Unread Ship
+- Document Efficiency (frequently viewed/revised style analysis)
+- Activity Log
+- Un-Read by Logged User
+- Visibility Ashore
+
+DMS Report Ship (related)
+Ship views for published docs, read/unread, bulk/offline status, document/user efficiency.
+
+Crew List Read Details
+Tracks read details related to crew list consumption of documents where configured.
+
+External Publish Gate
+Share documents across companies/clients when enabled for the deployment.
+
+Export to Excel
+Available from grids/lists to download current result sets locally.

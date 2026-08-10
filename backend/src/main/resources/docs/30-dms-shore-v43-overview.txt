@@ -1,0 +1,27 @@
+MACK DMS Shore — Office User Guide knowledge (V4.3, July 2026)
+
+Product: Content and Document Management System (DMS) — Shore / Office
+Vendor: SOLVERMINDS / SVM Solutions and Technologies
+Scope: Shore-side DMS vertical in the MACK application
+
+This knowledge pack trains Vicky Assist on DMS Shore office operations:
+login and home screen, masters, folders/pages/PDFs, workflow, publish via SSC,
+visibility, security, search, trash, bulk/offline transfer, and shore reports.
+
+High-level document lifecycle
+1. Create folder (choose Document Type: e.g. Circulars, Work Instructions, SMS)
+2. Assign workflow and folder/page properties
+3. Create page / PDF / nested folder under the parent
+4. Edit content (admin or workflow users with write rights)
+5. Submit for review / approval per workflow roles
+6. Publish to selected vessels/companies via SSC
+7. Republish after text changes, or Cancel Circular when replacing published circulars
+8. Monitor sync with Data Sync Report / SSC Comparison Report
+
+Key repositories (masters)
+- Image Manager — images used in pages
+- Document Manager — files linked across pages (SMS attachments typically from here)
+- Video Manager — videos for insert into pages (upload size limits apply per release notes)
+- Variables / Conditional Variables / Templates — reusable content and layout
+- Security Control + Group Mapping — who can do what
+- Workflow — review/approve chain by document category/type

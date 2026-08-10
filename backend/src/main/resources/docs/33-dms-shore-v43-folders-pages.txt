@@ -1,0 +1,47 @@
+MACK DMS Shore V4.3 — Working with folders and creating pages/PDFs
+
+Create a new folder
+1. Select the root (or parent) folder
+2. Click New
+3. Choose Document Type (e.g. Work Instructions, Circulars)
+4. Click Add
+5. Folder appears named as the document type — rename it to avoid confusion
+Note: Circular document type can include Expire Date behavior.
+New items are added at the end of the parent.
+
+Move folder/page (drag & drop)
+- Can move only within the same Document Type (Circular → Circular OK; Circular → SMS blocked)
+- Destination parent workflow is applied to the moved item (confirm Yes/No)
+- Move is recorded in Activity Log
+
+Edit folder / page properties
+1. Select folder → Edit Folder Properties
+2. Must assign workflow first or validation appears: Please assign the workflow
+3. Page Properties has Document and Distribution tabs
+4. Set Document Title and other metadata
+5. Save
+
+Parent property inheritance (V4.3)
+Properties configured on a parent folder are inherited by immediate subfolders and HTML/PDF documents added under it.
+Green-highlighted fields indicate values copied from the immediate parent.
+
+Create page / nested folder / PDF (right-click → New)
+1. Right-click folder → New
+2. Enter Name
+3. Choose Type:
+   - Page: select Page Template, Page Icon, Header Template, Footer Template (from Template Master)
+   - Folder: template fields hide
+   - PDF: choose File from local drive
+4. Add Page / Add Folder / Add Document
+
+Delete folder/page
+- Right-click → Delete, or select item and click top delete (bin) icon
+- Confirm deletion
+
+Other right-click actions
+- Change Icon
+- Assign Workflow
+- Rename
+- Submit
+- Publish / Republish
+- Cancel Circular (for published circulars)

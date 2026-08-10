@@ -1,0 +1,32 @@
+MACK DMS Shore V4.3 — Visibility, download/print restrict, mass update, security
+
+Visibility Ashore (Page Properties)
+Controls who ashore can see the document (company / department / rank style targeting).
+Configure in Page Properties Distribution / Visibility Ashore areas, then Save.
+
+Restrict download & print
+In Page Properties, enable/disable Restrict Download & Print.
+Author / Reviewer / Approver / workflow users can toggle this.
+Affects HTML/PDF documents and PDF attachments when restriction is applied.
+
+Mass Visibility Update
+1. Open Visibility Update
+2. Select one or many documents from the left pane
+3. Choose Company, Department, Rank
+4. Apply
+Used to push the same visibility settings across many documents quickly.
+
+Manage Visibility / Visibility Update master tools
+Also available as admin/functional tools for broader visibility sharing to shore/company/department/ranks.
+
+Security Control
+1. Open Security Control from masters/menus
+2. Add control for Group or User
+3. Grant task rights based on roles
+Without correct security mapping, users may see modules but cannot perform folder/page actions.
+
+Guest users
+1. Create guest user details in MACK
+2. Add Security Control for Guest User Access
+3. Provide document-level read access
+4. Use DMS Guest User Report / Activity Log for audit

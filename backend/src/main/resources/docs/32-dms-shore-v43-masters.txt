@@ -1,0 +1,55 @@
+MACK DMS Shore V4.3 — Masters and mapping (office)
+
+Image Manager
+Repository to upload, store, and manage images used in DMS pages.
+
+Document Manager
+Repository for documents uploaded from local drive, then linked across screens/pages.
+Naming allows alphanumeric plus Space, Hyphen, Underscore.
+Use Document Manager for controlled SMS-style attachments rather than uncontrolled one-off local links when process requires it.
+
+Video Manager
+Repository to upload/store/manage videos for insertion into pages.
+Respect configured upload size limits from the current release.
+
+Variables
+Reusable quick text/content pieces insertable anywhere in a document.
+Supports add/edit; used with Insert Variable and Conditional Variable in the editor.
+
+Templates
+Pre-formatted style setups for consistent SMS/Circular/crew-style documents.
+Create/edit in Template Master; insert into pages; choose page/header/footer templates when creating a page.
+
+Group Mapping
+Group multiple users under one group name for company/role assignment.
+
+Security Control
+Customize gateway permissions for a user or group based on roles.
+Required before many folder/page actions work as expected.
+
+Activity Log
+Security-relevant chronological record of file/folder transactions (moves, deletes, etc.).
+
+Document Type
+Master of document types transacted in DMS (examples: Circulars, Work Instructions).
+Folder properties/functions change by document type (e.g. Circulars can have Expire Date).
+
+Status
+View/edit status display names. Users cannot create brand-new status codes.
+
+Region / Category
+Used in properties to categorize/label folders and pages for filtering.
+
+Workflow master
+Define review/approve/reject chains. Assign to folders/pages.
+Default: child inherits parent folder workflow unless overridden.
+
+Reference Number
+Pattern by Document Type / Company for auto-generated references.
+Maritime tip from training: publishing order may not match creation order.
+
+Vessel Type (DMS)
+DMS-specific vessel type mapping for grouping/filtering (may differ from vessel master types).
+
+Guest User Access
+Admin can grant read access for guest users to selected documents; related Guest User Report / activity available.
