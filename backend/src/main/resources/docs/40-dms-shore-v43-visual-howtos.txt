@@ -1,0 +1,103 @@
+MACK DMS Shore V4.3 — Visual how-tos (steps + screenshots)
+
+Use these playbooks when users ask "how do I…", "show me", or "with screenshot".
+Always include the markdown images shown below in answers for matching topics.
+
+------------------------------------------------------------
+How-to: Open DMS home and orient on the landing screen
+Goal: Find folders, managers, and the document grid after login.
+1) Log in to the customer MACK Shore URL with your assigned account.
+2) Open the DMS / Document Management module.
+3) On Welcome/home, use the left folder tree (SMS, Circulars, manuals).
+4) Use top actions Image Manager and Document Manager when needed.
+5) Use the Summary grid to open a Document ID (eye / view action).
+
+![DMS home grid](/screenshots/dms-shore-v43/shot-03.png)
+
+![DMS dashboard widgets](/screenshots/dms-shore-v43/shot-30.png)
+
+Checks: folder tree visible; Image Manager / Document Manager buttons present.
+
+------------------------------------------------------------
+How-to: Open Image Manager and upload or browse images
+Goal: Manage images used inside DMS pages.
+1) From DMS home or an open page, click Image Manager.
+2) In the left tree under Images, select or create a folder.
+3) Use the green upload control to add PNG/JPG/GIF (see Allowed Formats).
+4) Click a thumbnail to select; close the modal when finished.
+
+![Image Manager](/screenshots/dms-shore-v43/shot-01.png)
+
+Checks: correct Image URL path shown; format icons match your file type.
+
+------------------------------------------------------------
+How-to: Open Video Manager and insert a video
+Goal: Store/select a video and insert it into a page.
+1) Open Video Manager from the DMS masters / page tools (per role access).
+2) Select a folder under Videos (example: video1).
+3) Confirm the MP4 (or allowed) file appears in the grid.
+4) Select the row and click Insert (bottom of modal).
+
+![Video Manager](/screenshots/dms-shore-v43/shot-25.png)
+
+In the page editor, right-click an embedded video → Edit Video Properties when needed.
+
+![Edit video properties](/screenshots/dms-shore-v43/shot-02.png)
+
+------------------------------------------------------------
+How-to: Open a document page and use Edit Page / managers
+Goal: View an SMS/circular page and start editing or attach media.
+1) Expand the left tree to the folder (e.g. SMS → chapter folder).
+2) Click the page title in the tree.
+3) Confirm breadcrumbs and page content load in the viewer.
+4) Click Edit Page to modify; use Image Manager / Document Manager from the toolbar.
+5) Use the hamburger utility menu for additional page utilities when shown.
+
+![Open SMS page Edit Page](/screenshots/dms-shore-v43/shot-15.png)
+
+![Page viewer hamburger menu](/screenshots/dms-shore-v43/shot-16.png)
+
+Optional: use the floating TOC overlay to jump Scope / Purpose / Responsibility sections.
+
+![Page TOC overlay](/screenshots/dms-shore-v43/shot-20.png)
+
+------------------------------------------------------------
+How-to: Search documents and review attachments
+Goal: Find content under a folder and preview matches.
+1) Select a folder in the left tree (e.g. Circulars → subfolder).
+2) Use Documents / Attachments tabs in the work area.
+3) Type a keyword in the list search box.
+4) Select a hit; review Document View on the right (highlights show matches).
+
+![Search documents and attachments](/screenshots/dms-shore-v43/shot-10.png)
+
+------------------------------------------------------------
+How-to: Review published documents in the Detail list
+Goal: Filter/inspect Published items by vessel/company/title.
+1) Open a folder dashboard and switch to the Detail tab.
+2) Use column filters (Status should show Published for live items).
+3) Use eye / magnifier actions to open or inspect a row.
+
+![Detail published list](/screenshots/dms-shore-v43/shot-05.png)
+
+------------------------------------------------------------
+How-to: Edit table cell colors in the page editor
+Goal: Change cell background/border color while editing a page.
+1) Open the page → Edit Page.
+2) Select the table cell → open Cell Properties.
+3) Use Background Color / Border Color pickers; OK to apply.
+
+![Cell properties color picker](/screenshots/dms-shore-v43/shot-07.png)
+
+------------------------------------------------------------
+How-to: Publish / republish (procedural; screens may vary by role)
+Goal: Move approved content to vessels via the publish dialog.
+1) Ensure workflow is assigned and item is approved.
+2) Right-click → Publish; confirm vessel list (Yes/No).
+3) For later text changes on a published page: edit → Republish (privileged users).
+If a matching publish dialog screenshot is uncertain, still give these steps and show home/page context shots (shot-03 / shot-16) rather than inventing a filename.
+
+Knowledge-pack note for builders
+New apps: capture shots into static/screenshots/<pack-id>/shot-NN.png,
+add docs/*-visual-howtos.txt + screenshots catalog, redeploy API.
+Never commit credentials used during capture.

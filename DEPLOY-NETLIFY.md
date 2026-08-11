@@ -43,9 +43,12 @@ Replace `YOUR_USER/YOUR_REPO`.
    - **Instance type:** Free (ok for demo)
 4. Environment variables:
    - `GEMINI_API_KEY` = your Gemini key
-   - `GEMINI_MODEL` = `gemini-2.0-flash-lite`
+   - `GEMINI_MODEL` = `gemini-3.6-flash`
    - `RAG_CORS_ORIGINS` = `http://localhost:4200`  
      (we will update this after Netlify URL is known)
+   - `VICKY_DATA_DIR` = `/data`
+   - `LEARNED_CHAT_PATH` = `/data/vicky-assist-learned-chats.txt`
+   - `EMBEDDING_STORE_PATH` = `/data/vicky-assist-embeddings.json`
 5. Click **Create Web Service** and wait until live.
 6. Copy API URL, example:
    - `https://vicky-assist-api.onrender.com`
@@ -109,6 +112,33 @@ Then open your Netlify URL and chat.
 
 ---
 
+## Step 6 — Durable self-learning (screenshots + learned chats)
+
+Screenshot how-tos ship inside the API image (`/screenshots/...` static files).  
+Self-learned Q&A writes under `VICKY_DATA_DIR` (default `/data` in Docker).
+
+| Env | Purpose |
+|-----|---------|
+| `VICKY_DATA_DIR` | Root folder for learned chats + embedding cache |
+| `LEARNED_CHAT_PATH` | Optional explicit learned Q&A file |
+| `EMBEDDING_STORE_PATH` | Optional explicit embedding JSON cache |
+| `API_BASE_URL` (Netlify) | Must be the Render API host so chat **and** screenshots load |
+
+**Persist across redeploys:** on Render, attach a **Disk** mounted at `/data` (paid instance).  
+Without a disk, learning lasts for the running container only and is wiped on redeploy.
+
+**New app knowledge packs (local):**
+
+```powershell
+.\scripts\new-knowledge-pack.ps1 -PackId "my-app-v1" -Title "My App"
+# Capture PNGs into backend/src/main/resources/static/screenshots/my-app-v1/
+# Edit the generated docs catalog + visual how-tos, then push + redeploy API
+```
+
+Never commit app passwords used during screenshot capture.
+
+---
+
 ## Quick test checklist
 
 - [ ] `...onrender.com/api/health` works
@@ -116,6 +146,9 @@ Then open your Netlify URL and chat.
 - [ ] Browser Network tab: `POST` goes to Render/API host
 - [ ] No CORS error
 - [ ] Chat returns an answer
+- [ ] DMS how-to shows screenshots (image URLs hit Render `/screenshots/...`)
+- [ ] Follow-up chips appear under assistant replies
+- [ ] (Optional) Render Disk mounted at `/data` for durable learning
 
 ---
 
@@ -125,5 +158,7 @@ Then open your Netlify URL and chat.
 |---------|-----|
 | Chat fails on Netlify | `API_BASE_URL` missing/wrong → set and **redeploy** Netlify |
 | CORS error | Add exact Netlify URL to Render `RAG_CORS_ORIGINS` |
+| Screenshots broken | Netlify `API_BASE_URL` must point at Render (images load from API host) |
+| Learning resets after deploy | Attach Render Disk at `/data` or set durable `VICKY_DATA_DIR` |
 | API slow first time | Render free tier sleeps; wait 30–60s |
 | Build fails on Netlify | Ensure Node 20 and publish dir is `dist/frontend/browser` |

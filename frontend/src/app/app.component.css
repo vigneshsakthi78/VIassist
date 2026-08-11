@@ -124,6 +124,41 @@
   background: color-mix(in srgb, #f4f7f4 14%, transparent);
 }
 
+.follow-ups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.follow-up {
+  border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font: inherit;
+  font-size: 0.82rem;
+  line-height: 1.25;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--panel) 55%, white);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.follow-up:hover:not(:disabled) {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  background: color-mix(in srgb, var(--accent) 12%, white);
+}
+
+.follow-up:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.bubble.user .follow-ups {
+  display: none;
+}
+
 .copy-label {
   font-size: 0.68rem;
   letter-spacing: 0.04em;

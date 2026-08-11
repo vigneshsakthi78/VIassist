@@ -9,7 +9,11 @@ RUN mvn -q -DskipTests package
 FROM eclipse-temurin:17-jre
 WORKDIR /app
 ENV PORT=8080
+ENV VICKY_DATA_DIR=/data
+ENV LEARNED_CHAT_PATH=/data/vicky-assist-learned-chats.txt
+ENV EMBEDDING_STORE_PATH=/data/vicky-assist-embeddings.json
 ENV JAVA_TOOL_OPTIONS="-XX:MaxRAMPercentage=70.0 -XX:+UseContainerSupport"
+RUN mkdir -p /data
 EXPOSE 8080
 COPY --from=build /app/target/langchain4j-rag-backend.jar app.jar
 ENTRYPOINT ["sh", "-c", "java -jar app.jar --server.port=${PORT}"]

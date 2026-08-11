@@ -18,6 +18,7 @@ import java.nio.file.StandardOpenOption;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -30,6 +31,7 @@ public class ChatLearningService {
     private static final Logger log = LoggerFactory.getLogger(ChatLearningService.class);
     private static final int CHUNK_SIZE = 2500;
     private static final int CHUNK_OVERLAP = 200;
+    private static final int MIN_ANSWER_CHARS = 80;
 
     private final InMemoryEmbeddingStore<TextSegment> embeddingStore;
     private final EmbeddingModel embeddingModel;
@@ -50,10 +52,12 @@ public class ChatLearningService {
         if (question == null || question.isBlank() || answer == null || answer.isBlank()) {
             return;
         }
-        // Skip learning error / quota responses
-        String lower = answer.toLowerCase();
+        String lower = answer.toLowerCase(Locale.ROOT);
         if (lower.contains("quota exhausted") || lower.contains("rate limit")
                 || lower.contains("api key missing") || lower.startsWith("chat failed:")) {
+            return;
+        }
+        if (answer.trim().length() < MIN_ANSWER_CHARS) {
             return;
         }
         executor.execute(() -> {
@@ -66,9 +70,18 @@ public class ChatLearningService {
     }
 
     public synchronized void learn(String question, String answer) throws IOException {
-        String block = formatBlock(question, answer);
+        String normalizedQuestion = normalizeQuestion(question);
         Path file = learnedFile();
-        Files.createDirectories(file.getParent() == null ? Path.of(".") : file.getParent());
+        if (isDuplicateQuestion(file, normalizedQuestion)) {
+            log.info("Skip learn — near-duplicate question already stored");
+            return;
+        }
+
+        String block = formatBlock(question, answer);
+        Path parent = file.getParent();
+        if (parent != null) {
+            Files.createDirectories(parent);
+        }
         Files.writeString(file, block + "\n\n", StandardCharsets.UTF_8,
                 StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 
@@ -80,14 +93,17 @@ public class ChatLearningService {
                 .build()
                 .ingest(document);
 
-        // Keep disk cache in sync when possible
         Path storePath = storeFile();
         try {
+            Path storeParent = storePath.getParent();
+            if (storeParent != null) {
+                Files.createDirectories(storeParent);
+            }
             embeddingStore.serializeToFile(storePath);
         } catch (Exception e) {
             log.debug("Could not refresh embedding cache after learn: {}", e.getMessage());
         }
-        log.info("Learned from chat Q&A (store size now {})", embeddingStore.size());
+        log.info("Learned from chat Q&A (store size now {}, file {})", embeddingStore.size(), file);
     }
 
     public List<Document> loadLearnedDocuments() {
@@ -113,19 +129,52 @@ public class ChatLearningService {
     }
 
     public static Path learnedFile() {
-        String configured = System.getenv("LEARNED_CHAT_PATH");
-        if (configured != null && !configured.isBlank()) {
-            return Path.of(configured);
-        }
-        return Path.of(System.getProperty("java.io.tmpdir"), "vicky-assist-learned-chats.txt");
+        return DataPaths.learnedChatFile();
     }
 
     private static Path storeFile() {
-        String configured = System.getenv("EMBEDDING_STORE_PATH");
-        if (configured != null && !configured.isBlank()) {
-            return Path.of(configured);
+        return DataPaths.embeddingStoreFile();
+    }
+
+    private static boolean isDuplicateQuestion(Path file, String normalizedQuestion) throws IOException {
+        if (!Files.isRegularFile(file) || normalizedQuestion.isEmpty()) {
+            return false;
         }
-        return Path.of(System.getProperty("java.io.tmpdir"), "vicky-assist-embeddings.json");
+        String all = Files.readString(file, StandardCharsets.UTF_8);
+        String[] blocks = all.split("\\n\\n(?=Learned chat Q&A)");
+        for (String block : blocks) {
+            String existing = extractQuestion(block);
+            if (existing == null) {
+                continue;
+            }
+            String normalizedExisting = normalizeQuestion(existing);
+            if (normalizedExisting.equals(normalizedQuestion)) {
+                return true;
+            }
+            // Near-duplicate: one question fully contains the other (min length guard)
+            if (normalizedQuestion.length() >= 12 && normalizedExisting.length() >= 12
+                    && (normalizedQuestion.contains(normalizedExisting)
+                    || normalizedExisting.contains(normalizedQuestion))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static String extractQuestion(String block) {
+        for (String line : block.split("\\R")) {
+            if (line.regionMatches(true, 0, "Question:", 0, "Question:".length())) {
+                return line.substring("Question:".length()).trim();
+            }
+        }
+        return null;
+    }
+
+    private static String normalizeQuestion(String question) {
+        return question.toLowerCase(Locale.ROOT)
+                .replaceAll("[^a-z0-9\\s]", " ")
+                .replaceAll("\\s+", " ")
+                .trim();
     }
 
     private static String formatBlock(String question, String answer) {

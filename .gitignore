@@ -5,6 +5,7 @@ frontend/.angular/
 .tools/
 .sharepoint-dms/
 .playwright-mcp/
+data/
 .env
 *.log
 .idea/

@@ -1,30 +1,64 @@
-MACK DMS Shore V4.3 — Screenshots available in Vicky Assist
+MACK DMS Shore V4.3 — Screenshot catalog (use these exact paths)
 
 When explaining DMS Shore UI steps, include markdown images so the chat UI can show them.
 Use paths exactly like this (leading slash):
 
 ![short label](/screenshots/dms-shore-v43/shot-XX.png)
 
-Available screenshots (from Shore Office User Guide V4.3 media):
+Catalog (prefer the best match; never invent filenames):
 
-shot-01.png — Image Manager window (folder tree + image thumbnails, upload/add toolbar)
-shot-03.png — DMS home / Welcome landing with document grid, Document ID (DMSDOC…), Image Manager & Document Manager buttons, left folder tree (SMS, Circulars, manuals)
-shot-16.png — Open document page view with Edit Page, Image Manager, Document Manager, breadcrumb, hamburger utility menu callout
+shot-01.png — Image Manager modal (folder tree + image thumbnails, + / delete / upload toolbar)
+shot-02.png — Page editor with embedded video; right-click Edit Video Properties
+shot-03.png — DMS Welcome / home grid (Document IDs, Image Manager & Document Manager, left folder tree)
+shot-04.png — Shore UI screen (managers / navigation; use when nearby shots fit poorly)
+shot-05.png — Detail tab document list (Published status, vessel/company columns, filters)
+shot-06.png — Shore UI screen (grids / properties)
+shot-07.png — Cell Properties dialog + color picker in page editor tables
+shot-08.png — Shore UI screen (editor / dialogs)
+shot-09.png — Shore UI screen (workflow or properties)
+shot-10.png — Folder search / Documents + Attachments split view with Document View preview
+shot-11.png — Shore UI screen (attachments / managers)
+shot-12.png — Shore UI screen (publish / properties family)
+shot-13.png — Shore UI screen (masters / lists)
+shot-14.png — Shore UI screen (navigation)
+shot-15.png — Open SMS policy page with Edit Page + Image/Document Manager on viewer toolbar
+shot-16.png — Open document page view; hamburger utility menu callout; Edit Page
+shot-17.png — Shore UI screen (page / utility)
+shot-18.png — Shore UI screen (page / utility)
+shot-19.png — Shore UI screen (page / utility)
+shot-20.png — Open page with floating table-of-contents overlay (Scope / Purpose / Responsibility)
+shot-21.png — Shore UI screen (TOC / page)
+shot-22.png — Shore UI screen (workflow)
+shot-23.png — Shore UI screen (workflow / publish)
+shot-24.png — Shore UI screen (managers)
+shot-25.png — Video Manager modal (folder tree, MP4 row, Insert button, allowed formats)
+shot-26.png — Shore UI screen (video / media)
+shot-27.png — Shore UI screen (media / insert)
+shot-28.png — Shore UI screen (reports / lists)
+shot-29.png — Shore UI screen (reports / lists)
+shot-30.png — DMS dashboard widgets (New / Unread / Recent) + folder structure callout
+shot-31.png — Shore UI screen (dashboard / home family)
+shot-32.png — Shore UI screen (security / masters)
+shot-33.png — Shore UI screen (security / masters)
+shot-34.png — Shore UI screen (SSC / transfer family)
+shot-35.png — Shore UI screen (SSC / bulk offline family)
+shot-36.png — Shore UI screen (bulk / offline)
+shot-37.png — Shore UI screen (search / trash)
+shot-38.png — Shore UI screen (search / trash)
+shot-39.png — Shore UI screen (reports)
+shot-40.png — Shore UI screen (reports / misc)
 
-Other shots (shot-02, shot-04 … shot-40) are additional Shore UI screens from the same guide
-(publish dialogs, properties, managers, trees, reports). Prefer a clearly matching shot when known;
-otherwise use shot-03 for general navigation and shot-01 for Image Manager topics.
-
-Example answer fragment:
-
-## Open DMS home
-1) Log in to MACK Shore and open DMS.
-2) Use the left folder tree (SMS / Circulars / manuals).
-3) Use Image Manager / Document Manager from the landing actions.
-
-![DMS home grid](/screenshots/dms-shore-v43/shot-03.png)
+Quick picks for common asks:
+- Home / landing / navigation → shot-03 or shot-30
+- Image Manager → shot-01
+- Video Manager → shot-25
+- Edit page / viewer toolbar → shot-15 or shot-16
+- Search attachments / document view → shot-10
+- Detail published list → shot-05
+- Page editor video properties → shot-02
+- Table cell colors → shot-07
 
 Rules
 - Always use markdown image syntax so the UI can render pictures.
-- Do not invent screenshot filenames that are not listed above.
-- One or two screenshots per answer is enough; pick the most relevant.
+- For how-to questions, include 1–2 screenshots in the answer (not zero when a match exists).
+- Do not invent screenshot filenames outside this catalog.

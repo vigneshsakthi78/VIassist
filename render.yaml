@@ -13,4 +13,11 @@ services:
       - key: GEMINI_EMBEDDING_MODEL
         value: gemini-embedding-001
       - key: RAG_CORS_ORIGINS
-        value: https://*.netlify.app,http://localhost:4200,http://127.0.0.1:4200
+        value: https://viassist.netlify.app,https://*.netlify.app,http://localhost:4200,http://127.0.0.1:4200
+      # Durable learning directory inside the container (mount a Render Disk at /data on paid plans)
+      - key: VICKY_DATA_DIR
+        value: /data
+      - key: LEARNED_CHAT_PATH
+        value: /data/vicky-assist-learned-chats.txt
+      - key: EMBEDDING_STORE_PATH
+        value: /data/vicky-assist-embeddings.json

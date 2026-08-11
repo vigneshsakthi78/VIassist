@@ -12,6 +12,7 @@ import dev.langchain4j.rag.content.retriever.EmbeddingStoreContentRetriever;
 import dev.langchain4j.store.embedding.EmbeddingStore;
 import dev.langchain4j.store.embedding.EmbeddingStoreIngestor;
 import com.example.rag.learning.ChatLearningService;
+import com.example.rag.learning.DataPaths;
 import dev.langchain4j.store.embedding.inmemory.InMemoryEmbeddingStore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -74,6 +75,8 @@ public class RagConfig {
 
         // Empty store — filled asynchronously so Tomcat can bind before embed quota work.
         log.warn("No prebuilt/cached embeddings found. App will start, then ingest in background.");
+        log.info("Durable data dir: {} (learned={}, store={})",
+                DataPaths.dataDir(), DataPaths.learnedChatFile(), DataPaths.embeddingStoreFile());
         return new InMemoryEmbeddingStore<>();
     }
 
@@ -117,8 +120,8 @@ public class RagConfig {
         return EmbeddingStoreContentRetriever.builder()
                 .embeddingStore(embeddingStore)
                 .embeddingModel(embeddingModel)
-                .maxResults(1)
-                .minScore(0.4)
+                .maxResults(3)
+                .minScore(0.35)
                 .build();
     }
 
@@ -237,11 +240,7 @@ public class RagConfig {
     }
 
     private Path resolveStorePath() {
-        String configured = System.getenv("EMBEDDING_STORE_PATH");
-        if (configured != null && !configured.isBlank()) {
-            return Paths.get(configured);
-        }
-        return Paths.get(System.getProperty("java.io.tmpdir"), "vicky-assist-embeddings.json");
+        return DataPaths.embeddingStoreFile();
     }
 
     private String hashDocuments(List<Document> documents) {

@@ -94,8 +94,13 @@ See [`.env.example`](.env.example).
 | Variable | Purpose |
 |----------|---------|
 | `GEMINI_API_KEY` | Google AI Studio Gemini API key (required) |
-| `GEMINI_MODEL` | Optional model name (default `gemini-2.0-flash`) |
+| `GEMINI_MODEL` | Optional model name (default `gemini-3.6-flash`) |
 | `DOCS_PATH` | Optional external docs folder |
+| `VICKY_DATA_DIR` | Durable folder for learned chats + embedding cache (default `./data`) |
+| `LEARNED_CHAT_PATH` | Optional override for learned Q&A file |
+| `EMBEDDING_STORE_PATH` | Optional override for embedding cache JSON |
+| `RAG_CORS_ORIGINS` | Allowed browser origins (Netlify + local) |
+| `API_BASE_URL` | Frontend build-time API host (Netlify) |
 
 ## Flow
 

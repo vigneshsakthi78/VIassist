@@ -2,7 +2,7 @@
   <header class="hero">
     <p class="brand">Vicky Assist</p>
     <h1>Enterprise productivity + DMS coach</h1>
-    <p class="lede">Priorities, meetings, and MACK DMS how-tos — learns from your chats over time.</p>
+    <p class="lede">Screenshot how-tos, practical playbooks, and learning from your chats over time.</p>
   </header>
 
   <section class="chat" aria-label="Chat">
@@ -30,7 +30,7 @@
               }
             </button>
           </div>
-          @for (part of parts(message.text); track $index) {
+          @for (part of parts(displayText(message)); track $index) {
             @if (part.type === 'text') {
               <p class="md" [innerHTML]="part.html"></p>
             } @else {
@@ -41,6 +41,15 @@
                 }
               </figure>
             }
+          }
+          @if (followUps(message).length) {
+            <div class="follow-ups" aria-label="Suggested follow-ups">
+              @for (tip of followUps(message); track tip) {
+                <button type="button" class="follow-up" (click)="askSuggestion(tip)" [disabled]="loading">
+                  {{ tip }}
+                </button>
+              }
+            </div>
           }
         </article>
       }

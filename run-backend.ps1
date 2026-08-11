@@ -50,7 +50,12 @@ if (-not $env:GEMINI_API_KEY -or $env:GEMINI_API_KEY.Trim().Length -eq 0) {
     Write-Host "ERROR: GEMINI_API_KEY is empty. Set a real key before starting."
     exit 1
 }
+if (-not $env:VICKY_DATA_DIR) {
+    $env:VICKY_DATA_DIR = Join-Path $root "data"
+}
+New-Item -ItemType Directory -Force -Path $env:VICKY_DATA_DIR | Out-Null
 Write-Host "Using Gemini model: $($env:GEMINI_MODEL)"
+Write-Host "Durable data dir: $($env:VICKY_DATA_DIR)"
 Write-Host ""
 
 Set-Location (Join-Path $root "backend")
