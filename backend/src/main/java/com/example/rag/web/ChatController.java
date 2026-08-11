@@ -1,6 +1,7 @@
 package com.example.rag.web;
 
 import com.example.rag.Assistant;
+import com.example.rag.learning.ChatLearningService;
 import com.example.rag.web.dto.ChatRequest;
 import com.example.rag.web.dto.ChatResponse;
 import org.slf4j.Logger;
@@ -22,9 +23,11 @@ public class ChatController {
     private static final Logger log = LoggerFactory.getLogger(ChatController.class);
 
     private final Assistant assistant;
+    private final ChatLearningService chatLearningService;
 
-    public ChatController(Assistant assistant) {
+    public ChatController(Assistant assistant, ChatLearningService chatLearningService) {
         this.assistant = assistant;
+        this.chatLearningService = chatLearningService;
     }
 
     @GetMapping("/health")
@@ -44,6 +47,7 @@ public class ChatController {
         for (int attempt = 1; attempt <= 2; attempt++) {
             try {
                 String answer = assistant.chat(userMessage);
+                chatLearningService.learnAsync(userMessage, answer);
                 return ResponseEntity.ok(new ChatResponse(answer));
             } catch (Exception ex) {
                 last = ex;

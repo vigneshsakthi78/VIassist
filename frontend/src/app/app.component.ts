@@ -35,6 +35,8 @@ export class AppComponent {
   draft = '';
   loading = false;
   error = '';
+  copiedIndex: number | null = null;
+  private copyResetHandle: ReturnType<typeof setTimeout> | null = null;
 
   send(): void {
     const message = this.draft.trim();
@@ -72,6 +74,22 @@ export class AppComponent {
     if (event.key === 'Enter' && !event.shiftKey) {
       event.preventDefault();
       this.send();
+    }
+  }
+
+  async copyMessage(message: ChatMessage, index: number): Promise<void> {
+    try {
+      await navigator.clipboard.writeText(message.text);
+      this.copiedIndex = index;
+      if (this.copyResetHandle) {
+        clearTimeout(this.copyResetHandle);
+      }
+      this.copyResetHandle = setTimeout(() => {
+        this.copiedIndex = null;
+        this.copyResetHandle = null;
+      }, 1600);
+    } catch {
+      this.error = 'Could not copy to clipboard.';
     }
   }
 

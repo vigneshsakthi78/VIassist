@@ -83,13 +83,51 @@
   opacity: 0.7;
 }
 
+.bubble-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
 .role {
   display: block;
-  margin-bottom: 0.35rem;
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   opacity: 0.65;
+}
+
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  padding: 0.2rem 0.45rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: transparent;
+  color: inherit;
+  opacity: 0.55;
+  cursor: pointer;
+  transition: opacity 0.15s ease, background 0.15s ease;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+.bubble.user .copy-btn:hover {
+  background: color-mix(in srgb, #f4f7f4 14%, transparent);
+}
+
+.copy-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .bubble p {
@@ -188,7 +226,7 @@ textarea:focus {
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
 }
 
-button {
+.composer > button {
   border: 0;
   border-radius: 999px;
   padding: 0.85rem 1.35rem;
@@ -201,12 +239,12 @@ button {
   transition: transform 0.15s ease, background 0.2s ease, opacity 0.2s ease;
 }
 
-button:hover:not(:disabled) {
+.composer > button:hover:not(:disabled) {
   transform: translateY(-1px);
   background: color-mix(in srgb, var(--accent) 85%, var(--ink));
 }
 
-button:disabled {
+.composer > button:disabled {
   opacity: 0.45;
   cursor: not-allowed;
 }

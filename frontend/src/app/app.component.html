@@ -2,14 +2,34 @@
   <header class="hero">
     <p class="brand">Vicky Assist</p>
     <h1>Enterprise productivity + DMS coach</h1>
-    <p class="lede">Priorities, meetings, and MACK DMS how-tos — with screenshots when you need them.</p>
+    <p class="lede">Priorities, meetings, and MACK DMS how-tos — learns from your chats over time.</p>
   </header>
 
   <section class="chat" aria-label="Chat">
     <div #thread class="thread" role="log" aria-live="polite">
       @for (message of messages; track $index) {
         <article class="bubble" [class.user]="message.role === 'user'" [class.assistant]="message.role === 'assistant'">
-          <span class="role">{{ message.role === 'user' ? 'You' : 'Vicky Assist' }}</span>
+          <div class="bubble-head">
+            <span class="role">{{ message.role === 'user' ? 'You' : 'Vicky Assist' }}</span>
+            <button
+              type="button"
+              class="copy-btn"
+              (click)="copyMessage(message, $index)"
+              [attr.aria-label]="copiedIndex === $index ? 'Copied' : 'Copy message'"
+              [title]="copiedIndex === $index ? 'Copied' : 'Copy'"
+            >
+              @if (copiedIndex === $index) {
+                <span class="copy-label">Copied</span>
+              } @else {
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                  />
+                </svg>
+              }
+            </button>
+          </div>
           @for (part of parts(message.text); track $index) {
             @if (part.type === 'text') {
               <p class="md" [innerHTML]="part.html"></p>

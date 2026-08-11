@@ -11,6 +11,7 @@ import dev.langchain4j.rag.content.retriever.ContentRetriever;
 import dev.langchain4j.rag.content.retriever.EmbeddingStoreContentRetriever;
 import dev.langchain4j.store.embedding.EmbeddingStore;
 import dev.langchain4j.store.embedding.EmbeddingStoreIngestor;
+import com.example.rag.learning.ChatLearningService;
 import dev.langchain4j.store.embedding.inmemory.InMemoryEmbeddingStore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -80,18 +81,31 @@ public class RagConfig {
     ApplicationRunner embeddingIngestRunner(
             InMemoryEmbeddingStore<TextSegment> embeddingStore,
             EmbeddingModel embeddingModel,
-            RagProperties properties) {
+            RagProperties properties,
+            ChatLearningService chatLearningService) {
         AtomicBoolean started = new AtomicBoolean(false);
         return args -> {
             if (!started.compareAndSet(false, true)) {
                 return;
             }
-            if (!embeddingStore.isEmpty()) {
-                log.info("Embedding store already loaded ({} entries). Skipping ingest.", embeddingStore.size());
-                return;
-            }
-
-            Thread t = new Thread(() -> ingestWithRateLimit(embeddingStore, embeddingModel, properties), "rag-ingest");
+            Thread t = new Thread(() -> {
+                try {
+                    if (embeddingStore.isEmpty()) {
+                        ingestWithRateLimit(embeddingStore, embeddingModel, properties);
+                    } else {
+                        log.info("Base embedding store ready ({} entries). Ingesting learned chats if any.",
+                                embeddingStore.size());
+                        List<Document> learned = chatLearningService.loadLearnedDocuments();
+                        for (int i = 0; i < learned.size(); i++) {
+                            ingestOneDocumentWithRetry(
+                                    embeddingStore, embeddingModel, learned.get(i), i + 1, learned.size());
+                            Thread.sleep(1500L);
+                        }
+                    }
+                } catch (Exception e) {
+                    log.error("RAG ingest runner failed: {}", e.getMessage(), e);
+                }
+            }, "rag-ingest");
             t.setDaemon(true);
             t.start();
         };
@@ -244,6 +258,7 @@ public class RagConfig {
     }
 
     private List<Document> loadDocuments(RagProperties properties) throws IOException {
+        List<Document> documents = new ArrayList<>();
         String docsPath = properties.getDocsPath();
         if (docsPath != null && !docsPath.isBlank()) {
             Path path = Paths.get(docsPath);
@@ -251,20 +266,37 @@ public class RagConfig {
                 throw new IllegalArgumentException("rag.docs-path is not a directory: " + path.toAbsolutePath());
             }
             log.info("Loading documents from filesystem: {}", path.toAbsolutePath());
-            return FileSystemDocumentLoader.loadDocuments(path);
+            documents.addAll(FileSystemDocumentLoader.loadDocuments(path));
+        } else {
+            log.info("Loading documents from classpath:/docs");
+            PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+            Resource[] resources = resolver.getResources("classpath:docs/*");
+            for (Resource resource : resources) {
+                if (!resource.isReadable() || resource.getFilename() == null) {
+                    continue;
+                }
+                try (InputStream in = resource.getInputStream()) {
+                    String text = new String(in.readAllBytes(), StandardCharsets.UTF_8);
+                    documents.add(Document.from(text));
+                }
+            }
         }
 
-        log.info("Loading documents from classpath:/docs");
-        PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        Resource[] resources = resolver.getResources("classpath:docs/*");
-        List<Document> documents = new ArrayList<>();
-        for (Resource resource : resources) {
-            if (!resource.isReadable() || resource.getFilename() == null) {
-                continue;
+        // Self-learned Q&A from previous chats (same process lifetime / disk)
+        Path learned = ChatLearningService.learnedFile();
+        if (Files.isRegularFile(learned)) {
+            String all = Files.readString(learned, StandardCharsets.UTF_8);
+            String[] blocks = all.split("\\n\\n(?=Learned chat Q&A)");
+            int added = 0;
+            for (String block : blocks) {
+                String trimmed = block.trim();
+                if (!trimmed.isEmpty()) {
+                    documents.add(Document.from(trimmed));
+                    added++;
+                }
             }
-            try (InputStream in = resource.getInputStream()) {
-                String text = new String(in.readAllBytes(), StandardCharsets.UTF_8);
-                documents.add(Document.from(text));
+            if (added > 0) {
+                log.info("Included {} learned chat document(s) from {}", added, learned);
             }
         }
         return documents;

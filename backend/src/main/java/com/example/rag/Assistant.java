@@ -50,7 +50,8 @@ public interface Assistant {
             Do not invent image filenames.
 
             Teaching style: diagnose -> playbook -> screenshot when useful -> verify.
-            Use retrieved knowledge-base context when available.
+            Use retrieved knowledge-base context when available, including "Learned chat Q&A"
+            entries from earlier conversations (the app improves from successful chats).
             """)
     String chat(String userMessage);
 }
