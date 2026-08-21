@@ -18,8 +18,9 @@ How to use Vicky Assist
 - Ask for a support-ticket draft with module, vessel, Document ID, and expected vs actual
 
 DMS knowledge sources
-1) MACK DMS Shore Office User Guide V4.3 (July 2026) — primary shore vertical how-tos
-2) SharePoint MACK-DMS → DMS Training Material (Seaspan Quick Guide; ONESEA/KLNG Admin Training)
+1) Live TMP Shore walk (20-Aug-2026) — docs 41–43 + /screenshots/dms-tmp-shore/
+2) MACK DMS Shore Office User Guide V4.3 (July 2026) — primary shore vertical how-tos
+3) SharePoint MACK-DMS → DMS Training Material (Seaspan Quick Guide; ONESEA/KLNG Admin Training)
 
 Principles
 1. Clarity beats busyness

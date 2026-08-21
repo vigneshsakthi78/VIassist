@@ -1,0 +1,50 @@
+MACK DMS TMP Shore — Screenshot catalog (live captures 20-Aug-2026)
+
+These PNGs were taken on a shore TMP environment. Client, company, username, and links are blurred.
+Use markdown images so the chat UI can render them. Paths must match exactly (leading slash).
+
+![short label](/screenshots/dms-tmp-shore/shot-XX.png)
+
+Live files that exist (do not invent other numbers in this pack):
+
+shot-31.png — Mack LOGIN page (User ID, Password, LOGIN). Version MCK.1.6.15.1661 H3600.
+shot-04.png — Mack HOME after login: module menu, Corporate Page, SMS & Circulars shortcut.
+shot-03.png — DMS Welcome/folder landing: left tree, Summary grid, Image Manager + Document Manager.
+shot-30.png — DMS Welcome node / home widgets and folder tree.
+shot-05.png — Details tab document list (Status Draft, Dis. Vessel, filters By Folder/Region/Vessel).
+shot-01.png — Image Manager modal (Images tree, + / delete / upload, PNG JPG GIF).
+shot-24.png — Document Manager modal (file store / versions).
+shot-25.png — Video Manager modal (Videos tree, MP4 WMV MOV AVI FLV).
+shot-13.png — Overflow master menu open (Video Manager through Vessel Type and further items).
+shot-08.png — Add Page dialog (Name, Type Page, Blank Page, Default Header/Footer, Add Page).
+shot-17.png — Favourites overlay (heart): Document Title + Remove, More...
+shot-37.png — Custom Filter overlay from sidebar funnel.
+shot-15.png / shot-16.png — Open document / page viewer in DMS shell (Work Instructions context).
+shot-06.png — Page Properties related screen (Document / Distribution family).
+shot-10.png — Top search bar / search action (Document Reference No, Title, Content/Page, tags).
+shot-18.png — Print / page-utility family.
+shot-14.png — Tile View navigation.
+shot-32.png — Security Control master.
+shot-38.png — Show Trash tree/view.
+
+Quick picks
+- Login → shot-31
+- Mack home / SMS shortcut → shot-04
+- DMS home / landing → shot-03 or shot-30
+- Image Manager → shot-01
+- Video Manager → shot-25
+- Document Manager → shot-24
+- Add Page → shot-08
+- Master menu → shot-13
+- Favourites → shot-17
+- Details list → shot-05
+- Filter → shot-37
+- Trash → shot-38
+- Tile view → shot-14
+- Security → shot-32
+
+Rules
+- Always use markdown image syntax.
+- For how-to questions include 1–2 screenshots (not zero when a match exists).
+- Prefer this TMP pack for live NiBiKi / TMP Shore UI. The older dms-shore-v43 pack may still be referenced.
+- Do not invent screenshot filenames outside this list.

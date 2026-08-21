@@ -27,9 +27,5 @@ body {
 body {
   font-family: var(--font-body);
   color: var(--ink);
-  background:
-    radial-gradient(1200px 600px at 10% -10%, color-mix(in srgb, var(--bg-c) 80%, white), transparent 60%),
-    radial-gradient(900px 500px at 100% 0%, color-mix(in srgb, var(--accent) 18%, white), transparent 55%),
-    linear-gradient(160deg, var(--bg-a), var(--bg-b) 55%, #e7f0ea);
-  background-attachment: fixed;
+  background: linear-gradient(180deg, #0b1f24 0 1px, #eef5f0 1px, #e7f0ea 100%);
 }

@@ -1,10 +1,13 @@
-<main class="shell">
-  <header class="hero">
+<header class="hero" aria-label="Vicky Assist">
+  <div class="hero-media" role="img" aria-label="Cargo ship at sea"></div>
+  <div class="hero-copy">
     <p class="brand">Vicky Assist</p>
     <h1>Enterprise productivity + DMS coach</h1>
     <p class="lede">Screenshot how-tos, practical playbooks, and learning from your chats over time.</p>
-  </header>
+  </div>
+</header>
 
+<main class="shell">
   <section class="chat" aria-label="Chat">
     <div #thread class="thread" role="log" aria-live="polite">
       @for (message of messages; track $index) {
@@ -81,3 +84,4 @@
     </form>
   </section>
 </main>
+

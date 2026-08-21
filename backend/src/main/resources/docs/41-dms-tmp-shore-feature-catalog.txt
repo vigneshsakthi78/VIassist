@@ -1,0 +1,102 @@
+MACK DMS — SMS and Circulars live feature catalog (TMP Shore, 20-Aug-2026)
+
+Walked live on a shore TMP environment (URL and login are not stored here).
+Path: Mack login → Home shortcut SMS & Circulars → /DMS/main (new tab)
+Logged in as Super Admin. Username, company, and client names are redacted in screenshots.
+Module: ndeCBean (DMS Admin / SMS & Circulars). UI Version on DMS shell: 2.4.
+
+What this module is
+MACK DMS for SMS manuals and Circulars. Shore users browse a document tree, author HTML/PDF/folder
+nodes, run workflow (draft → review → approve → publish), set visibility (company, vessel, rank,
+department), attach files, and sync to vessels / external apps.
+
+Node types
+- Folder (filetypeflag P): container. Add Page / Add Folder only under a folder.
+- HTML page (H): CKEditor document.
+- PDF / file (F): uploaded via Document Manager / path.
+- External link: URL-type node.
+
+How to open SMS & Circulars (live)
+1. Open the customer Mack shore URL (login title: DMS TMP Shore).
+2. Sign in with assigned User ID / Password (LOGIN).
+3. Home dashboard: shortcut SMS & Circulars, or menu Manuals & Info Sharing → DMS Modules → SMS & Circulars.
+4. Confirm dialog "DMS Application will be Opened in New Tab?" then DMS opens at /DMS/main.
+
+Related Mack items (not the DMS editor itself)
+- DMS Configuration
+- Sharing Admin: Bulletin Creation, Feedback Creation, Sharing Portal Admin
+- SMS Review Document, Global SMS Revision List, SMS Evaluation And Review Report/Analysis
+
+Shell layout (live)
+- Left tree: Welcome, then company SMS / Circulars folders (Work Instructions, One Sea, Enclosed Space, …)
+- Global search: Document Reference No, Document ID, Document Title, Content/Page, Search Tag, Vessel Type, Department, Rank, scope ALL
+- Welcome / folder landing tabs: Summary, Details, Editor, Editor Detail
+- Summary/Details grid columns: Action (eye / magnifier), Document Reference No, Document Title, Version, User Version, Status, Date of Publish, Dis. Vessel
+- Toolbar: Document Manager, Image Manager, overflow ⋯ master menu
+- Sidebar: New, Favourites (heart), Filter, Tile View
+- Company Variable Switch (company and vessel type; names redacted in screenshots)
+- Show Trash, notifications (comment count + document notify)
+- Session dialogs: Session Expire Warning, Fatal error / relogin, Server Unreachable
+
+Add Page dialog (live labels)
+Header: Add Page
+Fields: Name, Type (Page), Page Template (Blank Page), Page Icon (Page), Header Template (Default Header), Footer Template (Default Footer), URL
+Submit: Add Page
+Create only under a folder. Double-submit is guarded in code (SDT-19428).
+
+Page Properties (live labels)
+Tabs: Document, Distribution
+Document: Document Title*, Document ID, Document Type, Document Ref No.*, Sys. Version, Status,
+Applicable To (Ship / Shore / Common), Search Tags, Reference Regulation, Reason for Revision,
+User Version, Page Template, Page Header, Page Footer, WaterMark*, Company, Department, Rank,
+Vessel Department, Vessel Rank, Vessel Flag, Vessel Type, Region, Category, Date of Creation,
+Date of Published, Date of Expiry.
+Note: Either ALL or Individual values can be selected.
+Distribution: Company Selection*, Vessel Type*, Vessel Flag*, Vessel* (circulars), Add Documents.
+Related: Visibility Change (Company), Visibility Update, Visibility Ashore.
+
+Master menu (⋯) live labels
+Video Manager, Variables, Templates, Security Control, Group Mapping, Activity Log,
+Document Type, Status, Region, Category, Workflow, Data Sync Report, Reference Number,
+Vessel Type, SSC Comparison Report, Bulk / Offline, Bulk / Offline Gate, Visibility Update,
+External Publish Gate, Guest User Access, Sub Company (admin).
+
+Image Manager (live)
+Modal Image Manager. Tree under Images (example folder testcheck). Toolbar + / delete / upload.
+Image URL path. Allowed Formats: PNG JPG GIF. UI Version 2.1 inside modal.
+
+Video Manager (live)
+Modal Video Manager. Tree under Videos. Grid: File Type, File Name, Size(KB), Uploaded By.
+Allowed Formats: MP4 WMV MOV AVI FLV. UI Version 2.0 inside modal.
+
+Document Manager (live)
+Tabs: Current Version, Old Version, Linked Documents. Upload / folders / path for PDF.
+
+Favourites (live)
+Heart on sidebar. Overlay list: Document Title + Remove (trash). More... at bottom.
+Landing favourites grid is View/Delete only (Edit blocked).
+
+Filter (live)
+Custom Filter overlay from sidebar funnel.
+
+Trash (live)
+Show Trash switches the tree to trash. Context: Empty Trash, Empty Canceled, Empty Deleted, Accept/Reject.
+
+Print / Cancel Circular (from UI dialogs)
+Print: Header, Footer, Watermark, CONTROLLED.
+Cancel Circular: Reason for cancel.
+Circular Attachments dialog for circular files.
+
+HTML editor tools (titles on page)
+Insert Variable, Link Page, Insert Sticky, Hyperlink Document, Quick Image Upload,
+Conditional Variable, Document History, Insert Template, Import, Enable Ruler, Insert Image,
+Reference linkage, AutoSave, Edit Page Properties, Insert Document, Table Header,
+restrict download check. Downloads: HTML / PDF / DOC / DOCX.
+
+Workflow statuses seen on TMP grids
+Draft, Approved, Published (also SNTR / SNTP / RVRR / RVRA in masters).
+Typical path: create → submit review/approve → publish → (republish or Cancel Circular).
+
+Screenshots for this live pack
+Use markdown images from /screenshots/dms-tmp-shore/ (see 42-dms-tmp-shore-screenshots.txt).
+Do not invent filenames. Do not store passwords in answers.

@@ -1,5 +1,9 @@
 MACK DMS Shore V4.3 — Screenshot catalog (use these exact paths)
 
+Prefer the live TMP Shore pack when the question is about NiBiKi / TMP Shore UI:
+![label](/screenshots/dms-tmp-shore/shot-XX.png)
+See 42-dms-tmp-shore-screenshots.txt for files actually captured on 20-Aug-2026.
+
 When explaining DMS Shore UI steps, include markdown images so the chat UI can show them.
 Use paths exactly like this (leading slash):
 

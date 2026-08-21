@@ -1,0 +1,116 @@
+MACK DMS TMP Shore — Visual how-tos (steps + live screenshots)
+
+Use these playbooks when users ask how to use SMS & Circulars on DMS TMP Shore / NiBiKi.
+Always include the markdown images below for matching topics.
+
+------------------------------------------------------------
+How-to: Log in to DMS TMP Shore
+Goal: Reach Mack home, then SMS & Circulars.
+1) Open the assigned Mack shore URL
+2) Enter User ID and Password → LOGIN
+3) On home, click shortcut SMS & Circulars (or Manuals & Info Sharing → DMS Modules → SMS & Circulars)
+4) Confirm DMS opens in a new tab (/DMS/main)
+
+![TMP Shore login](/screenshots/dms-tmp-shore/shot-31.png)
+
+![Mack home SMS shortcut](/screenshots/dms-tmp-shore/shot-04.png)
+
+Checks: NiBiKi login version visible; after login Super Admin / assigned role shows.
+
+------------------------------------------------------------
+How-to: Orient on DMS home (tree + Summary grid)
+Goal: Find folders, managers, and the document grid.
+1) After SMS & Circulars opens, use the left folder tree (Welcome, SMS, Circulars, Work Instructions).
+2) Select a folder (example: Work Instructions).
+3) Use tabs Summary / Details / Editor / Editor Detail.
+4) Use Image Manager and Document Manager on the toolbar.
+
+![DMS home grid](/screenshots/dms-tmp-shore/shot-03.png)
+
+![DMS welcome](/screenshots/dms-tmp-shore/shot-30.png)
+
+Also available on the v43 pack path:
+![DMS home grid v43](/screenshots/dms-shore-v43/shot-03.png)
+
+Checks: tree visible; UI Version 2.4 on DMS shell; managers present.
+
+------------------------------------------------------------
+How-to: Create a page (Add Page)
+Goal: Add an HTML page under a folder.
+1) Select a folder in the tree (must be a folder, not a page).
+2) Click New on the left sidebar (or right-click → New).
+3) Fill Name; Type = Page; choose Page Template / Icon / Header / Footer.
+4) Click Add Page once (do not double-click; slow networks can nest the second create).
+
+![Add Page dialog](/screenshots/dms-tmp-shore/shot-08.png)
+
+Checks: new row appears under the same parent folder, not as a child of the new page.
+
+------------------------------------------------------------
+How-to: Open Image Manager
+Goal: Browse/upload images used in pages.
+1) From DMS home or an open page, click Image Manager.
+2) Select a folder under Images.
+3) Use + / delete / green upload. Allowed: PNG JPG GIF.
+
+![Image Manager](/screenshots/dms-tmp-shore/shot-01.png)
+
+------------------------------------------------------------
+How-to: Open Video Manager
+Goal: Store/select videos for insert into pages.
+1) Click the overflow ⋯ menu (next to Document/Image Manager).
+2) Click Video Manager.
+3) Select a folder under Videos. Allowed: MP4 WMV MOV AVI FLV.
+
+![Master menu](/screenshots/dms-tmp-shore/shot-13.png)
+
+![Video Manager](/screenshots/dms-tmp-shore/shot-25.png)
+
+------------------------------------------------------------
+How-to: Open Document Manager
+Goal: Manage files / versions / linked documents.
+1) Click Document Manager on the toolbar.
+2) Use tabs Current Version, Old Version, Linked Documents.
+
+![Document Manager](/screenshots/dms-tmp-shore/shot-24.png)
+
+------------------------------------------------------------
+How-to: Use Favourites
+Goal: Open the favourite documents overlay.
+1) Click the heart icon on the left sidebar.
+2) Click a title to open; use trash to Remove; More... for the full list.
+
+![Favourites overlay](/screenshots/dms-tmp-shore/shot-17.png)
+
+------------------------------------------------------------
+How-to: Filter and search
+Goal: Narrow the tree or search metadata.
+1) Sidebar funnel → Custom Filter.
+2) Top search: Document Reference No, Document ID, Document Title, Content/Page, Search Tag, Vessel Type, Department, Rank.
+
+![Custom Filter](/screenshots/dms-tmp-shore/shot-37.png)
+
+![Search](/screenshots/dms-tmp-shore/shot-10.png)
+
+------------------------------------------------------------
+How-to: Review Details list and Trash
+Goal: Inspect status/vessel columns, or recover deleted items.
+1) Folder landing → Details tab (Status, Dis. Vessel, Date of Publish).
+2) Click Show Trash to switch the tree to trash actions.
+
+![Details tab](/screenshots/dms-tmp-shore/shot-05.png)
+
+![Trash](/screenshots/dms-tmp-shore/shot-38.png)
+
+------------------------------------------------------------
+How-to: Tile view and Security Control
+Goal: Alternate navigation; admin security master.
+1) Click Tile View on the sidebar.
+2) Overflow menu → Security Control (role gated).
+
+![Tile view](/screenshots/dms-tmp-shore/shot-14.png)
+
+![Security Control](/screenshots/dms-tmp-shore/shot-32.png)
+
+Knowledge-pack note
+Live captures 20-Aug-2026. Never commit passwords. Redeploy API so /screenshots/dms-tmp-shore/* is served.

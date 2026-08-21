@@ -2,9 +2,15 @@ MACK DMS Shore V4.3 — Getting started and home screen
 
 Login
 1. Open Chrome and navigate to the customer MACK shore URL
-2. Sign in with assigned username/password
+   Live TMP Shore used for screenshots (URL redacted in knowledge text; login branding blurred on images)
+2. Sign in with assigned username/password (do not store passwords in RAG docs)
 3. Ensure user access is granted for DMS
-4. Navigate to MACK DMS from the application modules
+4. Navigate via Home shortcut SMS & Circulars, or Manuals & Info Sharing → DMS Modules → SMS & Circulars
+5. Confirm DMS opens in a new tab (/DMS/main)
+
+![TMP Shore login](/screenshots/dms-tmp-shore/shot-31.png)
+
+![Mack home](/screenshots/dms-tmp-shore/shot-04.png)
 
 Home / landing orientation (shore)
 Common top controls:

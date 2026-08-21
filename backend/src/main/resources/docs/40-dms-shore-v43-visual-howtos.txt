@@ -12,9 +12,11 @@ Goal: Find folders, managers, and the document grid after login.
 4) Use top actions Image Manager and Document Manager when needed.
 5) Use the Summary grid to open a Document ID (eye / view action).
 
-![DMS home grid](/screenshots/dms-shore-v43/shot-03.png)
+![DMS home grid](/screenshots/dms-tmp-shore/shot-03.png)
 
-![DMS dashboard widgets](/screenshots/dms-shore-v43/shot-30.png)
+![DMS dashboard widgets](/screenshots/dms-tmp-shore/shot-30.png)
+
+![DMS home grid v43](/screenshots/dms-shore-v43/shot-03.png)
 
 Checks: folder tree visible; Image Manager / Document Manager buttons present.
 
@@ -26,7 +28,7 @@ Goal: Manage images used inside DMS pages.
 3) Use the green upload control to add PNG/JPG/GIF (see Allowed Formats).
 4) Click a thumbnail to select; close the modal when finished.
 
-![Image Manager](/screenshots/dms-shore-v43/shot-01.png)
+![Image Manager](/screenshots/dms-tmp-shore/shot-01.png)
 
 Checks: correct Image URL path shown; format icons match your file type.
 
@@ -38,7 +40,7 @@ Goal: Store/select a video and insert it into a page.
 3) Confirm the MP4 (or allowed) file appears in the grid.
 4) Select the row and click Insert (bottom of modal).
 
-![Video Manager](/screenshots/dms-shore-v43/shot-25.png)
+![Video Manager](/screenshots/dms-tmp-shore/shot-25.png)
 
 In the page editor, right-click an embedded video → Edit Video Properties when needed.
 
@@ -53,9 +55,9 @@ Goal: View an SMS/circular page and start editing or attach media.
 4) Click Edit Page to modify; use Image Manager / Document Manager from the toolbar.
 5) Use the hamburger utility menu for additional page utilities when shown.
 
-![Open SMS page Edit Page](/screenshots/dms-shore-v43/shot-15.png)
+![Open SMS page Edit Page](/screenshots/dms-tmp-shore/shot-15.png)
 
-![Page viewer hamburger menu](/screenshots/dms-shore-v43/shot-16.png)
+![Page viewer hamburger menu](/screenshots/dms-tmp-shore/shot-16.png)
 
 Optional: use the floating TOC overlay to jump Scope / Purpose / Responsibility sections.
 
@@ -69,7 +71,7 @@ Goal: Find content under a folder and preview matches.
 3) Type a keyword in the list search box.
 4) Select a hit; review Document View on the right (highlights show matches).
 
-![Search documents and attachments](/screenshots/dms-shore-v43/shot-10.png)
+![Search documents and attachments](/screenshots/dms-tmp-shore/shot-10.png)
 
 ------------------------------------------------------------
 How-to: Review published documents in the Detail list
@@ -78,7 +80,7 @@ Goal: Filter/inspect Published items by vessel/company/title.
 2) Use column filters (Status should show Published for live items).
 3) Use eye / magnifier actions to open or inspect a row.
 
-![Detail published list](/screenshots/dms-shore-v43/shot-05.png)
+![Detail published list](/screenshots/dms-tmp-shore/shot-05.png)
 
 ------------------------------------------------------------
 How-to: Edit table cell colors in the page editor
