@@ -1,0 +1,32 @@
+Dexter DMS extract from mack_dms
+Exported 2026-10-23 for Vicky Assist.
+
+Published window (DocumentsData, AttachmentData, variable mapping)
+publishdate BETWEEN '2026-07-25 00:00:00' AND '2026-08-28 00:00:00'.
+Filters: ispublished Y, docstatus not DELE/CANC, filetypeflag H or F,
+header/footer row joined on docid+version with dmsheadfootsave.verstatus A.
+DocumentsData rows: 0
+AttachmentData rows: 0
+Variable-mapping rows joined to DocumentsData: 0
+
+Why the published set is empty on this database
+In that window, dmsdocumentmaster has two PUBD rows (DMSDOC319940 flowcher1, filetype H;
+DMSDOC319935 SMS, filetype P). The HTML page joins a header whose verstatus is V, not A,
+so the script's verstatus='A' filter drops it. The folder row is filetype P, also dropped.
+No active file-manager rows exist for the HTML page, so AttachmentData is empty.
+
+Templates with datecr on or after 2026-07-25
+Rows: 1
+TMPL132 | FormDes | [FormDes] | A | R |  | DEFAULT | 2026-10-06 13:07:49
+Template HTML:
+<p>Tesatsew</p>
+
+Deleted and cancelled documents kept for Dexter
+docstatus DELE or CANC, verstatus A, publishdate BETWEEN '2025-07-25 00:00:00' AND '2026-08-28 00:00:00'.
+Rows: 292 (DELE 291, CANC 1).
+Document ids are batched in 46-dexter-deleted-cancelled-docids.txt.
+Metadata and page HTML are in 47-dexter-deleted-cancelled-documents.txt.
+
+Excluded on purpose
+dmseventlog rows for pageid DMSDOC21657 action Page Deleted were not loaded.
+dmseventlog rows for action Page Deleted or Circular Cancelled were not loaded.

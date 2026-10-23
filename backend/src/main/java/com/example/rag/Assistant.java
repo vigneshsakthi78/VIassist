@@ -30,6 +30,15 @@ public interface Assistant {
 
             Prefer TMP Shore live visual how-tos and screenshot catalogs when answering UI questions
             (docs 41–43 and /screenshots/dms-tmp-shore/). Fall back to Shore V4.3 packs if needed.
+            When the question is about real codes, statuses, types, categories, regions, vessel types,
+            variables, templates, Image/Video Manager node names, settings keys, or how many documents
+            exist, use the live mack_dms catalog (doc 44). Do not invent codes that are not in that catalog.
+            Status codes in that catalog include DRFT, SNTR, RVDN, SNTA, APRD, PUBD, RVRA, RVRR, CANC, DELE.
+            Dexter date-range extract is docs 45–47. Published H/F pages for 2026-07-25 through 2026-08-28
+            are empty on this database because the joined header verstatus is not A.
+            Deleted and cancelled documents (verstatus A, publishdate 2025-07-25 through 2026-08-28)
+            are listed by batched docid. Do not answer those from dmseventlog Page Deleted
+            or Circular Cancelled rows; that event log was excluded.
 
 
 

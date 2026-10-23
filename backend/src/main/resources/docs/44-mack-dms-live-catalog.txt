@@ -1,0 +1,740 @@
+MACK DMS live catalog (mack_dms on the dev database)
+Exported 2026-10-23 for Vicky Assist training.
+Source is the live schema and lookup rows. Document HTML, file paths, user ids, emails, and setting secrets are not included.
+
+What this adds beyond the Shore V4.3 how-tos
+Real codes and names the shore app stores: document types, workflow statuses, categories, regions, vessel types, variables, templates, image and video manager nodes, security-group shapes, and how many documents sit in each status and file type.
+
+Document types (dmsdocumenttype)
+Rows: 12
+documenttype | description | status | companycode
+Circulars | Circulars | A | 
+DMS Features | DMS Features | A | 
+DMS Release | DMS Release | A | 
+Elastic Search | Elastic Search | v | 
+ELKF Stack | ELKF Stack | A | 
+Enclosed Space | Enclosed Space test | A | 
+Enclosed Space | Enclosed Space test | A | 
+Form | Form | A | 
+sd | sdf7 | A | 
+SMF | SMF | A | 
+SMS | SMS | A | 
+Work Instructions | Work Instructions test | A | 
+
+Document statuses (dmsdocstatus)
+Rows: 10
+statuscode | statusname | utype | status | grpname
+APRD | Approved | A | A | 
+CANC | Cancelled | G | A | 
+DELE | Deleted | D | A | 
+DRFT | Draft | C | A | 
+PUBD | Published | P | A | 
+RVDN | Reviewed | R | A | 
+RVRA | Returned to drafter | A | A | 
+RVRR | Returned to drafter | R | A | 
+SNTA | Send For Approval | E | A | 
+SNTR | Send For Review | E | A | 
+
+Categories (dmscategory)
+Rows: 9
+categorycode | categoryname | STATUS | companycode
+COM | COMMERCIAL |  | 
+ENV | ENVIRONMENT |  | 
+HLT | HEALTH |  | 
+MCH | MACHINERY |  | 
+NAV | NAVIGATION |  | 
+OPS | OPERATIONS |  | 
+QAL | QUALITY |  | 
+SAF | SAFETY |  | 
+smpl | Sample_Category | A | 
+
+Regions (dmsregion)
+Rows: 13
+regioncode | regionname | status
+AFR | Africa | A
+ASI | Asia | A
+ASR | Asia South East | A
+AST | Australasia | A
+CAM | Central America | A
+EUR | Europe | A
+FEA | Asia Far East | A
+MER | Asia Middle East | A
+NAM | North America | A
+OCN | Oceania | A
+OTH | Others | A
+SAM | South America | A
+WWW | Global | A
+
+Vessel types (dmsvesseltypemaster)
+Rows: 15
+dmsvtcode | dmsvtname | status | companycode
+ALL1 | ALL(System Use Only) | A | 
+asd | asdet | A | 
+BHV | BohaVessel | A | NYKSM
+BL | Bulk Carrier | A | 
+CN | Container Ship | A | 
+CS | Passenger Ship | A | 
+CT | Chemical Tanker | A | 
+dd | dd | A | NBS
+GC | Gas Carrier Ship | A | 
+GE | General Cargo | A | 
+LPG | LPG Carrier | A | 
+PC | PCC | A | 
+Test 1 | Test check | A | ALL
+TK | Tanker | A | 
+ygg | vy | A | NYKSM
+
+Workflows (dmsdocumentflow) — people lists omitted
+Rows: 8
+wrkflowid | wrkflowdesc | department | doctype | status | isdefault | isall | bysecgroup
+CHK_WFL | Check_WorkFlow |  | SMS | A | N | N | N
+Circular WF | CIR WF |  | Circulars | A | N | N | N
+DMSFW | DMS Features |  | DMS Features | A | N | N | N
+DMSR | DMS Release |  | DMS Release | A | N | N | N
+ELKFS | ELKF Stack |  | ELKF Stack | A | N | N | N
+MSA | Mass |  | SMS | A | N | N | N
+sd | ssd |  | sd | A | N | N | N
+SMS WF | SMS Workflow |  | SMS | A | N | N | N
+
+Variables (dmsvariables) — values omitted
+Rows: 25
+variablecode | variablename | variablefield | status | type | companycode
+VARL122 | Copyright | [Copyright] | A | U | ALL
+VARL197 | Version | [Version] | A | U | ALL
+VARL198 | Document ID | [Document ID] | A | U | ALL
+VARL199 | Document Owner | [Document Owner] | A | U | ALL
+VARL200 | Document Type | [Document Type] | A | U | ALL
+VARL201 | DocumentRef No | [DocumentRef No] | A | U | ALL
+VARL202 | Page Name | [Page Name] | A | U | ALL
+VARL203 | Published Date | [Published Date] | A | U | ALL
+VARL204 | Status | [Status] | A | U | ALL
+VARL205 | Supercedes | [Supercedes] | A | U | ALL
+VARL206 | ValidityArea | [ValidityArea] | A | U | ALL
+VARL207 | Copyright | [Copyright] | A | U | ALL
+VARL208 | CompanyName | [CompanyName] | A | U | ALL
+VARL209 | Author | [Author] | A | U | ALL
+VARL210 | Area | [Area] | A | U | ALL
+VARL211 | Approver Name | [Approver Name] | A | U | ALL
+VARL212 | HeaderLogo | [HeaderLogo] | A | U | ALL
+VARL213 | Approver Rank | [Approver Rank] | A | U | ALL
+VARL214 | CompanyLogo | [CompanyLogo] | A | U | ALL
+VARL215 | Company Logo Group | [Company Logo Group] | A | U | ALL
+VARL216 | Folder Name | [Folder Name] | A | U | ALL
+VARL216 | ohc_logo | [ohc_logo] | A | U | ALL
+VARL217 | HeaderLogo1 | [HeaderLogo1] | A | U | 
+VARL218 | NYkLOgo | [NYkLOgo] | A | U | 
+VARL219 | KmsmHeaderLogo | [KmsmHeaderLogo] | A | U | 
+
+Variable switches (dmsvariableswitch) — user ids omitted
+Rows: 6
+compcode | vsltypecode | switches
+ | CNT7 | 1
+HKK | BL | 1
+MTI | CNT7 | 4
+MTI | GC | 1
+NYKSG | ALL1 | 1
+NYKSM | BL | 1
+
+Templates (dmstemplates) — template HTML omitted
+Rows: 65
+templatecode | templatename | templatefield | status | type | companycode | styleref
+TMPL100 | LovoyTemp2 | [LovoyTemp2] | A | P |  | LOVOY_STYLE
+TMPL101 | Lovoy-Checklist | [Lovoy-Checklist] | A | P | ALL | LOVOY
+TMPL101 | Lovoy-Full Template | [Lovoy-Full Template] | A | P | ALL | LOVOY
+TMPL101 | Lovoy-Procedure | [Lovoy-Procedure] | A | P | ALL | LOVOY
+TMPL101 | NYKTemplate | [NYKTemplate] | A | P |  | 
+TMPL102 | Lat Lov2 | [Lat Lov2] | A | P |  | LOVOY
+TMPL103 | LOVOY DEFAULT | [LOVOY DEFAULT] | A | P |  | DEFAULT
+TMPL104 | LOVOY TEMP LATEST | [LOVOY TEMP LATEST] | A | P |  | 
+TMPL105 | TetsLOv | [TetsLOv] | A | P |  | LOVOY
+TMPL106 | defaultTe | [defaultTe] | A | P |  | DEFAULT
+TMPL107 | tes2Lov | [tes2Lov] | A | P |  | LOVOY
+TMPL108 | NYKTEmplated2 | [NYKTEmplated2] | A | P |  | SMILE
+TMPL109 | headerrww | [headerrww] | A | P |  | 
+TMPL110 | Test check | [Test check] | A | P |  | DEFAULT
+TMPL111 | Test_Lovoy | [Test_Lovoy] | A | P |  | LOVOY
+TMPL112 | Othclien | [Othclien] | A | P |  | 
+TMPL113 | temp12 | [temp12] | V | P |  | DEFAULT
+TMPL114 | t1 | [t1] | A | P |  | DEFAULT
+TMPL115 | t2 | [t2] | V | P |  | DEFAULT
+TMPL116 | t3 | [t3] | A | P |  | DEFAULT
+TMPL117 | NYTemplatee | [NYTemplatee] | A | P |  | SMILE
+TMPL118 | t5 | [t5] | A | P |  | DEFAULT
+TMPL119 | tabletemplate | [tabletemplate] | A | P |  | 
+TMPL120 | testnyk | [testnyk] | A | P |  | SMILE
+TMPL121 | SISL_Header1 | [SISL_Header1] | A | H |  | 
+TMPL122 | SISL_Header2 | [SISL_Header2] | A | H |  | 
+TMPL123 | SISL_header3 | [SISL_header3] | A | H |  | 
+TMPL124 | SISL_Header4 | [SISL_Header4] | A | H |  | 
+TMPL125 | Seaspan header | [Seaspan header] | A | H |  | 
+TMPL126 | SISL_Header | [SISL_Header] | A | H |  | 
+TMPL127 | TestSeaspan | [TestSeaspan] | A | H |  | DEFAULT
+TMPL128 | TEST_AN | [TEST_AN] | A | P |  | DEFAULT
+TMPL129 | NYKDefault_Header | [NYKDefault_Header] | A | H |  | DEFAULT
+TMPL130 | nykTes | [nykTes] | A | H |  | DEFAULT
+TMPL131 | kmsmTemp | [kmsmTemp] | A | H |  | DEFAULT
+TMPL132 | FormDes | [FormDes] | A | R |  | DEFAULT
+TMPL69 | Default Footer | [Default Footer] | A | F |  | DEFAULT
+TMPL70 | Default Header | [Default Header] | A | H |  | DEFAULT
+TMPL71 | Checking_template | [Checking_template] | A | P |  | 
+TMPL72 | Happy_Approach_Header | [Happy_Approach_Header] | A | H | ALL | DEFAULT
+TMPL73 | Lovoy Template | [Lovoy Template] | A | P | ALL | DEFAULT
+TMPL74 | NYK Header | [NYK Header] | A | H |  | DEFAULT
+TMPL75 | OHC_Templates | [OHC_Templates] | A | H |  | DEFAULT
+TMPL80 | test | [test] | V | P |  | DEFAULT
+TMPL81 | checktemp | [checktemp] | V | P |  | NYK
+TMPL82 | check2 | [check2] | V | P |  | NYK
+TMPL83 | Test check | [Test check] | V | P |  | SMILE
+TMPL84 | new temp | [new temp] | V | P |  | SMILE
+TMPL85 | NYk Temp | [NYk Temp] | V | P |  | SMILE
+TMPL86 | temp test | [temp test] | V | P |  | SMILE
+TMPL87 | NYK Templ | [NYK Templ] | V | P |  | SMILE
+TMPL88 | NYK2 | [NYK2] | V | P |  | Smile
+TMPL89 | DefaultTempl | [DefaultTempl] | V | P |  | Default
+TMPL90 | NYKTemplate1 | [NYKTemplate1] | V | P |  | Smile
+TMPL91 | NYKTest1 | [NYKTest1] | V | P |  | Smile
+TMPL92 | Test2NYK | [Test2NYK] | V | P |  | Smile
+TMPL93 | NYK2temp | [NYK2temp] | V | P |  | Smile
+TMPL94 | Default Temlate1 | [Default Temlate1] | V | P |  | DEFAULT
+TMPL95 | NYK1 | [NYK1] | A | P |  | SMILE
+TMPL96 | Default Template | [Default Template] | A | P |  | DEFAULT
+TMPL97 | LOVOY_Default | [LOVOY_Default] | A | P |  | DEFAULT
+TMPL98 | Seaspan_Lovoy_Temp | [Seaspan_Lovoy_Temp] | A | P |  | LOVOY
+TMPL99 | LovoyTemp | [LovoyTemp] | A | P |  | LOVOY_STYLE
+TMPLIVR001 | IVR body | [IVR body] | V | P |  | DEFAULT
+TMPLIVR002 | IVR header | [IVR header] | v | H |  | DEFAULT
+
+Settings (dmssetting) — short non-secret values only
+fieldname | module | status | value
+ |  |  | 
+MaxToDate | ACL | A | 40
+EPA_MAS_MOD_CONFIG | ASC | A | Y
+REUSE_DOC_CONFIG | ASC | A | Y
+ASD | ASD | A | AD
+BULKPATH | BFU | A | \\tmpdmsextractor\\
+DateInput | BFU | A | 5
+CK_CLIENT_NAME | CKE | A | NYK
+Custom_dropdown | CKE | A | Custom_dropdown
+CLEANFOLDER | CLEANPATH | A | docttohtml\PRCF~docttohtml\tmp~DMSFILEVIEWR
+Comments | CMT | A | RNK001
+DBPORT | DBD | A | 3306
+FILEPREFIX | DBD | A | DMSBLK
+EXTRACTFOLDER | DBDPATH | A | dmsextractor
+TMPFOLDER | DBDPATH | A | tmpdmsextractor
+DateInput | DBR | A | 5
+enable_external | DBU | A | N
+LIMITSIZEBULK | DBU | A | 250.00
+DateInput | DDR | A | 10
+BULKACCESS | DMS | A | RNK001
+BULKGATE | DMS | A | Y
+CNTTYPE | DMS | A | CNT002
+DEFVISIBILITY | DMS | V | NYKSM
+samplef | DMS | A | sampleval
+sampletest | DMS | A | 123456
+Sample_12 | DMS | V | CNT002
+test | DMS | A | 123456
+test234 | DMS | A | 1234
+TEST456 | DMS | A | 1234
+Testing | DMS | A | 234
+ARTIFACTS | DMSPATH | A | DMSCDN.war\WEB-INF\Artifacts
+ASPOSEPATH | DMSPATH | A | DMSCDN.war\resources\Aspose_Word_LIC\Aspose.Words.lic
+ATTACHRESOURCE | DMSPATH | A | /DMSCDN.war/resources/
+ATTACHRESOURCEPDF | DMSPATH | A | /DMSCDN/javax.faces.resource/
+CIRCULARS | DMSPATH | A | DMSCDN.war\resources\Circulars\
+DMSDOCMAN | DMSPATH | A | DMSCDN.war\resources\DMSDOCMAN
+DMSDOCS | DMSPATH | A | DMSCDN.war\resources\DMSDOCS
+DMSDOWNTMP | DMSPATH | A | DMSCDN.war\resources\DMSDOWNTMP\
+DMSIMAGE | DMSPATH | A | DMSCDN.war\resources\DMSImage
+DMSIMGMGNR | DMSPATH | A | DMSCDN.war\resources\DMSIMGMGNR
+DMS_DOCUMENTS | DMSPATH | A | DMSCDN.war\resources\DMS Documents
+FILEVIEWPATH | DMSPATH | A | DMSCDN.war\resources\DMSFILEVIEWR
+IMAGERESOURCE | DMSPATH | A | /DMSCDN.war/resources/DMSImage/
+IMGMGNRRESOURCE | DMSPATH | A | /DMSCDN.war/resources/DMSIMGMGNR/
+IMPORT_TMP | DMSPATH | A | DMSCDN.war\resources\docttohtml\tmp\
+MACKIMAGES | DMSPATH | A | DMSCDN.war\resources\mackImages\
+PDFRESOURCE | DMSPATH | A | /DMSCDN.war/resources/
+PDFRESOURCEEA | DMSPATH | A | /DMSCDN.war/resources/
+PDFRESOURCEPDF | DMSPATH | A | /DMSCDN.war/resources/
+PDFRESOURCEPDFEA | DMSPATH | A | /DMSCDN.war/resources/
+PDFRESOURCEPDFSHIP | DMSPATH | A | /DMSCDN/javax.faces.resources/DMSDOCS/
+PDFRESOURCEPDFSHIPEA | DMSPATH | A | /DMSCDN/javax.faces.resources/DMSDOCSEA/
+PRCFOLDER | DMSPATH | A | DMSCDN.war\resources\docttohtml\PRCF\
+RESOURCECONTEXT | DMSPATH | A | /DMSCDN.war/resources/DMSDOCMAN
+SMSPATH | DMSPATH | A | DMSCDN.war\resources\DMS Documents\SMSTMP\
+ACTIVITYLOG | DMSRPT | A | N
+FIRSTTIMEJOB | DMSRPT | A | N
+FIRSTTIMEJOBREAD | DMSRPT | A | N
+Group | DMSRPT | A | NYKSM
+LASTPUBD | DMSRPT | A | 46
+NOOFDAYS | DMSRPT | A | 183
+NOOFDAYSDELETE | DMSRPT | A | 10
+NOOFDAYSDELETE | DMSRPT | A | 10
+PERIODICTIME | DMSRPT | A | 30
+ReadNDays | DMSRPT | A | 20
+DMSVIDMGNR | DMSVidPath | A | DMSCDN.war\resources\DMSVIDMGNR
+FILEUPDLIMIT | DOC | A | 15728640
+FILEUPDLIMITMAX | DOC | A | 4160000000
+BULKPATH | DQG | A | BulkUpload
+COLUMN_CONFIG_DQG | DQG | A | watermark,docowner,area,validfrom,validto,visibleshipdept,visibleshiprank,isautoexpiry,VUA,sameaspublish
+CYPTOKEY | DQG | A | (value omitted)
+FIELD_DIS_DQG | DQG | A | Y
+NONPEAKHOUR | DQG | A | 00:00:00.000
+DELETECODE | DVR | A | Deleted or Page property changed in Shore and not updated in ship
+PUBLISHCODE | DVR | A | (value omitted)
+Systemoutprint | DVR | A | Y
+ENABLE_IMAGEMAN | IMM | A | Y
+ImageManager_Company_Segregation | IMM | A | Y
+Elasticsearch_content | JOB | A | N
+Foldermoveutil | JOB | A | N
+Folderutil_Destination | JOB | A | 
+Folderutil_Source | JOB | A | 
+ALLOWDASHBOARDNAVIGATION | NDE | A | Y
+ALLOWEMAILDMS | NDE | A | Y
+ALLOWEMAILDMS | NDE | A | Y
+ALLOWEMAILPUBD | NDE | A | N
+allowtypes | NDE | A | /(\.|\/)(DOC|doc|docx|XLSX|DOCX|xls|XLS|xlsx|txt|TXT|zip|ZIP|rar|RAR|CSV|csv|html|HTML|xlsm|XLSM|mht|MHT|xml|XML|7z|pdf|PDF|DOC?X|rtf|RTF|ppt|PPT|pptx|PPTX|MP4)$/
+allowtypesimg | NDE | A | /(\.|\/)(gif|jpe?g|png)$/
+APPROVALSREVPUBLISHCANC | NDE | A | SNTA
+APPROVALSREVPUBLISHCANC | NDE | A | RVRA
+APPROVALSREVPUBLISHCANC | NDE | A | APRD
+APPROVALSREVPUBLISHCANC | NDE | A | RVDN
+APPROVALSREVPUBLISHCANC | NDE | A | CANC
+AttachmentIDs | NDE | V | 
+ATTACHMENT_DOWNLOAD_RESTRICT_TYPE | NDE | A | 
+Attachment_Replace_CR90 | NDE | A | Y
+AUTOSAVE | NDE | A | 60
+AUTO_DRFT_DISABLE | NDE | A | Y
+Chatbot_Emp_List | NDE | A | HKKHA01,Yeli Feng,Danush,Indrajith,Bruce,WFIXREAD,Ritesh,Vasanth,Elkana
+CHATBOT_ENABLE | NDE | A | Y
+CIRATCENABLE | NDE | A | N
+CKFLOWCHART | NDE | A | Y
+CKFORMDESIGNER | NDE | A | Y
+CLIENT_NAME | NDE | A | NYK
+COMMENTS_TOPBAR | NDE | A | Y
+CompareConfigSize | NDE | A | 10
+ConfigColorforCR_90 | NDE | A | 
+CrDate_And_PUBDate | NDE | A | Y
+CR_90_PRD | NDE | A | Y
+CR_90_ReplaceValidation_Disable | NDE | A | N
+CR_90_Yes_NO | NDE | A | N
+Default_Doc_Highlight | NDE | A | N
+Disable_Style_Template | NDE | A | N
+DMSBASEURI | NDE | A | http://localhost:8080/
+DMSBASEURI | NDE | A | http://localhost:8080/
+DMS_VID_MNGR | NDE | A | Y
+DocType 1 | NDE | A | (value omitted)
+DocType 2 | NDE | A | SMS
+DocType 3 | NDE | A | Form
+DocType 3 | NDE | A | Form
+DocumentID_Enable | NDE | A | Y
+DocumentManager_Company_Segregation | NDE | A | Y
+DOCUMENT_VERSIONING | NDE | A | Y
+DOC_WATER_MARK | NDE | A | N
+Download_Print_Config | NDE | A | N
+DOWNLOAD_PRINT_PDF | NDE | A | N
+Download_vessel_Config | NDE | A | Y
+DRAFTDELETE | NDE | A | DRFT
+DRAFTDELETE | NDE | A | DELE
+ELASTICATTACHURL | NDE | A | http://localhost:9200/dmssearch/_search?size=10000;filter_path=hits.hits._source.path.real
+ELASTICSEARCH | NDE | A | Y
+ElasticSearch_Contains_Query | NDE | A | (value omitted)
+ELASTICURL | NDE | A | http://localhost:9200/logstashdms/_search?filter_path=hits.hits._source.docid;size=10000
+EMAIL_CONFIG_SHIP | NDE | A | Y
+EMAIL_MODULE_NAME | NDE | A | SAILS
+Enable Comments | NDE | A | N
+Enable Comments | NDE | A | N
+Enable Comments | NDE | A | N
+Enable Comments | NDE | A | N
+Enable_Comments | NDE | A | Y
+Enable_Comments | NDE | A | Y
+Enable_Comments | NDE | A | Y
+Enable_Comments | NDE | A | Y
+Enable_Comments | NDE | A | Y
+Enable_Comments | NDE | A | Y
+ENABLE_DOCUMENTMAN | NDE | A | N
+Enable_Doc_Removed_Highlight | NDE | A | Y
+Enable_Doc_Style_Highlight | NDE | A | Y
+Enable_Doc_Text_Highlight | NDE | A | Y
+Enable_Font_Family_Highlight | NDE | A | N
+ENABLE_SETVIEW | NDE | A | Y
+ENABLE_SUPCOMPANY_MODULE | NDE | A | N
+enable_top_place_chatbot | NDE | A | Y
+ExternalPublish_Tree | NDE | A | Y
+EXTERNAL_PUBLISH | NDE | A | Y
+Fav_More_count | NDE | A | 10
+File_Size_Enable | NDE | A | Y
+FILTERVALIDATION | NDE | A | Y
+Grid_Include_folder | NDE | A | Y
+HEADER_FOOTER_VALIDATAION | NDE | A | OR
+htmlFormatConfig | NDE | A | Y
+IMPORTSIZE | NDE | A | 10485760
+Landing_dateconfig | NDE | A | Y
+LANDING_TOGGLE | NDE | A | Y
+Lovoy_Config | NDE | A | [Lovoy Template],[Procedure],[Checklist],[Full Template],[Test Template]
+MAS_MOD_COMP_FIELD | NDE | A | N
+newAded | NDE | A | newAdedValus
+newAded2 | NDE | A | newAdedValus2
+newAded3 | NDE | A | newAdedValus3
+NewLogstashConf | NDE | A | Y
+NewtoolarIcons | NDE | A | Y
+newVessel | NDE | V | 
+NOTIFY_CRON_VALUE | NDE | A | 0 0 * ? * *
+NYK_NO_CR90 | NDE | A | Y
+Orderbypublisheddate | NDE | A | Y
+PageTempLabel | NDE | A | Y
+PAGEVIEWINTL | NDE | A | 300
+PDF_EDIT_ACCESS | NDE | A | Y
+PDF_REFNO_TOP | NDE | A | Y
+PDF_Version_Maintain | NDE | A | N
+PREFERRED_SHIP_CLMS_WIDTH | NDE | A | (value omitted)
+publish interval | NDE | A | INTERVAL 2  DAY
+ReasonforRevision | NDE | A | N
+RECENTDOCDAYS | NDE | A | 30
+REPUBLISH_CONFIG | NDE | A | Y
+REPUBLISH_EMP_LIST | NDE | A | SVMADMIN,HKKHA01,Yeli Feng,Danush,Indrajith,Bruce,WFIXREAD,Ritesh,Vasanth,Elkana
+RulerPadding | NDE | A | padding: 20px 98.9524px;
+RULE_ID | NDE | A | OPEN_WORKFLOW
+SEARCHRW | NDE | A | (value omitted)
+SEARCH_INFO_MSG | NDE | A | (value omitted)
+SECOND_LAYER | NDE | A | N
+SENDANDUNDERREVIEW | NDE | A | SNTR
+SENDANDUNDERREVIEW | NDE | A | RVRR
+solrsearch1 | NDE | A | Y
+solrsearch2 | NDE | A | N
+solrsearch3 | NDE | A | N
+SPEC_DOC_PRINT_RESTRICATION | NDE | A | Y
+SplitView | NDE | A | N
+Supersedes_Doctype | NDE | A | All
+Systemoutprint | NDE | A | Y
+Tmp_Del_hrs | NDE | A | 1
+Tmp_Del_Rid | NDE | A | 2
+TreeHeadNode | NDE | A | Home
+UPFILELIMIT | NDE | A | 5
+VARIABLESWTCONFIG | NDE | A | N
+VerDiffShowAllVer | NDE | A | Y
+VERIFYRANKHISTORY | NDE | A | Y
+VersionHighColor | NDE | A | background-color: #b3d9eb;color: #0082C0;
+versionHighlightButtonConfig | NDE | A | Y
+VESSELTYPEMASTER | NDE | A | D
+videoToolInsert | NDE | A | Y
+ViewAttachmentformats | NDE | A | html,pdf,doc,docx,csv,txt,xlsx,jpeg,jpg,png,mp4, webm,xls,xlsm
+ViewPageTimes | NDE | A | Valid From,Valid To,Published Date,Last Updated,Created Date
+WEB_TREE_ENABLE | NDE | A | Y
+WELEXPNAME | NDE | A | Welcome
+widgetrend | NDE | A | Y
+widgetrender | NDE | A | Y
+Watermark | PRT | A | UNCONTROLLED
+s | s | A | s
+ATCSEARCHENABLE | SATC | A | Y
+SOLRURL | SATC | A | http://70.207.7.23:8983/solr/sms/select?q=~&rows=200&omitHeader=true
+HashWithoutFormIDS | SID | A | PCM,PSH,PMA,PJA,PMT,PSH-PSH_tabview
+Newtest | Test | V | Y
+FILELIMIT | VID | A | 5
+FILEUPDLIMIT | VID | A | 5242880
+VideoManager_Company_Segregation | VID | A | N
+COMPENABLE | VRBLSWITCH | A | NYKL
+DEFAULTVALUE | VRBLSWITCH | A | 
+upfileds | YRS | A | rnk001
+Sample | YZM | A | uuuuuuuuu
+Settings listed: 230. Short values kept: 224. Long or secret-like values omitted: 6.
+
+Security groups (dmssecuritygroup) — grouped, member ids omitted
+type | status | isadmin | ismultiauthor | istileview | rights | groups_count
+U | A | N | N | N | N,N | 83
+U | v | N | N | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,N | 7
+U | v | N | N | N | A,E,H,V,T,I,M,S,Z,W,R,N | 6
+B | v | N | N | N | A,D,E,P,C,H,T,I,M,R,N | 5
+U | v | N | N | N | A,D,E,P,C,H,T,I,M,R,N | 4
+U | A | Y | Y | N | A,D,E,P,VA,C,H,V,T,I,M,VM,S,Z,W,R,L,EP,RD,G,N | 4
+U | V | N | Y | N | A,D,E,P,VA,C,H,V,T,I,M,VM,S,Z,W,R,L,EP,RD,G,N | 3
+U | v | Y | N | N | A,D,E,P,C,H,T,I,M,R,VM,VD,N | 3
+U | A | Y | Y | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,L,G,VM,VD,N | 3
+U | v | Y | N | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,VM,VD,N | 3
+U | v | Y | N | N | P,H,V,T,I,M,S,Z,W,R,VM,VD,N | 3
+U | V | N | N | N | A,D,E,P,VA,C,H,V,T,I,M,N,S,Z,W,R,L,G | 3
+U | A | Y | N | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,L,VM,VD,N | 3
+U | A | N | N | N | A,D,E,P,VA,C,H,V,T,I,M,N,VM,VD,S,Z,W,R,L,G | 3
+B | A | N | N | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,L,N | 2
+U | A | Y | Y | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,L,VM,VD,N | 2
+U | A | N | N | N | D,H,T,N | 2
+U | A | Y | Y | N | A,D,E,P,VA,C,H,V,T,I,M,N,VM,VD,S,Z,W,R,L,EP,RD,G | 2
+U | v | N | N | N | A,E,T,I,M,N | 2
+B | v | N | N | N | A,E,T,I,M,N | 2
+U | A | N | N | N | A,D,E,P,VA,C,H,V,T,I,M,S,Z,W,R,L,G,N | 2
+U | A | N | N | N | D,H,T,W,R,N | 2
+B | v | N | N | N | A,E,P,C,H,T,I,M,R,N | 2
+U | V | N | N | N | A,D,E,P,VA,C,H,I,M,N | 2
+B | A | N | N | N | L,G,N | 2
+B | A | N | N | N | D,H,T,W,R,N | 2
+U | A | N | Y | N | A,D,E,P,VA,C,H,V,T,I,M,N,S,Z,W,R,L,G | 2
+U | v | N | N | N | D,N | 2
+U | v | N | N | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,L,N | 2
+U | A | N | N | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,L,G,N | 2
+U | A | N | Y | N | A,D,E,P,VA,C,H,V,T,I,M,N,VM,VD,S,Z,W,R,L,EP,RD,G | 2
+U | v | Y | Y | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,L,G,VM,VD,N | 1
+B | v | N | N | N | A,D,E,P,C,H,T,I,M,Z,R,N | 1
+U | v | N | N | N | H,N | 1
+U | v | N | N | N | A,E,P,C,H,W,N | 1
+U | V | N | N | N | L,N | 1
+U | v | Y | N | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,L,VM,VD,N | 1
+U | A | N | Y | N | H,V,T,N | 1
+U | A | Y | Y | N | A,D,E,P,VA,C,H,V,T,I,M,N,VM,VD,S,Z,W,R,L,G | 1
+U | A | Y | Y | N | A,D,E,P,VA,C,H,V,T,I,M,S,Z,W,R,L,G,VM,VD,N | 1
+B | V | N | N | N | G,N | 1
+B | A | N | N | N | I,M,N | 1
+U | A | N | N | N | D,E,VA,H,N | 1
+U | A | N | N | N | E,VA,I,N | 1
+U | A | Y | Y | N | A,D,E,P,VA,C,H,V,T,I,M,N,S,Z,W,R,L,G,VM,VD | 1
+U | v | N | N | N | A,D,E,P,C,H,M,Z,W,R,N | 1
+U | v | N | N | N | A,E,P,C,H,V,T,I,M,S,Z,W,R,N | 1
+U | v | Y | N | N | V,T,I,M,S,Z,W,R,VM,VD,N | 1
+U | v | N | N | N | A,E,C,H,V,T,I,M,S,Z,W,R,N | 1
+U | v | N | N | N | A,E,P,C,H,M,N | 1
+U | A | N | Y | N | A,D,P,C,H,V,T,I,M,S,Z,W,R,L,N | 1
+U | A | N | N | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,L,N | 1
+U | A | N | N | N | V,S,N | 1
+U | A | N | N | N | A,D,P,V,M,N | 1
+U | A | N | Y | N | A,D,E,P,VA,C,H,V,T,S,Z,W,R,L,G,N | 1
+U | A | N | N | N | A,VID,VD,N | 1
+B | V | N | N | N | T,N | 1
+U | A | N | Y | N | P,M,L,N | 1
+U | A | N | N | N | VA,I,Z,N | 1
+U | A | N | N | N | EP,RD,N | 1
+U | A | N | N | N | A,D,E,P,VA,C,H,I,M,N | 1
+U | v | N | N | N | A,E,I,M,N | 1
+U | v | N | N | N | A,E,P,T,I,M,N | 1
+U | v | N | N | N | R,N | 1
+U | v | N | N | N | A,E,N | 1
+U | v | N | N | N | A,D,E,P,C,H,V,T,I,M,S,G,F,W,R,N | 1
+B | A | N | N | N | P,N | 1
+B | A | N | Y | N | A,D,E,P,C,H,V,T,I,M,S,Z,W,R,L,N | 1
+U | A | N | N | N | A,D,E,P,VA,C,H,V,T,I,M,N,S,Z,W,R,L,G | 1
+B | A | N | N | N | VA,S,N | 1
+U | A | N | N | N | H,T,W,R,N | 1
+U | A | N | N | N | L,G,N | 1
+U | v | Y | N | N | A,E,P,C,H,T,I,M,R,VM,VD,N | 1
+U | v | N | N | N | A,E,H,V,T,I,M,S,Z,R,N | 1
+B | v | N | N | N | A,E,H,V,T,I,M,S,Z,W,R,N | 1
+B | v | N | N | N | A,E,N | 1
+U | v | N | N | N | A,E,H,N | 1
+U | v | N | N | N | A,E,P,C,W,N | 1
+U | A | Y | Y | N | A,D,E,P,VA,C,H,V,T,I,M,S,Z,W,R,L,VM,VD,N | 1
+U | A | Y | Y | N | A,D,E,P,C,H,V,T,N | 1
+U | A | N | N | N | A,D,E,C,N | 1
+B | V | N | N | N | M,S,W,N | 1
+B | A | N | N | N | A,D,E,P,VA,C,H,V,T,M,S,W,R,L,G,N | 1
+U | A | N | N | N | T,W,R,N | 1
+U | A | Y | Y | N | A,D,E,P,VA,C,H,V,T,I,M,N,S,Z,W,R,L,G | 1
+U | A | N | Y | N | A,D,E,P,VA,C,H,V,T,I,M,VM,S,Z,W,R,L,EP,RD,G,N | 1
+U | A | N | N | N | N | 1
+
+Image Manager nodes (dmsimagemanager) — titles and type, authors omitted
+status | filetype | count
+A | F | 134
+A | D | 54
+V | F | 17
+V | D | 12
+Active-looking titles (up to 80):
+doctitle | filetype | status
+360_F_134537443_VendrqyXIWyHrZgxdIsfyKUost734JDP.jpg | F | A
+360_F_171454970_ESzMFnymIcJOHjTL8iTUHhCkMZYLQoDV.jpg | F | A
+360_F_171454970_ESzMFnymIcJOHjTL8iTUHhCkMZYLQoDV.jpg | F | A
+360_F_171454970_ESzMFnymIcJOHjTL8iTUHhCkMZYLQoDV.jpg | F | A
+360_F_171454970_ESzMFnymIcJOHjTL8iTUHhCkMZYLQoDV.jpg | F | A
+360_F_171454970_ESzMFnymIcJOHjTL8iTUHhCkMZYLQoDV.jpg | F | A
+360_F_173995335_j0eNa99Jd3PvFxUDHf9mqwxFSG4T04Ja.jpg | F | A
+360_F_173995335_j0eNa99Jd3PvFxUDHf9mqwxFSG4T04Ja.jpg | F | A
+360_F_173995335_j0eNa99Jd3PvFxUDHf9mqwxFSG4T04Ja.jpg | F | A
+360_F_201780104_hetXS26W8alnsbDKbpnr4sVizJfiO12w.jpg | F | A
+360_F_329383801_BKEydqwEWZoOEeNUDFxLOpVUhSB2JigK.jpg | F | A
+360_F_41064239_IaGdGyf1vxHFaNDS5K164OFOwiMe1hC9.jpg | F | A
+360_F_41064239_IaGdGyf1vxHFaNDS5K164OFOwiMe1hC9.jpg | F | A
+360_F_41064239_IaGdGyf1vxHFaNDS5K164OFOwiMe1hC9.jpg | F | A
+360_F_41064239_IaGdGyf1vxHFaNDS5K164OFOwiMe1hC9.jpg | F | A
+360_F_41064239_IaGdGyf1vxHFaNDS5K164OFOwiMe1hC9.jpg | F | A
+360_F_41064239_IaGdGyf1vxHFaNDS5K164OFOwiMe1hC9.jpg | F | A
+360_F_41064239_IaGdGyf1vxHFaNDS5K164OFOwiMe1hC9.jpg | F | A
+aerial-view-container-cargo-ship-sea.jpg | F | A
+aerial-view.jpg | F | A
+bg_logo.png | F | A
+bg_logo.png | F | A
+busy-shipping-port.jpg | F | A
+cke_note.jpg | F | A
+clientlogo.png | F | A
+clientlogo.png | F | A
+client_images | D | A
+Company Details | D | A
+defaultimage.png | F | A
+DMS Features | D | A
+dms features.png | F | A
+dms2 | D | A
+download (1).jpg | F | A
+download.jpg | F | A
+download.jpg | F | A
+efwefw | D | A
+elasticsearch history.png | F | A
+ELKF Stack | D | A
+ELK_stack.png | F | A
+Ets | D | A
+gratisography-augmented-reality-800x525.jpg | F | A
+image (65).png | F | A
+image (65).png | F | A
+image-20251125-050002.png | F | A
+image.png | F | A
+image.png | F | A
+image_chk | D | A
+image_chk1 | D | A
+image_chk1 | D | A
+IMG111.png | F | A
+IMG111.png | F | A
+IMG1146Picture1.png | F | A
+IMG11681VDR drill.png | F | A
+IMG1215Responsibilities.png | F | A
+IMG1219Crisis Management.png | F | A
+IMG1222Emergency Communication Drill.png | F | A
+IMG1231General obligations.png | F | A
+IMG1240Office Autority.png | F | A
+IMG1243Refer SMS Procedures.png | F | A
+IMG1250Responsibilities.png | F | A
+IMG1258Light Signal Column.png | F | A
+IMG1259Damage Survey.png | F | A
+IMG1260Successor of Command.png | F | A
+IMG174Sample - Copy.png | F | A
+IMG174Sample - Copy.png | F | A
+IMG174Sample - Copy.png | F | A
+IMG174Sample - Copy.png | F | A
+IMG179IMG750download.jpg | F | A
+IMG179IMG750download.jpg | F | A
+IMG179IMG750download.jpg | F | A
+IMG179IMG750download.jpg | F | A
+IMG179IMG750download.jpg | F | A
+IMG180IMG111.png | F | A
+IMG180IMG111.png | F | A
+IMG180IMG111.png | F | A
+IMG180IMG111.png | F | A
+IMG181IMG750download.jpg | F | A
+IMG181IMG750download.jpg | F | A
+IMG181IMG750download.jpg | F | A
+IMG181IMG750download.jpg | F | A
+
+Video Manager nodes (dmsvideomanager) — titles and type, authors omitted
+doctitle | filetype | status
+DMS KT Videos | D | A
+Elastic Search | D | A
+SampleFolder | D | A
+SampleVideo.mp4 | F | A
+SampleVideo_1.mp4 | F | A
+SampleVideo_1280x720_1mb (1).mp4 | F | A
+SampleVideo_1280x720_1mb (1).mp4 | F | A
+SampleVideo_1280x720_1mb (1).mp4 | F | A
+SampleVideo_1280x720_1mb.mp4 | F | A
+SampleVideo_1280x720_2mb.mp4 | F | A
+SampleVideo_2.mp4 | F | A
+Sample_1 | D | V
+Sample_2 | D | A
+Sample_3 | D | A
+sri | D | A
+Test video | D | A
+Test view | D | A
+test.mp4 | F | V
+Test1 | D | V
+test1.mp4 | F | A
+Test23 | D | A
+TestFolder | D | V
+tsttt | D | A
+VID394SampleVideo_1280x720_1mb (1).mp4 | F | A
+VID403SampleVideo.mp4 | F | A
+VID406VID394SampleVideo_1280x720_1mb (1).mp4 | F | A
+VID406VID394SampleVideo_1280x720_1mb (1).mp4 | F | A
+VID407SampleVideo_1280x720_2mb.mp4 | F | A
+Video Check | D | A
+Video MP4_Lake - testfile.org.mp4 | F | A
+Viji KT | D | A
+Vinothini KT | D | A
+
+Document master shape (dmsdocumentmaster) — counts only, no page content
+Total rows: 30446
+By filetypeflag
+  H : 15065
+  F : 14219
+  P : 1162
+By nodetype
+  C : 30415
+  P : 31
+By docstatus
+  PUBD : 14161
+  APRD : 10430
+  DELE : 4662
+  DRFT : 465
+  APRD - HIDE - HIDE : 309
+  PUBD - HIDE - HIDE : 302
+  CANC : 69
+  DRFT - HIDE - HIDE : 15
+  SNTA : 11
+  RVRR : 8
+  SNTR : 6
+  RVDN : 4
+  DELE - HIDE - HIDE : 2
+  V : 2
+By ispublished
+  n : 22000
+  Y : 8133
+  None : 313
+By verstatus
+  N : 22005
+  A : 8441
+By doctype
+  RF : 16562
+  SP : 7625
+  FM : 2378
+  SSP : 1848
+  BN : 486
+  CL : 466
+  SVM GUEST FOLDER : 334
+  MOC : 241
+  SSWI : 227
+  PL : 172
+  SMS : 60
+  CA : 46
+  Form : 1
+
+File manager (dmsfilemanager) — attachment source codes and counts, paths omitted
+source | status | ispublished | count
+A | A | Y | 19973
+D | A | N | 6522
+E | A | Y | 5442
+A | V | Y | 3963
+E | V | Y | 3476
+A | A | N | 2263
+A | V | N | 1800
+F | A | Y | 1567
+D | V | N | 1509
+Q | A | Y | 1475
+E | V | N | 1440
+M | A | Y | 1085
+I | A | N | 1057
+M | A | N | 821
+I | V | N | 671
+I | A | Y | 622
+F | V | N | 445
+Q | V | N | 425
+Q | A | N | 324
+E | A | N | 323
+F | A | N | 320
+M | V | N | 122
+I | V | Y | 121
+F | V | Y | 105
+Q | V | Y | 75
+M | V | Y | 62
+s | NYK | N | 11
+
+Column map the coach should use when explaining storage
+dmsdocumentmaster: one row per folder, HTML page, or file node. filetypeflag P folder, H HTML page, F file. docstatus is the workflow status. parent links to the parent docid. doccontent is the HTML body and is not in this training extract.
+dmsfilemanager: attachments for a docid. uniquefilename is the stored name. source marks where the file came from.
+dmsimagemanager and dmsvideomanager: tree of image or video assets. filetype distinguishes folder vs file. parent is the parent node docid.
+dmsdocumenttype: master list of document type codes used by workflow and pages.
+dmsdocstatus: status codes shown in the grid and workflow.
+dmsdocumentflow: which department and document type use which workflow. Author, reviewer, and approver user lists are omitted.
+dmssetting: module configuration keys. Secret and long values are omitted.
+dmsvariables / dmstemplates: company variable and template masters. The stored HTML or data payloads are omitted.
+
