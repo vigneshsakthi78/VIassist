@@ -26,6 +26,8 @@ docstatus DELE or CANC, verstatus A, publishdate BETWEEN '2025-07-25 00:00:00' A
 Rows: 292 (DELE 291, CANC 1).
 Document ids are batched in 46-dexter-deleted-cancelled-docids.txt.
 Metadata and page HTML are in 47-dexter-deleted-cancelled-documents.txt.
+Day-by-day records, with content text and attachment names, are in 48-dexter-day-by-day.txt.
+A docid search summarizes that content and lists attachments from the same extract.
 
 Excluded on purpose
 dmseventlog rows for pageid DMSDOC21657 action Page Deleted were not loaded.

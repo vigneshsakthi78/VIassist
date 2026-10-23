@@ -129,6 +129,15 @@
   opacity: 0.65;
 }
 
+.response-time {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
 .copy-btn {
   display: inline-flex;
   align-items: center;
@@ -246,6 +255,11 @@
   background: #fff;
 }
 
+.shot.user-shot img {
+  width: auto;
+  max-height: 220px;
+}
+
 .shot figcaption {
   margin-top: 0.35rem;
   font-size: 0.78rem;
@@ -262,13 +276,70 @@
   font-size: 0.95rem;
 }
 
-.composer {
+.composer-wrap {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 0.75rem;
-  align-items: end;
+  gap: 0.65rem;
   padding-top: 0.75rem;
   border-top: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+}
+
+.attach-preview {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.attach-preview img {
+  width: 4.5rem;
+  height: 3.2rem;
+  object-fit: cover;
+  border-radius: 0.45rem;
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  background: #fff;
+}
+
+.remove-attach {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.2rem 0;
+}
+
+.remove-attach:hover:not(:disabled) {
+  color: var(--ink);
+}
+
+.composer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.attach-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.85rem;
+  height: 2.85rem;
+  border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+  border-radius: 0.85rem;
+  background: color-mix(in srgb, var(--panel) 70%, white);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.attach-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.attach-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
 textarea {
@@ -291,7 +362,7 @@ textarea:focus {
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
 }
 
-.composer > button {
+.send-btn {
   border: 0;
   border-radius: 999px;
   padding: 0.85rem 1.35rem;
@@ -304,12 +375,12 @@ textarea:focus {
   transition: transform 0.15s ease, background 0.2s ease, opacity 0.2s ease;
 }
 
-.composer > button:hover:not(:disabled) {
+.send-btn:hover:not(:disabled) {
   transform: translateY(-1px);
   background: color-mix(in srgb, var(--accent) 85%, var(--ink));
 }
 
-.composer > button:disabled {
+.send-btn:disabled {
   opacity: 0.45;
   cursor: not-allowed;
 }
@@ -372,10 +443,11 @@ textarea:focus {
   }
 
   .composer {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr;
   }
 
-  .composer > button {
+  .send-btn {
+    grid-column: 1 / -1;
     width: 100%;
   }
 }

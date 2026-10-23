@@ -1,0 +1,2334 @@
+Day-by-day DMS documents for docid search.
+publishdate BETWEEN '2025-07-25 00:00:00' AND '2026-08-28 00:00:00', verstatus A, docstatus DELE or CANC.
+Grouped by publish date. A docid search summarizes Content and lists Attachments.
+This file is not built from dmseventlog.
+
+Day 2025-09-10 (2 documents)
+DMSDOC20729 | PDF-1 | 123 | v2.0 | DELE
+Document file: DOCM4926RF-5477.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC20730 | PDF-2 | 123 | v2.0 | DELE
+Document file: DOCM6191Seaspan Hull Surface Management Plan RF-2656 V2 2025.08.25.pdf
+Content: (no page content)
+Attachments: (none)
+
+Day 2025-10-16 (4 documents)
+DMSDOC19812 | SEASPAN OSPREY - SSP REVISION HISTORY | RF-2457 | v2.0 | DELE
+Document file: DCHL7596Seaspan Osprey - Revision History.pdf
+Content: (no page content)
+Attachments:
+- L-113000-05FRM Observers Feedback Form.docx | status A | size 0.0 | source A
+- L-113000-04FRM Task Assignement List.xlsx | status A | size 0.0 | source A
+- L-113000-03FRM Exercise Follow Up.xlsx | status A | size 0.0 | source A
+- L-113000-02FRM Exercise Evaluation Record.docx | status A | size 0.0 | source A
+- L-113000-01FRM Exercise Schedule.xlsx | status A | size 0.0 | source A
+- L-113000-04FRM Task Assignement List.xlsx | status A | size 27.621 | source E
+- L-111000-04FRM PEAR Management Tool.xlsm | status A | size 39.892 | source E
+- L-111000-02FRM IMC Communication Log.xlsx | status A | size 25.356 | source E
+- L-113000-02FRM Exercise Evaluation Record.docx | status A | size 70.518 | source E
+- L-113000-05FRM Observers Feedback Form.docx | status A | size 51.364 | source E
+- L-113000-03FRM Exercise Follow Up.xlsx | status A | size 18.152 | source E
+- L-111000-01FIG IMC.xlsx | status A | size 33.298 | source E
+- L-113000-01FRM Exercise Schedule.xlsx | status A | size 25.555 | source E
+
+DMSDOC19818 | SEASPAN OSPREY - SHIP SECURITY ASSESSMENT | SSP-0006 | v3.0 | DELE
+Document file: DCHL7602Seaspan Osprey - Ship Security Assessment - Rotated.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC19811 | SEASPAN OSPREY - SSP REVIEW LETTER | RF-1785 | v2.0 | DELE
+Document file: DCHL7595Seaspan Osprey - Review Letter.pdf
+Content: (no page content)
+Attachments:
+- L-111000-05FRM Risk Assessment Template.xlsx | status A | size 0.0 | source A
+- L-111000-04FRM PEAR Management Tool.xlsm | status A | size 0.0 | source A
+- L-111000-03FRM IMC Test Checklist.xlsx | status A | size 0.0 | source A
+- L-113000-02FRM Exercise Evaluation Record.docx | status A | size 0.0 | source A
+- L-111000-02FIG Media Response Handling Guide.docx | status A | size 0.0 | source A
+- L-111000-01FRM IMC Member Matrix.xlsx | status A | size 0.0 | source A
+- L-111000-01FIG IMC.xlsx | status A | size 0.0 | source A
+- L-111000-01FRM IMC Member Matrix.xlsx | status A | size 26.285 | source E
+- L-111000-01FIG IMC.xlsx | status A | size 33.298 | source E
+- L-111000-02FRM IMC Communication Log.xlsx | status A | size 25.356 | source E
+- L-111000-03FRM IMC Test Checklist.xlsx | status A | size 21.582 | source E
+- L-111000-04FRM PEAR Management Tool.xlsm | status A | size 39.892 | source E
+- L-111000-02FIG Media Response Handling Guide.docx | status A | size 83.428 | source E
+- Z-111001-01FIG Emergency Communication System Diagram.xls | status A | size 101.0 | source E
+
+DMSDOC19814 | SEASPAN OSPREY - SHIP SECURITY ASSESSMENT LETTER | RF-1781 | v3.0 | DELE
+Document file: DCHL7598Seaspan Osprey - Ship Security Assessment Letter.pdf
+Content: (no page content)
+Attachments: (none)
+
+Day 2025-10-22 (1 documents)
+DMSDOC18326 | OPEN LOOP SCRUBBER DISCHARGE PROHIBITION LIST | RF-0471 | v2.0 | DELE
+Document file: DCHL6636OPEN LOOP SCRUBBER DISCHARGE PROHIBITION LIST.pdf
+Content: (no page content)
+Attachments: (none)
+
+Day 2025-10-28 (1 documents)
+DMSDOC9462 | MARINE STANDARDS REPORTS (WEEKLY/MONTHLY/QUARTERLY/ANNUALLY) | RF-4300 | v2.0 | DELE
+Document file: (none)
+Content: Marine Standards R eports (not including Adhoc Reports) 
+
+ Weekly Reports – I ncludes Data and Graphs 
+
+ 
+
+ 
+ Tuesdays – Forecasted LTIF and PSC 
+ LTIF 
+ Weekly # of Injuries (excluding LTI’s 2020 vs. 2021) 
+ PSC (Nil vs. With) 
+ Incident (Operational / Personnel ) 
+ Significant Incident Closure 
+ Blackouts 
+ Overdue CARs 
+ Audits Completed 
+ PSC Inspections 
+ External Navigation Audits 
+ Planned Audits 
+ Plans and Permits ( Monday, Wednesday & Friday ) 
+ Docmap Synchs ( Monday, Wednesday & Friday ) 
+ 
+
+ 
+
+ Monthly Reports – Includes Data and Graphs 
+
+ 
+
+ 
+ First week of every month in the Weekly Management Report 
+
+ 
+ TRC 
+
+ 
+ Share Master List with FPD (Manoj G and Rhys) 
+ 
+ 
+ 
+ 
+ RF-3173...
+Attachments:
+- FLT_SPC-2020_005 Attachment 1 Hyundai EL motor manual Grease quantity and interval.pdf | status A | size 0.1475 | source A
+- FLT_SPC-2020_005 Attachment 2 Earth Brush SPRING TENSION.pdf | status A | size 0.1221 | source A
+
+Day 2025-10-29 (2 documents)
+DMSDOC14034 | NKK PSC DETENTION INFORMATION | RF-3838 | v1.0 | DELE
+Document file: DCHL3869RF-3838.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17996 | AMSA NOTICE REGARDING USE OF REMOTE SURVEYS FOR PSC DETENTIONS | RF-6925 | v1.0 | DELE
+Document file: DCHL6449AMSA NOTICE REGARDING USE OF REMOTE SURVEYS FOR PSC DETENTIONS.pdf
+Content: (no page content)
+Attachments: (none)
+
+Day 2025-10-30 (2 documents)
+DMSDOC9234 | Circulars | CI-041 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- Sample of Depot Spare Parts Management Sheet.xlsx | status A | size 112.88 | source A
+
+DMSDOC8430 | HKMD Notices/Circulars | HK-177 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- SN128.pdf | status A | size 0.0713 | source A
+
+Day 2025-11-20 (101 documents)
+DMSDOC17234 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO PRIDE | RF- 1359 | v2.0 | DELE
+Document file: DCHL5837Chapter 10 - COSCO PRIDE.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17235 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO PRINCE RUPERT | RF-1051 | v2.0 | DELE
+Document file: DCHL5838Chapter 10 - COSCO PRINCE RUPERT.pdf
+Content: (no page content)
+Attachments:
+- Appendix 1.zip | status A | size 416.85 | source A
+- Reference1.zip | status A | size 4680.5 | source A
+- Reference2.zip | status A | size 1121.9 | source A
+- Reference3.zip | status A | size 3397.1 | source A
+- Gazocean - STS Plan - LNG.docx | status A | size 4078.4 | source A
+
+DMSDOC17239 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO VIETNAM | RF-1053 | v2.0 | DELE
+Document file: DCHL5842Chapter 10 - COSCO VIETNAM.pdf
+Content: (no page content)
+Attachments:
+- DG Air Cooler Drain Arrangement.xlsx | status A | size 301.16 | source A
+- Screenshot 2025-03-20 222002.jpeg | status A | size 224.06 | source Q
+- Screenshot 2025-03-20 222339.jpeg | status A | size 86.921 | source Q
+
+DMSDOC17213 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO DEVELOPMENT | RF-0161 | v2.0 | DELE
+Document file: DCHL5819Chapter 10 - COSCO DEVELOPMENT.PDF
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC20043 | NTVRP-O BRIEN - ZIM PEARL - APPENDIX B | RF-6972 | v1.0 | DELE
+Document file: DCHL7622NTVRP Appendix B - ZIM Pearl.PDF
+Content: (no page content)
+Attachments:
+- sl-0075-new-spare-parts-coding-system.pdf | status A | size 0.0 | source A
+
+DMSDOC19006 | NTVRP-O BRIEN - ONE REPUTATION - APPENDIX B | RF-6959 | v2.0 | DELE
+Document file: DCHL7085PLAN3429_3429_130312_361328_0_Sec_21833.PDF
+Content: (no page content)
+Attachments:
+- HSEQ-SEC-053-20.pdf | status A | size 0.0811 | source A
+- SECURITY INFORMATION 2020 010.pdf | status A | size 0.0947 | source A
+
+DMSDOC19004 | NTVRP-O BRIEN - ONE RECOMMENDATION - APPENDIX B | RF-6957 | v1.0 | DELE
+Document file: DCHL7083PLAN3429_3429_130312_361328_0_Sec_21833.PDF
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC19002 | NTVRP-O BRIEN - ZIM SAPPHIRE - APPENDIX B | RF-6955 | v1.0 | DELE
+Document file: DCHL7081PLAN3429_3429_130312_361328_0_Sec_21833.PDF
+Content: (no page content)
+Attachments:
+- Hachiuma Air Vent Pipe Conditoin Pipe and Draft Gauge Condition Report.xlsx | status A | size 0.1357 | source A
+- NBP M-064 Cargo Damage due to ingress of Ballast Water into Cargo Hold.pdf | status A | size 0.1348 | source A
+- NBP M-081 Cargo wet damage due to insufficient sealing of cable.pdf | status A | size 0.1279 | source A
+- NBP Hold Inspection Report.pdf | status A | size 0.0918 | source A
+- GC TEC-012-19 .pdf | status A | size 0.0801 | source A
+- 2.doc.001.png | status A | size 0.0605 | source M
+- 2.doc.001.png | status A | size 0.0605 | source M
+- 2.doc.001.png | status A | size 0.0605 | source M
+- 2.doc.001.png | status A | size 0.0605 | source M
+
+DMSDOC19000 | NTVRP-O BRIEN - ONE FOREVER - APPENDIX B | RF-6953 | v1.0 | DELE
+Document file: DCHL7079PLAN3429_3429_130312_361328_0_Sec_21833.PDF
+Content: (no page content)
+Attachments:
+- Temporary Repair Work by Crew.xlsx | status A | size 0.0957 | source A
+- Divers Repair Work Report at Kashima.xlsx | status A | size 0.1025 | source A
+- Newly Installed Soundng Pipe for CDT.xlsx | status A | size 0.1025 | source A
+- NK Survey Report.pdf | status A | size 0.082 | source A
+- GC TEC-010-19 .pdf | status A | size 0.0801 | source A
+- 2.doc.001.png | status A | size 0.0605 | source M
+- 2.doc.001.png | status A | size 0.0605 | source M
+- 2.doc.001.png | status A | size 0.0605 | source M
+- 2.doc.001.png | status A | size 0.0605 | source M
+- 2.doc.001.png | status A | size 0.0605 | source M
+
+DMSDOC18996 | NTVRP-O BRIEN - ZIM MOUNT VINSON - APPENDIX B | RF-6951 | v1.0 | DELE
+Document file: DCHL7075PLAN3429_3429_130312_361328_0_Sec_21833.PDF
+Content: (no page content)
+Attachments:
+- DAMAGE PHOTOS.pdf | status A | size 0.0791 | source A
+- HSEQ-INCIDENT ALERT-021-19.pdf | status A | size 0.0918 | source A
+
+DMSDOC18510 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS-SEASPAN BRILLIANCE | RF-6938 | v1.0 | DELE
+Document file: DCHL6747Chapter 10 - SEASPAN BRILLIANCE.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17970 | NTVRP-O BRIEN - ZIM EMERALD - APPENDIX B | RF-6909 | v1.0 | DELE
+Document file: DCHL6431Sec 16__Appendix B-ZIM Emerald.PDF
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17926 | NTVRP-O BRIEN - ZIM MOUNT FUJI - APPENDIX B | RF-6885 | v1.0 | DELE
+Document file: DCHL6408Sec 16__Appendix B-ZIM Mount Fuji.PDF
+Content: (no page content)
+Attachments:
+- DCHL146730_SOIL 030-2022_Request for Anti-Facilitation Payment Measures on Ships.pdf | status A | size 0.0684 | source F
+
+DMSDOC17924 | NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS – ZIM MOUNT RAINIER | RF-6883 | v1.0 | DELE
+Document file: DCHL6406NTVRP-AII-ZIM Mount Rainier.pdf
+Content: (no page content)
+Attachments:
+- DCHL146528_SOIL 028-2022_NiBiKi System concerns.pdf | status A | size 0.0684 | source F
+
+DMSDOC17583 | NTVRP-O BRIEN – MAERSK CLEVELAND - APPENDIX B | RF-6648 | v1.0 | DELE
+Document file: DCHL6148Sec 16__Appendix B-Maersk Cleveland_compressed.pdf
+Content: (no page content)
+Attachments:
+- protected_SEASCOPE2025May_1.pdf | status A | size 1468.9 | source F
+
+DMSDOC17518 | NTVRP-O BRIEN - YM WELLNESS - APPENDIX B | RF-6608 | v1.0 | DELE
+Document file: DCHL6100Sec 0__Appendix B-YM Wellness.PDF
+Content: (no page content)
+Attachments:
+- H12 Honesty leaflet(Environmental regulations).pdf | status A | size 0.0 | source A
+- M-105 Oil Spills for the NBP fleets to avoid (Revison.1) .pdf | status A | size 0.0 | source A
+- Questionnaire sheet for Honesty-Smart Sounding Scale.xlsx | status A | size 0.0 | source A
+
+DMSDOC17098 | NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - MAERSK CHARLESTON | RF-6354 | v2.0 | DELE
+Document file: DCHL5746RF-6354 - NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - MAERSK CHARLESTON.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17096 | NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - ZIM MOUNT BLANC | RF-6352 | v2.0 | DELE
+Document file: DCHL5744RF-6352 - NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - ZIM MOUNT BLANC.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17094 | NTVRP-O BRIEN - ONE CONTINUITY - APPENDIX B | RF-6350 | v2.0 | DELE
+Document file: DCHL5742RF-6350 - NTVRP-O BRIEN - ONE CONTINUITY - APPENDIX B.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC16905 | NTVRP-O BRIEN - VUNG TAU EXPRESS - APPENDIX B | RF-6267 | v4.0 | DELE
+Document file: DOCM6036Sec 16__Appendix B-Vung Tau Express.PDF
+Content: (no page content)
+Attachments:
+- Fitter Injury to Right Hand Ring Finger.pdf | status A | size 441.33 | source A
+
+DMSDOC16850 | NTVRP-O BRIEN – YM WELCOME - APPENDIX B | RF-6246 | v2.0 | DELE
+Document file: DCHL5591NTVRP O BRIEN  YM WELCOME APPENDIX B.pdf
+Content: (no page content)
+Attachments:
+- Report -Inspection and Maintenance of......xlsx | status A | size 12.846 | source A
+- Plan - Inspection and Maintenance of.......xlsx | status A | size 19.808 | source A
+- Guidelines for Inspection and Maintainance - Waterweathertight doors hatches Air Vent Head others.pdf | status A | size 12.399 | source A
+- Guidelines for Inspection and Maintainance - Ventilation and Dampers.pdf | status A | size 243.50 | source A
+
+DMSDOC12860 | NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - ZIM CANADA | RF-5771 | v1.0 | DELE
+Document file: DCHL3563RF-5771.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12853 | NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - ONE FREEDOM | RF-5737 | v1.0 | DELE
+Document file: DCHL3560RF-5737.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12224 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - ONE MAGDALENA | RF-5421 | v2.0 | DELE
+Document file: DOCM6107NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - ONE MAGDALENA.pdf
+Content: (no page content)
+Attachments:
+- TD04-00048 MITSUBISHI HEAVY INDUSTRIES LTD Turbocharger Service Bulletin.pdf | status A | size 367.62 | source A
+
+DMSDOC12236 | NTVRP-O BRIEN - CMA CGM MEXICO - APPENDIX B | RF-4527 | v1.0 | DELE
+Document file: DCHL3166RF-4527.pdf
+Content: (no page content)
+Attachments:
+- TD03-00141-01 Updating of Engine Lube Oil Brand List.pdf | status A | size 35.480 | source A
+
+DMSDOC12791 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - MAERSK GUAYAQUIL | RF-4506 | v1.0 | DELE
+Document file: DCHL3536RF-4506.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC15994 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - ZIM SHENZHEN | RF-4467 | v2.0 | DELE
+Document file: DCHL5067RF-4467 - NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - ZIM SHENZHEN - V4.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12868 | NTVRP-O BRIEN - CMA CGM CHILE - APPENDIX B | RF-4462 | v1.0 | DELE
+Document file: DCHL3567RF-4462.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12228 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN CALICANTO | RF-3646 | v1.0 | DELE
+Document file: DCHL3158RF-3646.pdf
+Content: (no page content)
+Attachments:
+- TD04-00040 Inspection and Adjustment of Governor Link.pdf | status A | size 49.310 | source A
+
+DMSDOC12891 | NTVRP-O BRIEN - YM WITNESS - APPENDIX B | RF-3458 | v1.0 | DELE
+Document file: DCHL3578RF-3458.pdf
+Content: (no page content)
+Attachments:
+- HSEQ-INCIDENT ALERT-009-21.pdf | status A | size 103.31 | source A
+
+DMSDOC12889 | NTVRP-O BRIEN - YM WIDTH - APPENDIX B | RF-3446 | v1.0 | DELE
+Document file: DCHL3577RF-3446.pdf
+Content: (no page content)
+Attachments:
+- HSEQ-INCIDENT ALERT-002-22.pdf | status A | size 139.48 | source A
+
+DMSDOC12881 | NTVRP-O BRIEN - SEASPAN OSPREY - APPENDIX B | RF-3424 | v1.0 | DELE
+Document file: DCHL3573RF-3424.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12227 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN ADONIS | RF-3421 | v1.0 | DELE
+Document file: DCHL3157RF-3421.pdf
+Content: (no page content)
+Attachments:
+- TD04-00022-01 Change of Needle Valve (Speed Metering Valve) for Rack Limit Air Piston Timer.pdf | status A | size 31.727 | source A
+
+DMSDOC12230 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - YM WARMTH | RF-3004 | v1.0 | DELE
+Document file: DCHL3160RF-3004.pdf
+Content: (no page content)
+Attachments:
+- TD04-00035 Correction on Periodic Inspection Timing of the NZ Governor.pdf | status A | size 21.305 | source A
+
+DMSDOC12232 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - YM WIND | RF-2839 | v1.0 | DELE
+Document file: DCHL3162RF-2839.pdf
+Content: (no page content)
+Attachments:
+- TD04-00020 Change of Alternator Drive V-Belt.pdf | status A | size 33.916 | source A
+
+DMSDOC15974 | NTVRP-ECM- CHAPTER 10 - VESSEL PARTICULARS YM WONDROUS | RF-2647 | v2.0 | DELE
+Document file: DCHL5051RF-2647 - NTVRP-ECM- CHAPTER 10 - VESSEL PARTICULARS - YM WONDROUS - V8.pdf
+Content: (no page content)
+Attachments:
+- WI MHR 001-24 Crew data flow_PMT_v2.xlsx | status A | size 2249.0 | source A
+
+DMSDOC17200 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - CMA CGM CHENNAI | RF-2543 | v3.0 | DELE
+Document file: DCHL5808Chapter 10 - CMA CGM CHENNAI.pdf
+Content: (no page content)
+Attachments:
+- Monthly Maritime Incident Report - February 2025.pdf | status A | size 1585.0 | source A
+
+DMSDOC15970 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS COSCO HOPE | RF-2509 | v3.0 | DELE
+Document file: DCHL5048RF-2509 - NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO HOPE - V9.pdf
+Content: (no page content)
+Attachments:
+- Q1- 2024 - NYKSM KPI Analysis.pdf | status A | size 1045.6 | source A
+
+DMSDOC12805 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASAN BEAUTY | RF-1862 | v1.0 | DELE
+Document file: DCHL3538RF-1862.pdf
+Content: (no page content)
+Attachments:
+- FLT_GEN-2023_002 Attachment 1 Application Form (Form No. 1-4) - English Sample.pdf | status A | size 1660.0 | source A
+- FLT_GEN-2023_002 Attachment 2 Application Form (Form No. 1-4) - Japanese Sample.pdf | status A | size 158.84 | source A
+- FLT_GEN-2023_002 Attachment 3 Notice Letter (Form No. 5-6) - Sample.pdf | status A | size 191.06 | source A
+- FLT_GEN-2023_002 Attachment 4 Operational Measures Concerning EEXI Regulation to Ensure Stable Energy Supply in Japan - Reference.pdf | status A | size 1330.5 | source A
+
+DMSDOC17450 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN BEACON | RF-1859 | v1.0 | DELE
+Document file: DCHL6039Chapter 10 - SEASPAN BEACON.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12818 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN BRAVO | RF-1456 | v1.0 | DELE
+Document file: DCHL3544RF-1456.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12811 | NTVRP-ECM-Chapter 10 - VESSEL PARTICULARS - SEASPAN BELIEF | RF-1362 | v1.0 | DELE
+Document file: DCHL3541RF-1362.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12815 | NTVRP-ECM-Chapter 10 - VESSEL PARTICULARS - SEASPAN BEYOND | RF-1360 | v1.0 | DELE
+Document file: DCHL3543RF-1360.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC19245 | NTVRP-O BRIEN – YM WELLHEAD - APPENDIX B | RF-1133 | v1.0 | DELE
+Document file: DCHL7269NTVRP Plan.PDF
+Content: (no page content)
+Attachments:
+- Protected_SEASCOPE2025June.pdf | status A | size 9021.4 | source F
+
+DMSDOC15964 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS SEASPAN FELIXSTOWE | RF-1058 | v2.0 | DELE
+Document file: DCHL5043RF-1058 - NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN FELIXSTOWE - V6.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC15963 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS SUNNY PHOENIX | RF-1057 | v2.0 | DELE
+Document file: DCHL5042RF-1057 - NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS SUNNY PHOENIX - V7.pdf
+Content: (no page content)
+Attachments:
+- 20240722-aspides-maritime-security-threat.pdf | status A | size 776.09 | source A
+- ReCAAP ISC Half Yearly 2024 Report.pdf | status A | size 4521.5 | source A
+- ReCAAP ISC Weekly Report (9-16 Jul 2024).pdf | status A | size 620.85 | source A
+- UNCLASSIFIED_20240719_MDAT-GoG Weekly Report_29-24.pdf | status A | size 909.87 | source A
+- UNCLASSIFIED_Q2-2024.pdf | status A | size 1451.4 | source A
+
+DMSDOC12229 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN OCEANIA | RF-1055 | v1.0 | DELE
+Document file: DCHL3159RF-1055.pdf
+Content: (no page content)
+Attachments:
+- TD04-00036 Correction to Prevent Erroneous Part Order for Plunger Assembly.pdf | status A | size 942.57 | source A
+
+DMSDOC17237 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO THAILAND | RF-1052 | v2.0 | DELE
+Document file: DCHL5840Chapter 10 - COSCO THAILAND.pdf
+Content: (no page content)
+Attachments:
+- Nakilat Experience Share-07-2025- (QFlex)-Uncontrolled Venting Incidents.pdf | status A | size 859.44 | source A
+
+DMSDOC17232 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO MALAYSIA | RF-1049 | v2.0 | DELE
+Document file: DCHL5835Chapter 10 - COSCO Malaysia.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12240 | NTVRP-O BRIEN - SEASPAN EMERALD - APPENDIX B | RF-4524 | v1.0 | DELE
+Document file: DCHL3170RF-4524.pdf
+Content: (no page content)
+Attachments:
+- TD03-00057 Interchangeability of Con. Rod Bolt.pdf | status A | size 22.089 | source A
+
+DMSDOC12849 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - ZIM CHARLESTON | RF-4466 | v1.0 | DELE
+Document file: DCHL3559RF-4466.pdf
+Content: (no page content)
+Attachments:
+- HSEQ-INCIDENT ALERT-002-23.pdf | status V | size 92.691 | source A
+- DR HSEQ-INCIDENT ALERT-002-23.doc | status V | size 188.5 | source A
+- INTERNATIONAL BALLAST WATER MANAGEMENT CERTIFICATE.pdf | status V | size 278.91 | source A
+- PI2_Ballast Water Record.zip | status V | size 2985.8 | source A
+- Questionnaire20230120.docx | status V | size 21.0 | source A
+
+DMSDOC12231 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - YM WHOLESOME | RF-3645 | v1.0 | DELE
+Document file: DCHL3161RF-3645.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-020.1.png | status A | size 0.0 | source I
+- WI-JOB-020.png | status A | size 0.0 | source I
+
+DMSDOC12887 | NTVRP-O BRIEN - SEASPAN RAPTOR - APPENDIX B | RF-3423 | v1.0 | DELE
+Document file: DCHL3575RF-3423.pdf
+Content: (no page content)
+Attachments:
+- HSEQ-INCIDENT ALERT-004-22.pdf | status A | size 124.51 | source A
+
+DMSDOC12872 | NTVRP-O BRIEN - SEASPAN FALCON - APPENDIX B | RF-3445 | v1.0 | DELE
+Document file: DCHL3569RF-3445.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17203 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - CMA CGM COCHIN | RF-2619 | v2.0 | DELE
+Document file: DCHL5811Chapter 10 - CMA CGM COCHIN.pdf
+Content: (no page content)
+Attachments:
+- HEALTH BULLETIN - MAR2025.pdf | status A | size 325.05 | source F
+
+DMSDOC12819 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN BREEZE | RF-1860 | v1.0 | DELE
+Document file: DCHL3545RF-1860.pdf
+Content: (no page content)
+Attachments:
+- Screenshot 2023-04-08 130128.jpg | status A | size 89.212 | source Q
+- ECDIS screenshots_allision.pdf | status A | size 1180.7 | source A
+- Turncated report_Alision with buoy.pdf | status A | size 2193.4 | source A
+
+DMSDOC12813 | NTVRP-ECM-Chapter 10 - VESSEL PARTICULARS - SEASPAN BELLWETHER | RF-1363 | v1.0 | DELE
+Document file: DCHL3542RF-1363.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17214 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO FAITH | RF-1283 | v2.0 | DELE
+Document file: DCHL5820Chapter 10 - COSCO FAITH.pdf
+Content: (no page content)
+Attachments:
+- LPG-019WI Procedures for use of Anti-freeze with Inhibited Cargoes (Sample).docx | status A | size 205.65 | source E
+
+DMSDOC12772 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - CMA CGM CHIWAN | RF-1056 | v1.0 | DELE
+Document file: DCHL3527RF-1056.pdf
+Content: (no page content)
+Attachments:
+- HSEQ_BLT-2023_013 Attachment 1 Monthly Surveillance (April 2023).xlsx | status A | size 520.71 | source A
+
+DMSDOC19003 | NTVRP-O BRIEN - ZIM TOPAZ - APPENDIX B | RF-6956 | v1.0 | DELE
+Document file: DCHL7082PLAN3429_3429_130312_361328_0_Sec_21833.PDF
+Content: (no page content)
+Attachments:
+- GC GEN-004-19.pdf | status A | size 0.0791 | source A
+- 2.doc.001.png | status A | size 0.0605 | source M
+
+DMSDOC18009 | NTVRP-O BRIEN - ZIM OPAL - APPENDIX B | RF-6931 | v1.0 | DELE
+Document file: DCHL6461Sec 4__Appendix B-ZIM Opal.PDF
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17580 | NTVRP-O BRIEN – SEASPAN LOGA - APPENDIX B | RF-6647 | v1.0 | DELE
+Document file: DCHL6147Sec 16__Appendix B-Seaspan Loga_compressed.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17093 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - ONE COSMOS | RF-6349 | v2.0 | DELE
+Document file: DCHL5741RF-6349 - NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - ONE COSMOS.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12858 | NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - ONE ORINOCO | RF-5506 | v1.0 | DELE
+Document file: DCHL3562RF-5506.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17814 | NTVRP-O BRIEN’S - YM WREATH - APPENDIX B | RF-3457 | v1.0 | DELE
+Document file: DCHL6333NTVRP Appendix B.pdf
+Content: (no page content)
+Attachments:
+- DCHL57311_SOIL 011-2021_DOC 4th annual audit(Panama).pdf | status A | size 0.0684 | source F
+
+DMSDOC12821 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN BRIGHTNESS | RF-1858 | v1.0 | DELE
+Document file: DCHL3546RF-1858.pdf
+Content: (no page content)
+Attachments:
+- 1. DONJON-SMIT Vessel RAC Checklist (9913781)(HACHINOHE MARU).pdf | status V | size 692.66 | source A
+- 2. DONJON-SMIT Vessel RAC Checklist (9174282)(DELPHINUS LEADER).pdf | status V | size 256.58 | source A
+- 3. Hachiuma Steamship SMFF Certification-ECM.pdf | status V | size 73.881 | source A
+- 4. Hachiuma Steamship SMFF Certification - GMS.pdf | status V | size 124.45 | source A
+- 5. RAC Cert_Hachiuma Steamship Co. Ltd..pdf | status V | size 173.24 | source A
+- HSEQ-ALL-001-22.pdf | status V | size 51.255 | source A
+
+DMSDOC17233 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO PHILIPPINES | RF-1050 | v2.0 | DELE
+Document file: DCHL5836Chapter 10 - COSCO Philippines.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17211 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - CMA CGM TUTICORIN | RF-0383 | v2.0 | DELE
+Document file: DCHL5818Chapter 10 - CMA CGM TUTICORIN.PDF
+Content: (no page content)
+Attachments:
+- Digital logbook Userguide.pdf | status A | size 4104.9 | source A
+- LMS portal Brochure.pdf | status A | size 578.83 | source A
+- Digital Logbooks NYK Presentation.pdf | status A | size 2111.6 | source A
+- Risk Assessment Office - Digital logbook.xls | status A | size 37.5 | source A
+- Management of Change Office - Digital logbook.xls | status A | size 37.0 | source A
+- MEPC.383(81).pdf | status A | size 266.00 | source A
+- MEPC.372(80).pdf | status A | size 1440.4 | source A
+- Sample Declaration of BWRB.pdf | status A | size 268.18 | source A
+
+DMSDOC12808 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN AMAZON | RF-0271 | v1.0 | DELE
+Document file: DCHL3539RF-271.pdf
+Content: (no page content)
+Attachments:
+- L-P-11.30.00.2.png | status V | size 0.0 | source I
+- L-P-11.30.00.1.png | status V | size 0.0 | source I
+- L-P-11.30.00.3.png | status V | size 0.0 | source I
+- L-P-11.30.00.5.png | status V | size 0.0 | source I
+- L-P-11.30.00.4.png | status V | size 0.0 | source I
+
+DMSDOC12244 | NTVRP-O BRIEN - SEASPAN RIO DE JANEIRO - APPENDIX B | RF-0230 | v1.0 | DELE
+Document file: DCHL3174RF-230.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-007.1.png | status A | size 0.0 | source I
+- WI-JOB-007.png | status A | size 0.0 | source I
+
+DMSDOC12264 | NTVRP-O BRIEN-SEASPAN EXCELLENCE - APPENDIX B | RF-0226 | v1.0 | DELE
+Document file: DCHL3194RF-226.pdf
+Content: (no page content)
+Attachments:
+- HSEQ_BLT-2022_033 Attachment 1 Monthly Surveillance (November 2022).xlsx | status A | size 729.76 | source A
+
+DMSDOC12262 | NTVRP-O BRIEN-SEASPAN EFFICIENCY - APPENDIX B | RF-0222 | v1.0 | DELE
+Document file: DCHL3192RF-222.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12267 | NTVRP-O BRIEN-SEASPAN GANGES - APPENDIX B | RF-0217 | v1.0 | DELE
+Document file: DCHL3197RF-217.pdf
+Content: (no page content)
+Attachments:
+- Sep Monthly surveillance.xls | status A | size 579.0 | source A
+
+DMSDOC12255 | NTVRP-O BRIEN-CSCL SYDNEY - APPENDIX B | RF-0213 | v1.0 | DELE
+Document file: DCHL3185RF-213.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-022.1.png | status A | size 0.0 | source I
+- WI-JOB-022.png | status A | size 0.0 | source I
+
+DMSDOC12254 | NTVRP-O BRIEN-SEASPAN MONTEVIDEO - APPENDIX B | RF-0207 | v2.0 | DELE
+Document file: DOCM5971NTVRP-O BRIEN-CSCL MONTEVIDEO - APPENDIX B.PDF
+Content: (no page content)
+Attachments:
+- WI-JOB-021.1.png | status A | size 0.0 | source I
+- WI-JOB-021.png | status A | size 0.0 | source I
+
+DMSDOC12251 | NTVRP-O BRIEN-CSCL BRISBANE - APPENDIX B | RF-0202 | v1.0 | DELE
+Document file: DCHL3181RF-202.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-017.1.png | status V | size 0.0 | source I
+- WI-JOB-017.png | status V | size 0.0 | source I
+
+DMSDOC12250 | NTVRP-O BRIEN-SEASPAN YINGKOU - APPENDIX B | RF-0196 | v2.0 | DELE
+Document file: DCHL3180RF-196.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-016.1.png | status A | size 0.0 | source I
+- WI-JOB-016.png | status A | size 0.0 | source I
+
+DMSDOC12287 | NTVRP-O BRIEN-SEASPAN TOKYO - APPENDIX B | RF-0184 | v1.0 | DELE
+Document file: DCHL3217RF-184.pdf
+Content: (no page content)
+Attachments:
+- TD02-00123 Service Parts Codes for Temperature pressure Sensors.(Rev.1).pdf | status A | size 106.45 | source A
+
+DMSDOC12259 | NTVRP-O BRIEN-RECORD OF REVIEW | RF-0180 | v1.0 | DELE
+Document file: DCHL3189RF-180.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-027.1.png | status V | size 0.0 | source I
+- WI-JOB-027.png | status V | size 0.0 | source I
+
+DMSDOC17229 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO HARMONY | RF-0165 | v2.0 | DELE
+Document file: DCHL5832Chapter 10 - COSCO HARMONY.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC18995 | NTVRP-O BRIEN - ZIM MOUNT ELBRUS - APPENDIX B | RF-6971 | v2.0 | DELE
+Document file: DCHL7074PLAN3429_3429_130312_361328_0_Sec_21833.PDF
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC18997 | NTVRP-O BRIEN - ONE FOCUS - APPENDIX B | RF-6952 | v1.0 | DELE
+Document file: DCHL7076PLAN3429_3429_130312_361328_0_Sec_21833.PDF
+Content: (no page content)
+Attachments:
+- PCC-CMAXS-Revised List Oct 2019.pdf | status A | size 0.0967 | source A
+- PCC-TEC-002-19.pdf | status A | size 0.0801 | source A
+
+DMSDOC17925 | NTVRP-O BRIEN - ZIM MOUNT KILIMANJARO - APPENDIX B | RF-6884 | v1.0 | DELE
+Document file: DCHL6407Sec 16__Appendix B-ZIM Mount Kilimanjaro.PDF
+Content: (no page content)
+Attachments:
+- DCHL146629_SOIL 029-2022_Colour Coded Cutting Board.pdf | status A | size 0.0684 | source F
+
+DMSDOC17097 | NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - ZIM MOUNT DENALI | RF-6353 | v2.0 | DELE
+Document file: DCHL5745RF-6353 - NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - ZIM MOUNT DENALI.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC15450 | NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - ZIM SAMMY OFER | RF-6067 | v1.0 | DELE
+Document file: DCHL4870RF-6067.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12788 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - MADRID EXPRESS | RF-4479 | v1.0 | DELE
+Document file: DCHL3534RF-4479.pdf
+Content: (no page content)
+Attachments:
+- GS10-12_Precautions for Operation Engine (Extracts from the manual).pdf | status A | size 260.09 | source A
+
+DMSDOC12233 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - YM WORLD | RF-2840 | v1.0 | DELE
+Document file: DCHL3163RF-2840.pdf
+Content: (no page content)
+Attachments:
+- FRM-L-P-04.20.00.1.xlsx | status A | size 61.878 | source E
+- FRM-L-P-04.20.00.2.docx | status V | size 69.090 | source E
+- GI-08-002.9.docx | status V | size 69.198 | source E
+
+DMSDOC15966 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS SEASPAN HAMBURG | RF-1059 | v2.0 | DELE
+Document file: DCHL5044RF-1059 - NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN HAMBURG - V6.pdf
+Content: (no page content)
+Attachments:
+- 2024_Remember Naka-no-Se_Handout.pdf | status V | size 709.60 | source A
+- BULK.zip | status V | size 3025.8 | source A
+- NBP.zip | status V | size 3316.1 | source A
+- PCC.zip | status V | size 887.61 | source A
+- HSEQ-NYK-014-24(2).pdf | status V | size 407.23 | source A
+
+DMSDOC17230 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO JAPAN | RF-1047 | v2.0 | DELE
+Document file: DCHL5833Chapter 10 - COSCO JAPAN.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12848 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN ZAMBEZI | RF-0273 | v1.0 | DELE
+Document file: DCHL3558RF-273.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12284 | NTVRP-O BRIEN-SEASPAN SAIGON - APPENDIX B | RF-0232 | v1.0 | DELE
+Document file: DCHL3214RF-232.pdf
+Content: (no page content)
+Attachments:
+- TD03-00022 Effects and Features of DEFRIC Coat.pdf | status A | size 74.413 | source A
+
+DMSDOC12258 | NTVRP-O BRIEN-MOL EXPRESS - APPENDIX B | RF-0228 | v1.0 | DELE
+Document file: DCHL3188RF-228.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-025.png | status A | size 0.0 | source I
+
+DMSDOC12263 | NTVRP-O BRIEN-SEASPAN EMISSARY - APPENDIX B | RF-0224 | v1.0 | DELE
+Document file: DCHL3193RF-224.pdf
+Content: (no page content)
+Attachments:
+- crew assistant.png | status A | size 17.648 | source Q
+
+DMSDOC12242 | NTVRP-O BRIEN - SEASPAN LAHORE - APPENDIX B | RF-0219 | v1.0 | DELE
+Document file: DCHL3172RF-219.pdf
+Content: (no page content)
+Attachments:
+- TD02-00130-01 Maint of the Air Pr Reducing Vv - Revision 1 Plug tightening procedure change.pdf | status A | size 199.44 | source A
+
+DMSDOC12256 | NTVRP-O BRIEN-CSCL ZEEBRUGGE - APPENDIX B | RF-0215 | v2.0 | DELE
+Document file: DOCM5987NTVRP-O BRIEN-CSCL ZEEBRUGGE - APPENDIX B.PDF
+Content: (no page content)
+Attachments:
+- WI-JOB-023.1.png | status A | size 0.0 | source I
+- WI-JOB-023.png | status A | size 0.0 | source I
+
+DMSDOC12237 | NTVRP-O BRIEN - MAERSK NILE - APPENDIX B | RF-0210 | v1.0 | DELE
+Document file: DCHL3167RF-210.pdf
+Content: (no page content)
+Attachments:
+- TD03-00133 Caution for Replacing Set Type FO Injection Pump Assembly..pdf | status A | size 21.490 | source A
+
+DMSDOC12253 | NTVRP-O BRIEN-CSCL LONG BEACH - APPENDIX B | RF-0204 | v1.0 | DELE
+Document file: DCHL3183RF-204.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-019.1.png | status A | size 0.0 | source I
+- WI-JOB-019.png | status A | size 0.0 | source I
+
+DMSDOC12272 | NTVRP-O BRIEN-SEASPAN LONCOMILLA - APPENDIX B | RF-0199 | v1.0 | DELE
+Document file: DCHL3202RF-199.pdf
+Content: (no page content)
+Attachments:
+- nimic_logo.jpg | status V | size 0.0 | source I
+
+DMSDOC12248 | NTVRP-O BRIEN-COSCO FORTUNE - APPENDIX B | RF-0186 | v1.0 | DELE
+Document file: DCHL3178RF-186.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-013.1.png | status A | size 0.0 | source I
+- WI-JOB-013.png | status A | size 0.0 | source I
+
+DMSDOC12270 | NTVRP-O BRIEN-SEASPAN KYOTO - APPENDIX B | RF-0182 | v1.0 | DELE
+Document file: DCHL3200RF-182.pdf
+Content: (no page content)
+Attachments:
+- 20221025-IRTB 32.pdf | status A | size 313.20 | source A
+- ReCAAP ISC Weekly Report (18-24 Oct 22) v1.pdf | status A | size 559.07 | source A
+- UNCLASSIFIED_20221028_MDAT-GoG Weekly Report_43-22.pdf | status A | size 713.12 | source A
+- Weekly Security Update - Update Week 43.pdf | status A | size 1022.1 | source A
+
+DMSDOC12290 | UNITED STATES - NTVRP-O BRIEN-APPENDIX C | RF-0176 | v1.0 | DELE
+Document file: DCHL3220RF-176.pdf
+Content: (no page content)
+Attachments:
+- TD02-00103 How to Check FO Injection Pump Rack Function Manually.pdf | status A | size 99.227 | source A
+
+Day 2025-11-21 (41 documents)
+DMSDOC19005 | NTVRP-O BRIEN - ONE REINFORCEMENT - APPENDIX B | RF-6958 | v1.0 | DELE
+Document file: DCHL7084PLAN3429_3429_130312_361328_0_Sec_21833.PDF
+Content: (no page content)
+Attachments:
+- HSEQ-NYK-019-20.pdf | status A | size 0.0811 | source A
+- 1.Calm Sea_200.pdf | status A | size 0.0801 | source A
+- 2.Safety and Environmental Management Committee Meeting.pdf | status A | size 0.1201 | source A
+- 3.Summary of Near Miss Marine Injury and Marine Sickness Data 2019.pdf | status A | size 0.1309 | source A
+- 4.STSC-62-00.pdf | status A | size 0.0781 | source A
+
+DMSDOC18994 | NTVRP-O BRIEN - ZIM MOUNT OLYMPUS - APPENDIX B | RF-6949 | v1.0 | DELE
+Document file: DCHL7073PLAN3429_3429_130312_361328_0_Sec_21833.PDF
+Content: (no page content)
+Attachments:
+- MARTEC Info.pdf | status A | size 0.0771 | source A
+- Request for avoiding anchorage in the vicinity.pdf | status A | size 0.1113 | source A
+- Enhancement of VTS information provision for dragging anchor.pdf | status A | size 0.125 | source A
+- HSEQ-NYK-045-19.pdf | status A | size 0.0811 | source A
+
+DMSDOC17584 | NTVRP-O BRIEN – ZIM AMBER - APPENDIX B | RF-6649 | v2.0 | DELE
+Document file: DCHL6149Sec 16__Appendix B-ZIM Amber.PDF
+Content: (no page content)
+Attachments:
+- 20250509_UKMTO_ADVISORY_INCIDENT 015-25_UPDATE-001.pdf | status A | size 0.0 | source A
+- DMW-ADVISORY-10-2025_compressed.pdf | status A | size 0.0 | source A
+- IBF-List-of-designated-risk-Areas-with-applicable-benefits-as-of-May-2025-1_compressed.pdf | status A | size 0.0 | source A
+- JMIC Week 21 Dashboard 19 MAY - 25 MAY 2025.pdf | status A | size 0.0 | source A
+- MSCIO_ATALANTA_WEEKLY_REPORT_23_MAY-29_MAY_25.pdf | status A | size 0.0 | source A
+- ReCAAP ISC Weekly Report (20-26 May 2025).pdf | status A | size 0.0 | source A
+- UNCLASSIFIED_20250530_MDAT-GoG Weekly Report_22-25.pdf | status A | size 0.0 | source A
+
+DMSDOC17095 | NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - ZIM MOUNT EVEREST | RF-6351 | v2.0 | DELE
+Document file: DCHL5743RF-6351 - NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - ZIM MOUNT EVEREST.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12861 | NTVRP-GMS-APPENDIX II - VESSEL PARTICULARS - ZIM USA | RF-5770 | v1.0 | DELE
+Document file: DCHL3564RF-5770.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12879 | NTVRP-O BRIEN - SEASPAN HARRIER - APPENDIX B | RF-3746 | v1.0 | DELE
+Document file: DCHL3572RF-3746.pdf
+Content: (no page content)
+Attachments:
+- 1. Ballast Water Exchange Position (Non-compliant).pdf | status A | size 1275.6 | source A
+- 2. T1133e.pdf | status A | size 1571.8 | source A
+- 3-5. Maps.pdf | status A | size 1163.0 | source A
+
+DMSDOC12239 | NTVRP-O BRIEN - SEASPAN CHIBA - APPENDIX B | RF-1919 | v1.0 | DELE
+Document file: DCHL3169RF-1919.pdf
+Content: (no page content)
+Attachments:
+- TD03-00063 Caution for Installing Meiyo Electric's Temp Sensor - Thermo couple resistannce temp sensor.pdf | status A | size 29.990 | source A
+
+DMSDOC16014 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - CSCL AFRICA | RF-1054 | v2.0 | DELE
+Document file: DCHL5084RF-1054.pdf
+Content: (no page content)
+Attachments:
+- Calm Sea 251.pdf | status A | size 1733.5 | source F
+
+DMSDOC17141 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO INDONESIA | RF-1046 | v3.0 | DELE
+Document file: DCHL5762RF-1046 - NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO INDONESIA.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17227 | NTVRP-O BRIEN - MAERSK NANSHA - APPENDIX B | RF-6419 | v2.0 | DELE
+Document file: DCHL5830Sec 16__Appendix B-Maersk Nansha.pdf
+Content: (no page content)
+Attachments:
+- 20250313 TAITAR NO.3 Guantang Port Trial Berth Report-final.pdf | status A | size 15740. | source F
+- ECDIS screen shot for Guantang Arrival.pdf | status A | size 255.43 | source A
+- Notice to Mariner for Military practice area_ADMIN_Mar-15-161219-2025_Conflict.pdf | status A | size 672.02 | source A
+
+DMSDOC12803 | NTVRP-ECM-Chapter 10 - VESSEL PARTICULARS - SEASPAN BENEFACTOR | RF-1361 | v2.0 | DELE
+Document file: DOCM5993NTVRP-ECM-Chapter 10 - VESSEL PARTICULARS - SEASPAN BENEFACTOR.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12285 | NTVRP-O BRIEN-SEASPAN SANTOS - APPENDIX B | RF-0233 | v1.0 | DELE
+Document file: DCHL3215RF-233.pdf
+Content: (no page content)
+Attachments:
+- TD02-00107-01 How to Check Tightness of Angle Tightening Rod Bolts and Balance Weight Bolts.pdf | status A | size 101.88 | source A
+
+DMSDOC12241 | NTVRP-O BRIEN - SEASPAN EMPIRE - APPENDIX B | RF-0225 | v1.0 | DELE
+Document file: DCHL3171RF-225.pdf
+Content: (no page content)
+Attachments:
+- TD03-00016-01 MHI TC Service Bulletin - Rev.1 An Add. SN.pdf | status A | size 1178.0 | source A
+
+DMSDOC12261 | NTVRP-O BRIEN-SEASPAN DUBAI - APPENDIX B | RF-0216 | v1.0 | DELE
+Document file: DCHL3191RF-216.pdf
+Content: (no page content)
+Attachments:
+- shipyardBallast OB Pipe NM.docx | status A | size 331.29 | source A
+
+DMSDOC12257 | NTVRP-O BRIEN-MAERSK NEW DELHI - APPENDIX B | RF-0203 | v1.0 | DELE
+Document file: DCHL3187RF-203.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-024.1.png | status A | size 0.0 | source I
+- WI-JOB-024.png | status A | size 0.0 | source I
+
+DMSDOC12247 | NTVRP-O BRIEN-COSCO EXCELLENCE - APPENDIX B | RF-0185 | v1.0 | DELE
+Document file: DCHL3177RF-185.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-012.1.png | status A | size 0.0 | source I
+- WI-JOB-012.png | status A | size 0.0 | source I
+- cinquieme.png | status A | size 34.598 | source Q
+
+DMSDOC12843 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN THAMES | RF-0167 | v1.0 | DELE
+Document file: DCHL3555RF-167.pdf
+Content: (no page content)
+Attachments:
+- Calm Sea_233.pdf | status V | size 515.78 | source A
+- HSEQ-NYK-005-23.pdf | status V | size 93.069 | source A
+- STSC_73_00.pdf | status V | size 252.02 | source A
+
+DMSDOC19001 | NTVRP-O BRIEN - ZIM RUBY - APPENDIX B | RF-6954 | v1.0 | DELE
+Document file: DCHL7080PLAN3429_3429_130312_361328_0_Sec_21833.PDF
+Content: (no page content)
+Attachments:
+- Ship's Movement Trailing Record at Port Said.pdf | status A | size 0.1094 | source A
+- GC TEC-011-19 .pdf | status A | size 0.0801 | source A
+- 2.doc.001.png | status A | size 0.0605 | source M
+
+DMSDOC12225 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - ONE PARANA | RF-5420 | v1.0 | DELE
+Document file: DCHL3155RF-5420.pdf
+Content: (no page content)
+Attachments:
+- TD04-00046 Cooling Water Thermostat.pdf | status A | size 89.075 | source A
+
+DMSDOC12840 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN HUDSON | RF-0377 | v1.0 | DELE
+Document file: DCHL3552RF-377.pdf
+Content: (no page content)
+Attachments:
+- Calm Sea_235.pdf | status V | size 1289.8 | source A
+- HSEQ-NYK-008-23.pdf | status V | size 86.022 | source A
+
+DMSDOC12274 | NTVRP-O BRIEN-SEASPAN NEW DELHI - APPENDIX B | RF-0229 | v1.0 | DELE
+Document file: DCHL3204RF-229.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12266 | NTVRP-O BRIEN-SEASPAN FRASER - APPENDIX B | RF-0220 | v1.0 | DELE
+Document file: DCHL3196RF-220.pdf
+Content: (no page content)
+Attachments:
+- HSEQ_ALL-2022_029 Attachment 1 HVPQ6_OCIMF Report Template.pdf | status A | size 861.50 | source A
+- HSEQ_ALL-2022_029 Attachment 2 HVPQ5-to-HVPQ6-Mapping_v1.0.xlsx | status A | size 715.07 | source A
+
+DMSDOC17197 | NTVRP-O BRIEN-ONE ATLAS - APPENDIX B | RF-0208 | v2.0 | DELE
+Document file: DCHL5805Sec 3__Appendix B-One Atlas.PDF
+Content: (no page content)
+Attachments:
+- 26_SOIL 026-2024-Crew Injury-Incident during garbage incineration.pdf | status A | size 290.03 | source F
+
+DMSDOC12271 | NTVRP-O BRIEN-SEASPAN LINGUE - APPENDIX B | RF-0198 | v1.0 | DELE
+Document file: DCHL3201RF-198.pdf
+Content: (no page content)
+Attachments:
+- Ship based flow chart.pdf | status A | size 158.30 | source A
+- Shore based flow chart.pdf | status A | size 118.70 | source A
+- Emergency Directory 21.12.2022 (1).pdf | status A | size 3004.4 | source A
+
+DMSDOC12268 | NTVRP-O BRIEN-SEASPAN KOBE - APPENDIX B | RF-0181 | v1.0 | DELE
+Document file: DCHL3198RF-181.pdf
+Content: (no page content)
+Attachments:
+- FLT_SPC-2022_005 Attachment 1 LNGOI_02 Low Suction Pressure rev2.pdf | status A | size 123.86 | source A
+
+DMSDOC16727 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - CMA CGM MUMBAI | RF-3304 | v2.0 | DELE
+Document file: DCHL5495RF-3304.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12846 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - SEASPAN YANGTZE | RF-0272 | v1.0 | DELE
+Document file: DCHL3557RF-272.pdf
+Content: (no page content)
+Attachments:
+- Calm Sea_232.pdf | status V | size 1472.6 | source A
+- HSEQ-NYK-002-23.pdf | status V | size 81.697 | source A
+
+DMSDOC12265 | NTVRP-O BRIEN-SEASPAN EXPEDITOR - Appendix B | RF-0227 | v1.0 | DELE
+Document file: DCHL3195RF-227.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12238 | NTVRP-O BRIEN - MAERSK NINGBO - APPENDIX B | RF-0205 | v1.0 | DELE
+Document file: DCHL3168RF-205.pdf
+Content: (no page content)
+Attachments:
+- TD03-00066 Caution for Adjusting and Disassembling LO Thermostat Valve.pdf | status A | size 51.829 | source A
+
+DMSDOC12249 | NTVRP-O BRIEN-COSCO FUZHOU - APPENDIX B | RF-0187 | v1.0 | DELE
+Document file: DCHL3179RF-187.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-015.1.png | status A | size 0.0 | source I
+- WI-JOB-015.png | status A | size 0.0 | source I
+
+DMSDOC17969 | NTVRP-O BRIEN - ZIM CORAL - APPENDIX B | RF-6908 | v1.0 | DELE
+Document file: DCHL6430Sec 16__Appendix B-ZIM Coral.PDF
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17947 | NTVRP-O BRIEN - SEASPAN JAKARTA - APPENDIX B | RF-0218 | v1.0 | DELE
+Document file: DCHL6417Sec 3__Appendix B-Seaspan Jakarta.PDF
+Content: (no page content)
+Attachments:
+- 03_SOIL 003-2025_RiSK4SEA PSC Pre-Arrival Checklist.pdf | status A | size 157.55 | source F
+
+DMSDOC12292 | UNITED STATES - NTVRP-O BRIEN-APPENDIX D | RF-0177 | v1.0 | DELE
+Document file: DCHL3222RF-177.pdf
+Content: (no page content)
+Attachments:
+- TD02-00093 Cleaning Agent For Turbine Wheel and Casing of RH 3 Series Turbochager..pdf | status A | size 135.52 | source A
+
+DMSDOC12260 | NTVRP-O BRIEN-RIO GRANDE EXPRESS - APPENDIX B | RF-0231 | v1.0 | DELE
+Document file: DCHL3190RF-231.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-005.1.png | status A | size 0.0 | source I
+- WI-JOB-005.png | status A | size 0.0 | source I
+
+DMSDOC12243 | NTVRP-O BRIEN - SEASPAN OSAKA - APPENDIX B | RF-0183 | v1.0 | DELE
+Document file: DCHL3173RF-183.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-004.1.png | status A | size 0.0 | source I
+- WI-JOB-004.png | status A | size 0.0 | source I
+
+DMSDOC19476 | NTVRP-O BRIEN - YM WORTH - APPENDIX B | RF-6247 | v1.0 | DELE
+Document file: DOCM5998NTVRP-O BRIEN - YM WORTH - APPENDIX B.PDF
+Content: (no page content)
+Attachments:
+- 036_Oil Pollution by miss operation.pdf | status A | size 161.50 | source F
+
+DMSDOC12246 | NTVRP-O BRIEN-CMA CGM SEATTLE - APPENDIX B | RF-0214 | v1.0 | DELE
+Document file: DCHL3176RF-214.pdf
+Content: (no page content)
+Attachments:
+- WI-JOB-011.1.png | status A | size 0.0 | source I
+- WI-JOB-011.png | status A | size 0.0 | source I
+- quatrieme.png | status A | size 33.770 | source Q
+
+DMSDOC17231 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO KOREA | RF-1048 | v2.0 | DELE
+Document file: DCHL5834Chapter 10 - COSCO Korea.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12235 | NTVRP-O BRIEN - ALTAMIRA EXPRESS - APPENDIX B | RF-0223 | v1.0 | DELE
+Document file: DCHL3165RF-223.pdf
+Content: (no page content)
+Attachments:
+- TD04-00009 O-ring between FO Injection Pump and Pump Installation Mount..pdf | status A | size 41.491 | source A
+
+DMSDOC12273 | NTVRP-O BRIEN-SEASPAN LUMACO - APPENDIX B | RF-0200 | v1.0 | DELE
+Document file: DCHL3203RF-200.pdf
+Content: (no page content)
+Attachments:
+- nimic_logo.jpg | status A | size 0.0 | source I
+
+DMSDOC17228 | NTVRP-ECM-CHAPTER 10 - VESSEL PARTICULARS - COSCO GLORY | RF-0163 | v2.0 | DELE
+Document file: DCHL5831Chapter 10 - COSCO GLORY.PDF
+Content: (no page content)
+Attachments: (none)
+
+Day 2025-12-03 (1 documents)
+DMSDOC19201 | SSP - SHIP SPECIFIC CONTENT - ZIM DIAMOND | SP-1056 | v5.0 | DELE
+Document file: DOCM5953SSP - SHIP SPECIFIC CONTENT - ZIM DIAMOND.pdf
+Content: (no page content)
+Attachments: (none)
+
+Day 2025-12-11 (1 documents)
+DMSDOC13093 | IT - VESSEL SUPPORT MATRIX | SP-0593 | v4.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- 202302 Mini GSMSC NiBiKi Meeting Minutes.pdf | status A | size 72.757 | source F
+- April_MiNi GSMSC for NiBiKi Related.pdf | status A | size 976.82 | source A
+- SMS Standard Shipboard rank.pdf | status A | size 69.155 | source A
+- Visibility Ashore Mini GSMSC April 2023.pdf | status A | size 527.08 | source A
+- List of attendees April Mini GSMSC for NiBiKi 2023 02.xlsx | status A | size 16.690 | source A
+- 202302 Mini GSMSC NiBiKi Meeting Minutes.pdf | status A | size 72.757 | source A
+
+Day 2025-12-26 (3 documents)
+DMSDOC21799 | JOB DESCRIPTIONS | SP-0117 | v1.0 | DELE
+Document file: DCHL8699SP0117.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC21800 | BUNKERING TRANSFER PURIFICATION AND CHANGEOVER PROCEDURE FOR HFO MGO AND ULSFO | SP-0573 | v1.0 | DELE
+Document file: DCHL8700SP0573.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC21798 | HSEQ COMMITTEE & SAFETY OFFICER | SP-0101 | v1.0 | DELE
+Document file: DCHL8698SP0101.pdf
+Content: (no page content)
+Attachments: (none)
+
+Day 2026-01-08 (1 documents)
+DMSDOC13701 | CYBER SECURITY POLICY - MARITIME | PL-030 | v1.0 | DELE
+Document file: (none)
+Content: CYBER SECURITY POLICY - MARITIME
+Attachments: (none)
+
+Day 2026-01-14 (1 documents)
+DMSDOC8129 | Crew Forums | CR-049 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- GI_07-2020_008 Attachment 1 Section 1 Guidelines for Mooring Wires.pdf | status A | size 0.1309 | source A
+- GI_07-2020_008 Attachment 2 Section 2 Guidelines for High Modulus Synthetic Fibre Ropes.pdf | status A | size 0.1514 | source A
+- GI_07-2020_008 Attachment 3 Section 3 Guidelines for Tail Ropes.pdf | status A | size 0.1279 | source A
+- GI_07-2020_008 Attachment 4 Attachment_1 Mooring Wire Inspection Record.xlsx | status A | size 0.1367 | source A
+- GI_07-2020_008 Attachment 5 Attachment_2 Ledger HMPE Manufacturer Maintenance and Testing.xlsx | status A | size 0.1543 | source A
+- GI_07-2020_008 Attachment 6 Attachment_3 Appraisal Criteria for Tail Rope Inspection.pdf | status A | size 0.1484 | source A
+- GI_07-2020_008 Attachment 7 Attachment_4 Retirement Criteria Decision Making Flowchart.xlsx | status A | size 0.1514 | source A
+- GI_07-2020_008 Attachment 8 Attachment_5 Tail Rope Management Record.xls | status A | size 0.1328 | source A
+
+Day 2026-01-17 (11 documents)
+DMSDOC14235 | CORPORATE VISION - GOALS 2021 - DECEMBER UPDATE | RF-4615 | v2.0 | DELE
+Document file: DCHL3990RF-4615.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC14094 | KEY PERFORMANCE INDICATORS (KPIs) 2021 | RF-4133 | v2.0 | DELE
+Document file: DCHL3911RF-4133.pdf
+Content: (no page content)
+Attachments:
+- 1.Notification form 200422.xls | status V | size 1206.0 | source A
+- 2.the Map of the Listed Areas of War Risk Navigation Limitation 160523.pdf | status V | size 1006.8 | source A
+- 3.War Risk Navigation Limitations160523.pdf | status V | size 47.982 | source A
+- 4.War Risks Insurance News No.23-2.pdf | status V | size 160.99 | source A
+- HSEQ-SEC-06-23.pdf | status V | size 183.06 | source A
+
+DMSDOC14398 | KEY PERFORMANCE INDICATORS (KPI'S) 2020 | RF-3197 | v2.0 | DELE
+Document file: DCHL4087RF-3197.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC14325 | KEY PERFORMANCE INDICATORS (KPI'S) 2019 | RF-2736 | v2.0 | DELE
+Document file: DCHL4047RF-2736.pdf
+Content: (no page content)
+Attachments:
+- 20240205-UKMTO_INDUSTRY_GUIDANCE_SOUTHERN_RED_SEA_AND_GULF_OF_ADEN.pdf | status A | size 161.17 | source A
+
+DMSDOC14336 | TARGETS / KPIs 2019 | RF-2780 | v2.0 | DELE
+Document file: DCHL4051RF-2780.pdf
+Content: (no page content)
+Attachments:
+- Injury Pictures.pdf | status A | size 321.24 | source A
+
+DMSDOC17944 | Goal Tracker Technical Coordinator-2024 | RF-0044 | v1.0 | DELE
+Document file: (none)
+Content: [Supercedes]
+Attachments: (none)
+
+DMSDOC17943 | Goal Tracker Marine Manager-2024 | RF-0042 | v1.0 | DELE
+Document file: (none)
+Content: [Supercedes]
+Attachments:
+- SOIL 000-2021_SMS.Z-P-05.60.00_Company Circular-Asahi Specific.pdf | status A | size 181.92 | source F
+
+DMSDOC17942 | Goal Tracker Vessel Manager - 2024 | RF-0041 | v2.0 | DELE
+Document file: (none)
+Content: [Supercedes]
+Attachments:
+- DCHL1536CIL_CCD 002-2025_Electronic Application for the articles of agreement is entered into (terminated changed and renewed).pdf | status A | size 0.0684 | source F
+
+DMSDOC17941 | Goal Tracker Fleet Manager - 2024 | RF-0039 | v1.0 | DELE
+Document file: (none)
+Content: [Supercedes]
+Attachments:
+- 27_SOIL 027-2024-Standard for Suspension of Hatch Cover Operation-SAITO-PC01.pdf | status A | size 438.28 | source F
+
+DMSDOC14338 | CORPORATE VISION / GOALS 2020 | RF-2781 | v2.0 | DELE
+Document file: DCHL4053RF-2781.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC14073 | CORPORATE VISION - GOALS 2021 | RF-3991 | v2.0 | DELE
+Document file: DCHL3899RF-3991.pdf
+Content: (no page content)
+Attachments: (none)
+
+Day 2026-01-21 (4 documents)
+DMSDOC21833 | RF doc | TST RF | v1.0 | CANC
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC8321 | TBD | TB-423 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- nimic_logo.jpg | status A | size 0.0439 | source I
+
+DMSDOC17935 | Arctic Fleet KPI | 0 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- DCHL151423_SOIL 023-2024_DOC Renewal Audit (Marshall).pdf | status A | size 0.0684 | source F
+
+DMSDOC8409 | Health & Safety | HE-175 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- nimic_logo.jpg | status A | size 0.0439 | source I
+- Press release on 2019 CIC on Emergency Systems and Procedures.pdf | status A | size 0.168 | source E
+
+Day 2026-01-22 (2 documents)
+DMSDOC12595 | SAMPLE BALLAST RECORD FORM | RF-2698 | v5.0 | DELE
+Document file: (none)
+Content: BALLAST TANK ID / NAME: No: 3 WWBT (P) SAMPLE FORM 
+
+ USE ONE FORM PER TANK 
+
+ Entries below are as per the BW M code s * Entry not required as per the BWM code Figures below are hypothetical for sample purposes only 
+
+ 
+ 
+ 
+ 
+ Date 
+
+ 
+ 
+ Time 
+
+ 
+ 
+ Location Port or Facility of Uptake / Discharge / Circulated / Treated / Exchange (Port or Latitude / 
+
+ Longitude) 
+
+ 
+ 
+ Estimated Volume of Uptake / Discharge / Circulated / Treated / Exchanged (in cubic meters) 
+
+ 
+ 
+ Depth of Water at Exchange Location (in meters) 
+
+ 
+ 
+ Estimated Volume of Ballast Remaining (in cubic meters) 
+
+ 
+ 
+ D= Discharge 
+
+ B= Ballast 
+
+ E= Exchange 
+
+ C= Circulate 
+
+ T= Treated 
+
+ I = Internal transfer 
+
+ 
+ 
+...
+Attachments: (none)
+
+DMSDOC20896 | ZIM AQUAMARINE - SSP APPROVAL LETTER | RF-2285 | v1.0 | DELE
+Document file: DCHL8283SSP_APPROVAL_ZIMAQUAMARINE.pdf
+Content: (no page content)
+Attachments: (none)
+
+Day 2026-01-28 (3 documents)
+DMSDOC15405 | IT SHORE/OFFICE SUPPORT MATRIX | RF-5891 | v1.0 | DELE
+Document file: DCHL4831RF-5891.pdf
+Content: (no page content)
+Attachments:
+- 1. APPLICATION FORM.xls | status A | size 91.5 | source A
+
+DMSDOC14059 | MACN REPORTED INCIDENTS - QUARTERLY REPORT 2020 Q3 | RF-3923 | v2.0 | DELE
+Document file: DCHL3889RF-3923.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12414 | USA FEDERAL COFR 2022 | RF-3621 | v1.0 | DELE
+Document file: (none)
+Content: To SSML Teams 
+
+ Cc SSML – managed Fleet ( bcc) 
+
+ Good-day 
+
+ 
+ A US Federal COFR is required for ships that call, or are likely to call, US ports. 
+ 
+
+ The COFR is issued subject to there being in place , valid underlying ship’s P&I insurance for oil pollution, and a further top-up insurance purchased from a specialist insurer, each ship. 
+
+ We purchase this specialist cover through SIGCO . 
+
+ 
+ SIGCO cover premium is offered in two options: 
+ 
+
+ Full Trading cover : for ships certain to call US ports. 100% full premium is payable . 
+
+ Partial Service cover : for ships that may call US ports. A lower deposit premium only, is payable. 
+
+ Fully-paid ships , are published by the USCG NPFC on...
+Attachments: (none)
+
+Day 2026-02-02 (11 documents)
+DMSDOC14522 | MACN - IMMIGRATION OFFENCES - EXAMPLES | RF-5269 | v2.0 | DELE
+Document file: DCHL4160RF-5269.pdf
+Content: (no page content)
+Attachments:
+- 1. Polyethylene Lining Blocking position.pdf | status A | size 82.559 | source A
+- 2. Caution sample for Prohibit hot work.pdf | status A | size 141.41 | source A
+- 3. Last maintenance date.pdf | status A | size 20.625 | source A
+
+DMSDOC14532 | MACN - HELPDESK - BEFORE ARRIVAL IN PORT & IN THE EVENT OF AN INCIDENT | RF-5303 | v2.0 | DELE
+Document file: DCHL4165RF-5303.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC14523 | MACN - NIGERIA COUNTRY GUIDE | RF-5270 | v2.0 | DELE
+Document file: DCHL4161RF-5270.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC14533 | MACN - GUIDANCE FOR PORT AGENTS | RF-5304 | v2.0 | DELE
+Document file: DCHL4166RF-5304.pdf
+Content: (no page content)
+Attachments:
+- 03. HEALTH BULLETIN - MAR2024.pdf | status V | size 209.84 | source A
+- HEALTH BULLETIN - JAN2023.pdf | status V | size 232.11 | source A
+- HSEQ-BLT-007-24.pdf | status V | size 127.83 | source A
+
+DMSDOC14534 | MACN - NOTICE TO MEMBERS - NIGERIA | RF-5305 | v2.0 | DELE
+Document file: DCHL4167RF-5305.pdf
+Content: (no page content)
+Attachments:
+- HSEQ-BLT-008-24 Monthly Questionnaire - March 2024.pdf | status V | size 144.90 | source A
+- Monthly Questionnaire 2024 Mar - 2024 Apr.xlsx | status V | size 109.34 | source A
+- Monthly Questionnaire ANSWER SHEET 2024 Feb - 2024 Mar.xlsx | status V | size 110.59 | source A
+
+DMSDOC17223 | MACN - DEMOCRATIC REPUBLIC OF CONGO COUNTRY GUIDE | RF-6416 | v2.0 | DELE
+Document file: DCHL5829RF-6416 - MACN - DEMOCRATIC REPUBLIC OF CONGO COUNTRY GUIDE.pdf
+Content: (no page content)
+Attachments:
+- Best Practice of HKK Vessels in Feb. 2025.pdf | status A | size 182.5 | source A
+- XXX_MSU_0325.xlsx | status A | size 1389.7 | source A
+- Monthly Surveillance - Mar 2025.pdf | status A | size 181.28 | source A
+- Ref MSU Respond Attachment space 6.pdf | status A | size 55.968 | source A
+- Index for HKK letter 202503.xlsx | status A | size 260.50 | source A
+
+DMSDOC8089 | A PRACTICAL GUIDE TO RESISTING CORRUPT PAYMENTS (RF-3021) | RF-3021 | v2.0 | DELE
+Document file: DCHL448A PRACTICAL GUIDE TO RESISTING CORRUPT PAYMENTS (RF-3021).pdf
+Content: (no page content)
+Attachments:
+- nimic_logo.jpg | status V | size 0.0439 | source I
+- Table of Used Cooking Oil Treatment.pdf | status V | size 0.1416 | source E
+
+DMSDOC14089 | MACN CAPTAINS' INFORMATION | RF-4081 | v2.0 | DELE
+Document file: DCHL3909RF-4081.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC14525 | MACN - GUIDANCE FOR CAPTAINS | RF-5280 | v2.0 | DELE
+Document file: DCHL4163RF-5280.pdf
+Content: (no page content)
+Attachments:
+- Attachment 1. Service News 5_Damage to Hyd. Pump.pdf | status A | size 168.79 | source A
+- Attachment 2. Service News 9_Troubles of Hyd. motor and Actions.pdf | status A | size 146.75 | source A
+- Attachment 3. Service News 11_Oil leakage or damage of oil seal in hydraulic motor.pdf | status A | size 124.09 | source A
+- Attachment 4. If the Hydraulic Motor is forced to rotate by an external force..pdf | status A | size 57.457 | source A
+- Attachment 5. Study for Cause of Breakage of Port Windlass.pdf | status A | size 399.79 | source A
+
+DMSDOC19552 | MACN MEETINGS | RF-1613 | v1.0 | DELE
+Document file: (none)
+Content: [Supercedes]
+Attachments:
+- HSEQ_BLT-2025_045_Attachment 2 Summary list of Nakilat Experience Share Circulars.xlsx | status V | size 0.0 | source A
+- HSEQ_BLT-2025_045_Attachment 2_Summary list of Nakilat Experience Share Circulars.xlsx | status A | size 0.0 | source A
+- HSEQ_BLT-2025_045_Attachment 1_Nakilat Experience Share-13-2025-Allision with Terminal Dolphin During Berthing.pdf | status A | size 0.0 | source A
+
+DMSDOC14536 | MACN POSTERS | RF-5306 | v2.0 | DELE
+Document file: DCHL4168RF-5306.pdf
+Content: (no page content)
+Attachments:
+- Nakilat Experience Share-03-2024- Fire in Incinerator Exhaust Manifold.pdf | status A | size 1128.5 | source A
+
+Day 2026-02-10 (24 documents)
+DMSDOC17460 | GOA IRTC USAGE BY EOS 16-OCT-23 | RF-6560 | v1.0 | DELE
+Document file: DCHL6049RF-6560 - GOA IRTC USAGE BY EOS 16-OCT-23.pdf
+Content: (no page content)
+Attachments:
+- Simplified overview of the discharge provisions of the revised MARPOL Annex V.pdf | status V | size 17.416 | source A
+
+DMSDOC14352 | 2022 MARINE STANDARDS ROVING TEAM MEETING WITH INGENIUM | RF-5783 | v1.0 | DELE
+Document file: (none)
+Content: MEETING POINTS OF DISCUSSION AT MUMBAI BETWEEN INGENIUM AND MARINE STANDARDS ROVING AUDITOR TEAM 
+
+ 
+ Steering test - Guidelines provided in the procedures are ambiguous and interpreted in various ways by the ship staff. Recommend that a detailed extent of the test is specified for arrival so that vessels can follow the same in a uniform manner . The scope of the test could be in close similarity with the USCG requirements so that vessels are familiar with the process when arriving in US ports. 
+ Main Engine Test : Noted that some vessels are following the procedure, however for vessels calling ports with congested waters or vessels with time constraints to keep to the ETA , tend to test...
+Attachments:
+- Incident Investigation Report - Steam Burn Case.pdf | status A | size 1033.0 | source A
+
+DMSDOC14299 | GAP ANALYSIS ON WHAT CHANGES ARE IN THE NEW VERSION OF BMP5 | RF-2571 | v1.0 | DELE
+Document file: DCHL4026RF-2571.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC13975 | GUIDELINES FOR DEVELOPING MANUALS FOR MAINTENANCE AND OPERATION OF LIFEBOATS | RF-0020 | v2.0 | DELE
+Document file: DOCM6263RF-0020 - Guidelines for Developing Operating and Maintenance Manuals for Lifeboat Systems - MSC.1-Circ.1205-Rev.1.pdf
+Content: (no page content)
+Attachments:
+- HSE Alert TS 2023 Bank effect transiting suez Canal (1).pdf | status A | size 430.46 | source A
+
+DMSDOC13973 | MEASURES TO PREVENT ACCIDENTS WITH LIFEBOATS | RF-0017 | v2.0 | DELE
+Document file: DOCM6256RF-0017 - Measures to Prevent Accidents with Lifeboats - MSC.1-Circ.1206-Rev.1.pdf
+Content: (no page content)
+Attachments:
+- M-CERT-2023-ACT-004-v1.1.pdf | status A | size 4205.3 | source A
+- M-CERT-2023-ACT-005-v1.0.pdf | status A | size 4777.0 | source A
+- M-CERT-2023-ACT-006-v1.0.pdf | status A | size 4302.5 | source A
+- M-CERT-2023-ACT-007-v1.0.pdf | status A | size 2634.0 | source A
+- M-CERT-2023-ACT-008-v1.0.pdf | status A | size 2440.8 | source A
+- M-CERT-2023-ACT-009.pdf | status A | size 2638.0 | source A
+- M-CERT-2023-ACT-010.pdf | status A | size 2165.7 | source A
+- M-CERT-2023-ACT-011.pdf | status A | size 2473.4 | source A
+
+DMSDOC18942 | SHIPBOARD MANAGEMENT COMMITTEE | SP-0099 | v2.0 | DELE
+Document file: (none)
+Content: Procedure: Shipboard Management Committee 
+
+ Purpose 
+
+ To provide guidance to Ship and Shore personnel on how to organize and run the Shipboard Management Committee
+
+ 
+ Scope 
+
+ This applies to all ships managed by Seaspan Ship Management Ltd.
+
+ 
+ 
+
+ Responsibility 
+
+ The Master is responsible to implement this procedure.
+
+ 
+ 
+
+ Procedure 
+
+ Note: The Shipboard Management Committee consists of:
+
+Master - Chairman
+
+Chief Engineer - Member 
+
+Chief Officer - Member
+
+Second Engineer - Member
+
+Electrical Officer - Member 
+
+ Functionality 
+
+ Review the working of the “health, safety and environment committee’ to ensure resources are well utilized.
+
+ Caution! Do not combine this meeting with any...
+Attachments: (none)
+
+DMSDOC14339 | 2021 MASTERS ANNUAL SSP AND SSA REVIEW - CONSOLIDATED | RF-5090 | v2.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- CASUALTY REPORT(2024 002).pdf | status A | size 259.34 | source A
+
+DMSDOC14278 | 2021 MASTERS ANNUAL SOPEP REVIEW - CONSOLIDATED | RF-4750 | v2.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC14361 | HYDROPEN OPERATING MANUAL | RF-5809 | v1.0 | DELE
+Document file: DCHL4065RF-5809.pdf
+Content: (no page content)
+Attachments:
+- MARINE SECURITY ADVISORY 092023_Rev.5.pdf | status V | size 194.41 | source A
+- SSA-2024-01.pdf | status V | size 156.15 | source A
+- MMN-09-2023-RED-SEA-29-11-2023.pdf | status V | size 152.70 | source A
+- ATALANTA -PIRACY SITREP - GOA-SB.pdf | status V | size 174.28 | source A
+- MC(24)15 -Annex A - 2024-02-05 INTERIM INDUSTRY TRANSIT ADVICE SRS GoA.pdf | status V | size 611.56 | source A
+- MC(24)15 REVISED INTERIM INDUSTRY TRANSIT ADVICE SOUTHERN RED SEA.pdf | status V | size 134.44 | source A
+- UKMTO ADVISORY 001 JAN 24 - UPDATE 001.pdf | status V | size 225.50 | source A
+- UKMTO ADVISORY 022100ZFEB2024_20240202.pdf | status V | size 205.23 | source A
+- UKMTO ADVISORY INCIDENT 023_20240128.pdf | status V | size 192.91 | source A
+- UKMTO ADVISORY INCIDENT 025 UPDATE001_20240130 .pdf | status V | size 175.55 | source A
+- Attachment.zip | status V | size 2098.9 | source A
+- HSEQ-SEC-002-24.pdf | status V | size 165.38 | source A
+
+DMSDOC14346 | 2022 MASTERS ANNUAL SSP REVIEW - CONSOLIDATED | RF-5732 | v2.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC14576 | 2022 MASTERS ANNUAL SOPEP REVIEW - CONSOLIDATED | RF-5547 | v2.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC14588 | 2022 REVIEW OF SMS DOCUMENTS SUMMARY | RF-5666 | v2.0 | DELE
+Document file: DCHL4204RF-5666.pdf
+Content: (no page content)
+Attachments:
+- NiBiKi_Tips_ Search for Spare Parts in NiBiKi_PMS.pdf | status A | size 5214.8 | source F
+
+DMSDOC17525 | 2023 MASTERS AND COMPANYS ANNUAL SSP REVIEW | RF-6613 | v3.0 | DELE
+Document file: (none)
+Content: [Supercedes]
+Attachments:
+- 2025-05 TAM SAFETY ALERT - REX_Injury while launching a lifeboat.pdf | status A | size 451.10 | source F
+
+DMSDOC17224 | 2023 MASTERS ANNUAL SOPEP REVIEW - CONSOLIDATED | RF-6418 | v3.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- Attachment 1_User guide of Competency Management System(CMS).pdf | status V | size 1724.6 | source E
+- CMS Users Guide (For All Users Onboard).pdf | status A | size 4695.4 | source E
+- CMS Users Guide (For Onboard Assessors).pdf | status A | size 1205.1 | source E
+
+DMSDOC19416 | 2024 MASTERS ANNUAL SSP REVIEW - CONSOLIDATED | RF-1279 | v2.0 | DELE
+Document file: (none)
+Content: [Supercedes]
+Attachments: (none)
+
+DMSDOC19072 | 2024 MASTERS ANNUAL SOPEP REVIEW - CONSOLIDATED | RF-6950 | v3.0 | DELE
+Document file: (none)
+Content: [Supercedes]
+Attachments:
+- HSEQ-INCIDENT ALERT-012-20.pdf | status A | size 0.0928 | source A
+- HSEQ-INCIDENT_ALERT-012-20.doc.001.jpeg | status A | size 0.0859 | source M
+- HSEQ-INCIDENT_ALERT-012-20.doc.002.jpeg | status A | size 0.0859 | source M
+
+DMSDOC21266 | 2025 MASTERS ANNUAL SSP REVIEW - CONSOLIDATED | RF-2472 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC17869 | MARINE STANDARDS NEW 2024 GOALS MEETING MINUTES | RF-6800 | v1.0 | DELE
+Document file: DCHL6356Meeting Minutes New Goals 2024 updated.pdf
+Content: (no page content)
+Attachments:
+- DCHL882SOIL 005-2023.pdf | status A | size 0.0684 | source F
+
+DMSDOC14273 | KEY PERFORMANCE INDICATORS (KPIs) CORPORATE GOALS 2022 | RF-5175 | v2.0 | DELE
+Document file: DCHL4014RF-5175.pdf
+Content: (no page content)
+Attachments:
+- ECDIS OM Revision Log (2024.01.01).pdf | status A | size 76.791 | source A
+- SMS Revision - 2024-01-01 SMS Training.pdf | status A | size 4653.5 | source A
+- SMS Revision Log (2024.01.01).pdf | status A | size 145.49 | source A
+
+DMSDOC16646 | I-CLAN ANNUAL SUBSCRIPTION T&C | RF-4720 | v2.0 | DELE
+Document file: (none)
+Content: I CLAN – PORTAL FOR VDR PLAYBACK, NAVIGATION AUDITS AND ASSESSMENTS 
+
+ 
+ Scope of Service and functionality offered 
+ 
+
+ 1) Easy play back using log in and credentials, web based portal through a secure internet connection. 
+
+ 2) VDR data playback available as per 
+
+ 
+ Equipment data captured in VDR 
+ Audio (processed for improvement in sound quality) 
+ CCTV ( if available) 
+ Parameter Graphs and dials 
+ Analytics from observations made on checklist 
+ Repository for all supporting documents 
+ Playback on maps, ENC from NOAA, with integration on pay per view with ENC tiles 
+ 
+
+ 3) Easy play back for reviews and briefing 
+
+ 4) User access to ships, fleets as per company roles and...
+Attachments:
+- SAFETY BULLETIN(2024 004).pdf | status A | size 115.13 | source A
+- MARSECURITY-24-INS-003_Navigational Instructions for the Persian Gulf (RVSD-2).pdf | status A | size 833.19 | source A
+
+DMSDOC16756 | SEASPAN TRAINING EXPENSE COST ESTIMATE 2020 - DNV GL | RF-3675 | v2.0 | DELE
+Document file: (none)
+Content: Seaspan Training Expense Cost Estimate 2020 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ NOTE: This is a cost estimate only and may be subject to change. 
+
+ 
+
+ 
+
+ 
+
+ DNV GL Headquarters, Veritasveien 1, P.O.Box 300, 1322 Høvik, Norway. Tel: +47 67 57 99 00. www.dnvgl.com 
+
+ 
+
+ Seaspan Training Expense Cost Estimate 
+
+ 2020
+Attachments: (none)
+
+DMSDOC18426 | CARRIAGE OF FIREARMS AND AMMUNITION ON BOARD (CFA) FOR SEASPAN DUBAI (IMO 9301782) EXEMPTION LETTER | RF-0601 | v1.0 | DELE
+Document file: (none)
+Content: [Supercedes]
+Attachments:
+- HSEQ-ALL-016-23.pdf | status A | size 321.13 | source A
+- No.1218 China    Circular on revised fishing ban periods.pdf | status A | size 314.78 | source A
+- No.1134 Collision between Merchant and Fishing Vessels in Chinese Waters Features and Loss Prevention Suggestions.pdf | status A | size 378.94 | source A
+
+DMSDOC17226 | Past Years |  | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- S-071001-01FIG Watch Level - Engine Room (For Tankers and Gas carriers).doc | status A | size 52.0 | source A
+
+DMSDOC8132 | Objectives & Key Performance Indicators | 1 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+Day 2026-02-13 (1 documents)
+DMSDOC8384 | Fitness and Wellbeing | FI-083 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- nimic_logo.jpg | status A | size 0.0439 | source I
+- SMS Master List 2 comparison table.xlsx | status A | size 0.1426 | source E
+
+Day 2026-02-17 (4 documents)
+DMSDOC14220 | ENVIRONMANAGER - COMPANY RULES | RF-4549 | v1.0 | DELE
+Document file: DCHL3982RF-4549.pdf
+Content: (no page content)
+Attachments:
+- SL2020-694 Cylinder and system oils.pdf | status A | size 528.48 | source A
+- SL2014-587 Cylinder Lubrication Update. Adjusting the ACC factor in service..pdf | status A | size 1434.8 | source A
+- SL2014-590 Engine Perfomance Evaluation.pdf | status A | size 805.87 | source A
+- SL2016-625 Gas-tight Lock-Top Piston Ring.pdf | status A | size 593.08 | source A
+- SL2018-659 Cermet-Coated Piston Rings for Operation on Low-Sulphur Fuels-0.5 S or lower.pdf | status A | size 1003.0 | source A
+- SL2018-663 Cylinder and System Oils MAN B-W Low-Speed Two-Stroke Engines.pdf | status A | size 506.63 | source A
+- Sl2023-737 CyIinder lubrication update.pdf | status A | size 1591.4 | source A
+- Sl2023-741 Biofuel operation.pdf | status A | size 579.04 | source A
+- SL2019-681 Guiding overhaul intervals - updated tables.pdf | status A | size 1041.2 | source A
+- SL2019-689 Extended guiding overhaul intervals-for ME-GI and ME-GIE engines.pdf | status A | size 638.37 | source A
+
+DMSDOC14248 | ENVIRONMANAGER GUIDE | RF-4653 | v1.0 | DELE
+Document file: DCHL3998RF-4653.pdf
+Content: (no page content)
+Attachments:
+- USI-10016-E Rev.13 Japan Engine Corporation Available technical service of each Authorized Repair Agent (ARA).pdf | status A | size 344.76 | source A
+- USI-10027-E Recommendations for the use of Biofules.pdf | status A | size 402.70 | source A
+- USI-10002-E Rev.3 Recommendable cylinder oil BN and the guidance of cylinder oil feed rate.pdf | status A | size 1102.7 | source A
+- USI-10004-E Rev.9 Lubricating Oil List for UEC Engines.pdf | status A | size 348.83 | source A
+- USI-31406-E Rev.1 Inspection and Maintenance of engine driven high pressure pump on UEC-Eco engines.pdf | status A | size 1281.1 | source A
+- USI-26306-E Rev.2 Introduction of New Type Check valve installed on Upper and Lower Exhaust Valve Drive.pdf | status A | size 415.51 | source A
+- USI-26401-E Regular cleaning of the vent orifice on Exhaust valve upper driving part.pdf | status A | size 385.28 | source A
+- USI-31008-E Start of supply for improvement type of Constant pressure valve in Eco fuel injection pump.pdf | status A | size 375.04 | source A
+- USI-13303-E Removable tool of stuffing box inside of crankcase.pdf | status A | size 797.36 | source A
+- USI-10026-E Rev.1 Enforcement of EEXI Regulation (Introduction of EPL application).pdf | status A | size 3315.1 | source A
+
+DMSDOC19096 | ONE OCEAN PAYS ACTIVATE SLEEPING ENC CELL | RF-0943 | v1.0 | DELE
+Document file: DCHL7163One Ocean PAYS Activate sleeping ENC cell.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC14008 | ONEOCEAN SUPPORT | RF-0053 | v3.0 | DELE
+Document file: (none)
+Content: Purpose 
+
+ The purpose of this instruction is to show OneOcean users where to find the help menus for guidance operating the program. The help menus inside the application should be utilized before reaching out to IT & OneOcean support. 
+
+ For guidance on maintaining ENCs, Paper Charts & Publications, please see the following standard procedure: SP-198 ENCs, PAPER CHARTS AND PUBLICATIONS 
+
+ If your problem cannot be solved through the help tab you may contact Seaspan IT & OneOcean via: 
+
+ 
+ Seaspan IT Support - support@seaspan.zendesk.com 
+ 
+
+ 
+ 
+
+ Instructions 
+
+ The below set of screenshots will show you how access the menus in the OneOcean application : 
+
+ 1) Click on the top right of...
+Attachments:
+- HSEQ-SEC-015-23 Attachments .zip | status V | size 1978.1 | source A
+- HSEQ-SEC-015-23.pdf | status V | size 83.970 | source A
+
+Day 2026-02-18 (21 documents)
+DMSDOC12184 | ATTENDANCE - ISO 45001 REFRESHER TRAINING OH&S DOCUMENT REVIEW IN DOCMAP | RF-4292 | v1.0 | DELE
+Document file: DCHL3114RF-4292.pdf
+Content: (no page content)
+Attachments:
+- GI-10-008.png | status V | size 0.0 | source I
+- GI-10-007.1.xlsx | status V | size 21.619 | source E
+- GI-10-007.2.xlsx | status V | size 42.355 | source E
+- GI-10-007.3.xlsx | status V | size 26.613 | source E
+
+DMSDOC12183 | ATTENDANCE - ISO 45001 OH&S DOCUMENT REVIEW IN DOCMAP | RF-4030 | v1.0 | DELE
+Document file: DCHL3113RF-4030.pdf
+Content: (no page content)
+Attachments:
+- TD06-00003 Tightening of Cylinder Head Bolts and Nuts.pdf | status A | size 94.004 | source A
+
+DMSDOC16611 | SAFE WORKING ON SHIPS AND VESSELS | RF-6218 | v2.0 | DELE
+Document file: DCHL5396RF-6218 - SAFE WORKING ON SHIPS AND VESSELS.pdf
+Content: (no page content)
+Attachments:
+- HSEQ_NYK-2024_003 Attachment1 Announcement of LNG ESG Award.pdf | status A | size 96.967 | source A
+- HSEQ_NYK-2024_003 Attachment2 LNG ESG Award Poster.pdf | status A | size 178.57 | source A
+
+DMSDOC12182 | ANNUAL OFFICE INSPECTION 2022 | RF-5621 | v1.0 | DELE
+Document file: DCHL3112RF-5621.pdf
+Content: (no page content)
+Attachments:
+- TD06-00008 Part No. of Crankpin Bearing.pdf | status A | size 26.510 | source A
+
+DMSDOC12423 | ISO 14001: 2015 MANAGEMENT REVIEW | RF-3319 | v1.0 | DELE
+Document file: (none)
+Content: Seaspan Ship Management Ltd. – ISO 14001: 2015 Management Review 
+
+ Date conducted: 1 st Dec 2020 
+
+ a) Status of previous actions from management reviews 
+
+ i) Observations reported during Office Internal Audit conducted in May 2020, were closed within the stipulated time frame. 
+
+ ii) The NS5 (Company Planned Maintenance and HSQE management platform) was superseded by a new FMS (Fleet Management Software). Though platform offers enhanced interface from previous version, the system capability to generate data for analysis of environmental impacts is still under study. 
+
+ b) Changes in: 
+
+ 1. internal/external inputs, 
+
+ Environmental Aspects database is maintained as an active document...
+Attachments:
+- Picture 9.png | status A | size 44.623 | source Q
+- Picture2.png | status A | size 99.588 | source Q
+- Picture1.png | status A | size 92.354 | source Q
+- Picture7.png | status A | size 53.957 | source Q
+- Picture6.png | status A | size 47.420 | source Q
+- Picture5.png | status A | size 53.957 | source Q
+- Picture3.png | status A | size 48.773 | source Q
+- Picture 10.png | status A | size 38.276 | source Q
+- Picture4.png | status A | size 197.70 | source Q
+- Picture7.png | status A | size 8.0634 | source Q
+- Picture6.png | status A | size 8.8076 | source Q
+- Picture8.png | status A | size 9.75 | source Q
+- Picture4.png | status A | size 890.29 | source Q
+- Picture1.png | status A | size 883.16 | source Q
+- Picture2.png | status A | size 902.83 | source Q
+- Picture5.png | status A | size 951.82 | source Q
+- Picture10.png | status A | size 8.3994 | source Q
+- Picture3.png | status A | size 825.64 | source Q
+- FY 2022-2023 attachments for reference.zip | status A | size 42.691 | source A
+- IA 01.png | status A | size 101.03 | source Q
+- IA 02.png | status A | size 96.268 | source Q
+- IA-03.png | status A | size 101.96 | source Q
+- SIRE 01.png | status A | size 41.859 | source Q
+- SIRE 02.png | status A | size 55.364 | source Q
+- SIRE 03.png | status A | size 51.556 | source Q
+- SIRE 04.png | status A | size 54.204 | source Q
+- FY23-24 (April 23 - Sep 23) Attachments for reference.zip | status A | size 110.88 | source A
+- PIC 5.jpg | status A | size 90.545 | source Q
+- PIC 7.jpg | status A | size 95.080 | source Q
+- PIC 1.jpg | status A | size 125.63 | source Q
+- PIC 6.jpg | status A | size 81.013 | source Q
+- PIC 4.jpg | status A | size 80.112 | source Q
+- PIC 3.jpg | status A | size 114.33 | source Q
+- PIC 2.jpg | status A | size 105.74 | source Q
+- List of IA Repetitive and Trending Findings FY Apr 24-Sep 24.xls | status A | size 75.0 | source A
+- SIRE-Repetitive and High Risk Observations FY Apr 24_Sep24.xlsx | status A | size 22.026 | source A
+- FY 2023 - 2024 (April 23 - MAR 24) Attachments for Reference.zip | status A | size 35.302 | source A
+- PIC 1.jpg | status A | size 162.43 | source Q
+- PIC 5.jpg | status A | size 88.757 | source Q
+- PIC 3.jpg | status A | size 134.73 | source Q
+- PIC 2.jpg | status A | size 143.93 | source Q
+- PIC 6.jpg | status A | size 82.199 | source Q
+- PIC 4.jpg | status A | size 59.905 | source Q
+- PIC 7.jpg | status A | size 77.717 | source Q
+- FY 2024 - 2025 (April 24 - MAR 25) Attachments for Reference.zip | status A | size 0.0 | source A
+
+DMSDOC8709 | SAFETY ALERT - 2018 - 09 - COMPLIANCE WITH COMPANY DRUG & ALCOHOL POLICY | RF-2548 | v2.0 | DELE
+Document file: DCHL695DOCID=506412.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12197 | SSML FLEET INSIGHTS Q1 2021 | RF-1105 | v1.0 | DELE
+Document file: DCHL3127RF-1105.pdf
+Content: (no page content)
+Attachments:
+- GI-09-009.jpg | status A | size 0.0 | source I
+
+DMSDOC16336 | IGF TRAINING CERTIFICATE - ADVANCED - GURMEET SINGH AHUJA - GMA | RF-5631 | v2.0 | DELE
+Document file: DCHL5174RF-5631.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC15428 | LNG AS A MARINE FUEL AND BUNKERING OPERATIONS - SUMIT PRASAD | RF-5802 | v1.0 | DELE
+Document file: DCHL4854RF-5802.pdf
+Content: (no page content)
+Attachments:
+- M-059 Shore wrecker collided with hatch coaming.pdf | status A | size 180.20 | source F
+
+DMSDOC15281 | IGF TRAINING CERTIFICATE - BASIC - SUMIT PRASAD - SEASBLY | RF-5701 | v1.0 | DELE
+Document file: DCHL4722RF-5701.pdf
+Content: (no page content)
+Attachments:
+- poi.png | status A | size 256.29 | source Q
+- pml.png | status A | size 257.59 | source Q
+
+DMSDOC20011 | ONE Magdalena - Singapore - LR | ONE Magdalena | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- PH-05-2025-Port-Hedland-Marine-Safety-Video.pdf | status A | size 0.0 | source A
+- Port of Port Hedland Port Handbook.pdf | status A | size 0.0 | source A
+
+DMSDOC20012 | ONE Orinoco - Singapore - LR | ONE Orinoco | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC19999 | ONE Fantastic - Singapore - DNV | ONE Fantastic | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- Monthly Questionnaire.pdf | status A | size 62.038 | source F
+- Monthly Questionnaire Sep 2025(question).xlsx | status A | size 0.0 | source A
+- Monthly Questionnaire Aug 2025(answer) .xlsx | status A | size 0.0 | source A
+
+DMSDOC19998 | ONE Amazon - Singapore - LR | ONE Amazon | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC19991 | Maersk Nadi - Singapore - ABS | Maersk Nadi | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC19995 | Maersk Nile - Singapore - ABS | Maersk Nile | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- Monthly Maritime Incident Report _August 2025.pdf | status A | size 0.0 | source A
+
+DMSDOC12291 | FAMILIARIZATION: DF EQUIPMENT - NITROGEN GENERATOR | RF-5188 | v1.0 | DELE
+Document file: DCHL3221RF-5188.pdf
+Content: (no page content)
+Attachments:
+- TD02-00096 Maintenance of Camshaft LO Pp CW Pump Drive Idle Gear Bearing.pdf | status A | size 102.39 | source A
+
+DMSDOC16383 | DF - AUXILIARY ENGINE SCR FAMILIARIZATION | RF-5484 | v2.0 | DELE
+Document file: (none)
+Content: Familiarization: DF Equipment – PaNox Marine Selective Catalytic Reduction Unit for Himsen 8H35DF Engines 
+
+ Introduction & Concept : 
+
+ The Selective Catalytic Reduction ( SCR) unit is needed in order to regulate the NOx contents of the exhaust gas emissions from the Diesel generator engines . 
+
+ The SCR is put into use when the engines operate on MGO/ fossil fuel and mostly in port . SCR is not required when the engine operated on LNG. 
+
+ 
+
+ Selective Catalytic Reduction (SCR) selectively removes the oxides of nitrogen (NOx) in the exhaust gases from stationery engines in the presence of a catalyst using ammonia (NH3) as a reduction agent. By chemical reaction, this system produces...
+Attachments:
+- HSEQ_BLT-2024_066 Attachment 1 Monthly Surveillance (October 2024).xlsx | status A | size 82.552 | source A
+- HSEQ_BLT-2024_066 Attachment 2 Previous Monthly Surveillance Items.xlsx | status A | size 63.873 | source A
+- HSEQ_BLT-2024_066 Attachment 3 Previous Monthly Review Items.xlsx | status A | size 35.500 | source A
+- HSEQ_BLT-2024_066 Attachment 4 Waste delivery amount at Japan ports.xlsx | status A | size 11.548 | source A
+
+DMSDOC16414 | DF - AUXILIARY ENGINE FAMILIARIZATION | RF-5195 | v2.0 | DELE
+Document file: DCHL5244RF-5195.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC18353 | DF-LNG Bunkering - Yantian -Hose connection guidelines | RF-6939 | v3.0 | DELE
+Document file: DCHL6654bunker hose connection and disconnection guidelines.pdf
+Content: (no page content)
+Attachments:
+- 1. USI-10002E Recommendable cylinder oil BN and the guidance of cylinder oil feed rate.pdf | status A | size 1220.1 | source A
+
+DMSDOC20195 | DF - LNG BUNKERING COMPATIBILITY STUDY PROCESS FLOW | RF-1804 | v1.0 | DELE
+Document file: DCHL7637LNG Bunkering Compatibility Study Process.pdf
+Content: (no page content)
+Attachments:
+- 20251016_Unpriced_FURUNO Life Parts List.pdf | status A | size 0.0 | source A
+
+Day 2026-02-19 (2 documents)
+DMSDOC21825 | SVM GUEST FOLDER | SVM GUEST FOLDER | v2.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC20001 | ONE Forever - Singapore - DNV | ONE Forever | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- Incident Investigation Report-Fall from ladder resulting in upper arm fracture.pdf | status A | size 0.0 | source A
+
+Day 2026-03-09 (18 documents)
+DMSDOC20013 | ONE Parana - Singapore - LR | ONE Parana | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC20010 | ONE Future - Singapore - DNV | ONE Future | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- Screenshot_1.png | status A | size 699.12 | source Q
+- Picture1.png | status A | size 635.23 | source Q
+
+DMSDOC20009 | ONE Fruition - Singapore - DNV | ONE Fruition | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- HSEQ_BLT-2025_054 Attachment 2 Summary list of Nakilat Experience Share Circulars.xlsx | status A | size 0.0 | source A
+- HSEQ_BLT-2025_054 Attachment 1 Nakilat Experience Share-17-2025-Terminal Fender Groving Caused by Protruding Drain Pipe.pdf | status A | size 0.0 | source A
+
+DMSDOC20008 | ONE Frontier - Singapore - DNV | ONE Frontier | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- 2025 Q2 Management Review.pdf | status A | size 2926.9 | source F
+
+DMSDOC20007 | ONE Friendship - Singapore - DNV | ONE Friendship | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC20004 | ONE Freedom - Singapore - DNV | ONE Freedom | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- Letter Head.doc | status V | size 0.0 | source A
+
+DMSDOC20003 | ONE Forward - Singapore - DNV | ONE Forward | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- Jamming-and-spoofing-2nd Edition (2025).pdf | status A | size 0.0 | source A
+
+DMSDOC20002 | ONE Fortune - Singapore - DNV | ONE Fortune | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- (Ref)S-096000-15FIG Cyber Safety Poster.pdf | status A | size 0.0 | source A
+- CIS Controls V7.1_Supplementary Explanation.pdf | status A | size 0.0 | source A
+- CIS-Controls V7.1.xlsx | status A | size 0.0 | source A
+- ClassNK comments for SCRMP.pdf | status A | size 0.0 | source A
+- CVC-WI-27(3)b.pdf | status A | size 0.0 | source A
+- Cyber Security Organization Chart.pdf | status A | size 0.0 | source A
+- DVD Drive securing sample picture.pdf | status A | size 0.0 | source A
+- GI-SMS-05-014-25 SCRMP Guidelines.pdf | status A | size 0.0 | source A
+- GMS-Client-Advisory-11-24-Reporting-Security-Cyber-Incidents-USCG-NVIC-02-24 (1).pdf | status A | size 0.0 | source A
+- Guidelines for vessels recognized by ClassDNV.pdf | status A | size 0.0 | source A
+- USB Tools.pdf | status A | size 0.0 | source A
+
+DMSDOC20039 | Seaspan Brilliance - Singapore - DNV | Seaspan Brilliance | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- sl-0066-1-maintenance-intervals-and-component-life-expectancies.pdf | status A | size 0.0 | source A
+- sl-0066-1-a-maintenance-intervals-and-component-life-expectancies-rt-flex50-d-x52.pdf | status A | size 0.0 | source A
+- sl-0066-1-b-maintenance-intervals-and-component-life-expectancies-x52-s20-x62-s20-x62-x62-b-x72-x72-b.pdf | status A | size 0.0 | source A
+- sl-0066-1-c-maintenance-intervals-and-component-life-expectancies-x82-20-x92-b.pdf | status A | size 0.0 | source A
+- sl-0066-1-d-maintenance-intervals-and-component-life-expectancies-rt-flex50df-x52df.pdf | status A | size 0.0 | source A
+- sl-0066-1-e-maintenance-intervals-and-component-life-expectancies-x62df-x72df-11-12-21-22-x82df-10-x82df-20-x92df-x92df-2.pdf | status A | size 0.0 | source A
+
+DMSDOC20033 | Seaspan Benefactor - Singapore - DNV | Seaspan Benefactor | v2.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- Risk Assessment New Salient Features.pdf | status A | size 8623.6 | source F
+
+DMSDOC20032 | Seaspan Bellwether - Singapore - DNV | Seaspan Bellwether | v2.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- HSEQ-ALL-008-25.pdf | status V | size 0.0 | source A
+
+DMSDOC20031 | Seaspan Belief - Singapore - DNV | Seaspan Belief | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- EU Regulation 2022-89.pdf | status V | size 0.0 | source A
+- DIRECTIVE (EU) 2019-883.pdf | status A | size 0.0 | source A
+- REGULATION (EU) 2022-89 .pdf | status A | size 0.0 | source A
+
+DMSDOC20030 | Seaspan Beauty - Singapore - DNV | Seaspan Beauty | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- Best Practice of HKK Vessels in Aug 2025.pdf | status A | size 0.0 | source A
+- Index for HKK letter 202509.xlsx | status A | size 0.0 | source A
+- Monthly Surveillance - Sep 2025.pdf | status A | size 0.0 | source A
+- Ref MSU Respond Attachment space 12.pdf | status A | size 0.0 | source A
+- XXX_MSU_0925.xlsx | status A | size 0.0 | source A
+
+DMSDOC18783 | YZJ 7K | 1 | v3.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- CASUALTY REPORT(2025 002).pdf | status A | size 2515.8 | source A
+
+DMSDOC8378 | SGMF Publications & Technical Guidance Notices | SG-402 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- SN 129.pdf | status A | size 0.0723 | source A
+
+DMSDOC8376 | USCG | US-440 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- SN 133.pdf | status A | size 0.0723 | source A
+
+DMSDOC8375 | IAPH | IA-182 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- SN 132.pdf | status A | size 0.0723 | source A
+
+DMSDOC8253 | Documentation - DF Vessels | DO-055 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- TN084.pdf | status A | size 0.0713 | source A
+
+Day 2026-03-10 (15 documents)
+DMSDOC8665 | HONG KONG MARDEP - UPDATE TO COMMON DETAINABLE DEFICIENCIES 04 AUG 15 | RF-0668 | v1.0 | DELE
+Document file: DCHL652HONG KONG MARDEP - UPDATE TO COMMON DETAINABLE DEFICIENCIES 04 AUG 15.pdf
+Content: (no page content)
+Attachments:
+- SN 097.pdf | status A | size 0.0723 | source A
+
+DMSDOC10763 | PSC - AMSA STATISTICS 2019 | RF-2811 | v2.0 | DELE
+Document file: DCHL2215RF-2811.pdf
+Content: (no page content)
+Attachments:
+- JHA STD-D-COM-001 Lowering, Launching, and Inspection of Lifeboat.pdf | status V | size 0.1123 | source F
+
+DMSDOC8615 | 2019 PSC STATISTICS | RF-3198 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- HSEQ_BLT-2020_029 Attachment 1 Monthly Bulletin (October 2020).pdf | status A | size 0.1279 | source A
+- HSEQ_BLT-2020_029 Attachment 2 Application template.docx | status A | size 0.1182 | source A
+- HSEQ_BLT-2020_029 Attachment 3 The American Club Cyber Awareness Comic.pdf | status A | size 0.1357 | source A
+
+DMSDOC14941 | SSML PSC DEFICIENCIES AND DETENTIONS - 2020 | RF-3150 | v3.0 | DELE
+Document file: DCHL4472RF-3150.pdf
+Content: (no page content)
+Attachments:
+- Memorandum of Understanding.docx | status A | size 21.958 | source A
+
+DMSDOC8589 | 2018 PSC STATISTICS | RF-2700 | v1.0 | DELE
+Document file: DCHL5802018 PSC STATISTICS.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC8588 | PSC DETENTION FOR CONTAINER SHIPS 2018 | RF-2661 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC8637 | INDIAN PSC REPORT 2020 | RF-4714 | v1.0 | DELE
+Document file: DCHL625INDIAN PSC REPORT 2020.pdf
+Content: (no page content)
+Attachments:
+- nkpsc22_e.pdf | status A | size 846.05 | source A
+- MSA-2023-02.pdf | status A | size 117.90 | source A
+
+DMSDOC8628 | PSC BULLETIN NK-PSC-22 - FIRE FIGHTING OUTFITS | RF-3876 | v1.0 | DELE
+Document file: DCHL617PSC BULLETIN NK-PSC-22 - FIRE FIGHTING OUTFITS.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC8620 | USCG PSC ANNUAL REPORT 2019 | RF-3372 | v1.0 | DELE
+Document file: DCHL608USCG PSC ANNUAL REPORT 2019.pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC8597 | CHINA PSC INSPECTIONS DEFICIENCIES IN 2019 | RF-3076 | v1.0 | DELE
+Document file: (none)
+Content: China PSC Inspections Deficiencies in 2019 
+
+ 
+ 
+ 
+ 
+ China PSC Inspections Deficiencies in 2019 
+
+ 
+ 
+ Tokyo MOU Deficiency 
+
+ 
+ 
+ Tokyo MOU Deficiency Main Header 
+
+ 
+ 
+ 
+ 
+ Both sides pilot ladder in poor condition. 
+
+ 
+ 
+ Pilot ladders and hoist/pilot transfer arrangements 
+
+ 
+ 
+ Safety of Navigation 
+
+ 
+ 
+ 
+ 
+ The Starboard navigational light malfunction 
+
+ 
+ 
+ Lights, shapes, sound-signals 
+
+ 
+ 
+ Safety of Navigation 
+
+ 
+ 
+ 
+ 
+ Fixed DRU failed to connect to the VDR since 29-Mar-2019, and the ship did not report the defective VDR to flag state and the local China MSA office. 
+
+ 
+ 
+ Voyage data recorder (VDR)/Simplified Voyage data recorder(S-VDR) 
+
+ 
+ 
+ Safety of Navigation 
+
+ 
+ 
+ 
+ 
+...
+Attachments:
+- nimic_logo.jpg | status A | size 0.0439 | source I
+
+DMSDOC10760 | INDONESIA - PSC DETENTION OF HONG KONG-REGISTERED SHIPS AT INDONESIA PORTS | RF-4908 | v2.0 | DELE
+Document file: DCHL2214RF-4908 (1).pdf
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC8595 | PSC ACTIVITY IN CHINA | RF-2849 | v1.0 | DELE
+Document file: DCHL586PSC ACTIVITY IN CHINA.pdf
+Content: (no page content)
+Attachments:
+- WS16Q450_02gb.pdf | status A | size 0.0791 | source A
+
+DMSDOC8591 | PSC DETENTION AT ANTWERP - FLEETWIDE NOTIFICATION | RF-2783 | v1.0 | DELE
+Document file: DCHL582PSC DETENTION AT ANTWERP - FLEETWIDE NOTIFICATION.pdf
+Content: (no page content)
+Attachments:
+- WI_ALL-2024_007 Attachment 1 Standard Library Management Flowchart.xlsx | status A | size 16.477 | source A
+
+DMSDOC10766 | AUSTRALIA - PSC AMSA DETENTIONS | RF-3782 | v2.0 | DELE
+Document file: DCHL2216RF-3782.pdf
+Content: (no page content)
+Attachments:
+- JHA STD-D-COM-004 Rigging of Pilot and Combination Ladder.pdf | status V | size 0.1045 | source F
+
+DMSDOC10500 | US REGULATORY UPDATE 2016 PACIFIC NORTHWEST CHECKLIST REV2 | RF-1234 | v1.0 | DELE
+Document file: DCHL2033RF-1234.pdf
+Content: (no page content)
+Attachments: (none)
+
+Day 2026-03-11 (11 documents)
+DMSDOC21903 | Methanol - Container Vessels |  | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC18763 | Procedures | SP | v6.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC18779 | DF Controlled Area Diagram |  | v3.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- CASUALTY REPORT(2025 001).pdf | status A | size 239.14 | source A
+
+DMSDOC18782 | SGMF Publications and Technical Guidance Notices | 1 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC18781 | ISO | 1 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC18780 | USCG | 1 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC18778 | Documentation |  | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- SECURITY INFORMATION(2025 001).pdf | status A | size 397.95 | source A
+
+DMSDOC18764 | References | 1 | v4.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- DCHL1471GI-Security-012-16.pdf | status A | size 0.0684 | source F
+
+DMSDOC18760 | LNG & Methanol - Container Vessels | 1 | v11.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC19548 | References | RF | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC19546 | LNG - PCTC |  | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+Day 2026-03-18 (4 documents)
+DMSDOC12430 | VECP PRESENTATION BY MARINE & VESSEL SUPERINTENDENTS | RF-1830 | v1.0 | DELE
+Document file: DCHL3353DOCID=504089.pdf
+Content: (no page content)
+Attachments:
+- ECDIS Proficiency Test - Nov -22.zip | status A | size 109.41 | source A
+
+DMSDOC12128 | MONITORING AND IMPROVING THE EMS | MO-225 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments:
+- FRM-L-P-00.20.00.1.pdf | status V | size 137.58 | source E
+- FRM-L-P-00.20.00.2.xlsx | status A | size 13.883 | source E
+- FRM-L-P-00.20.00.3.docx | status V | size 42.499 | source E
+- FRM-L-P-00.20.00.4.docx | status V | size 41.879 | source E
+- FRM-L-P-00.20.00.5.xlsx | status V | size 147.76 | source E
+- FRM-L-P-00.20.00.6.docx | status V | size 39.607 | source E
+- FRM-L-P-00.20.00.7.docx | status A | size 38.221 | source E
+- FRM-L-P-00.20.00.8.docx | status A | size 45.451 | source E
+- FRM-L-P-00.20.00.9.docx | status V | size 59.263 | source E
+- FRM-L-P-00.20.00.10.docx | status A | size 47.563 | source E
+- FRM-L-P-00.20.00.11.docx | status A | size 39.173 | source E
+- FRM-L-P-00.20.00.12.docx | status A | size 39.853 | source E
+- FRM-L-P-00.20.00.13.docx | status V | size 38.485 | source E
+- FRM-L-P-00.20.00.14.docx | status A | size 39.680 | source E
+- L-P-00.20.00.1.png | status A | size 0.0 | source I
+- L-P-00.20.00.2.png | status A | size 0.0 | source I
+- FRM-L-P-00.20.00.9.docx | status A | size 59.296 | source E
+- FRM-L-P-00.20.00.13.docx | status A | size 38.536 | source E
+- FRM-L-P-00.20.00.3.docx | status A | size 42.961 | source E
+- FRM-L-P-00.20.00.4.docx | status A | size 42.207 | source E
+- FRM-L-P-00.20.00.6.docx | status A | size 39.738 | source E
+- FRM-L-P-00.20.00.1.pdf | status A | size 125.72 | source E
+- FRM-L-P-00.20.00.5.xlsx | status A | size 147.79 | source E
+
+DMSDOC12127 | ENVIRONMENTAL INCIDENTS AND NON-COMPLIANCE INVESTIGATIONS | EN-074 | v1.0 | DELE
+Document file: (none)
+Content: (no page content)
+Attachments: (none)
+
+DMSDOC12196 | THE GREEN BOOK - ENVIRONMENTAL SUSTAINABILITY AND SEASPAN'S ACTIONS | RF-4881 | v1.0 | DELE
+Document file: DCHL3126RF-4881.pdf
+Content: (no page content)
+Attachments:
+- GI-09-007.1.png | status V | size 0.0 | source I
+- GI-09-007.2.png | status V | size 0.0 | source I
+- GI-09-007.3.png | status V | size 0.0 | source I
+- GI-09-007.4.png | status V | size 0.0 | source I
+- GI-09-007.5.png | status V | size 0.0 | source I
+- GI-09-007.6.png | status V | size 0.0 | source I
+- GI-09-007.7.png | status V | size 0.0 | source I
+- GI-09-007.22.png | status V | size 0.0 | source I
+- GI-09-007.11.png | status V | size 0.0 | source I
+- GI-09-007.17.png | status V | size 0.0 | source I
+- GI-09-007.12.png | status V | size 0.0 | source I
+- GI-09-007.18.png | status V | size 0.0 | source I
+- GI-09-007.21.png | status V | size 0.0 | source I
+- GI-09-007.10.png | status V | size 0.0 | source I
+- GI-09-007.16.png | status V | size 0.0 | source I
+- GI-09-007.13.png | status V | size 0.0 | source I
+- GI-09-007.19.png | status V | size 0.0 | source I
+- GI-09-007.8.png | status V | size 0.0 | source I
+- GI-09-007.9.png | status V | size 0.0 | source I
+- GI-09-007.14.png | status V | size 0.0 | source I
+- GI-09-007.20.png | status V | size 0.0 | source I
+- GI-09-007.15.png | status V | size 0.0 | source I
+- GI-09-007.1.pdf | status V | size 828.57 | source E
+- GI-09-007.2.pdf | status V | size 465.57 | source E

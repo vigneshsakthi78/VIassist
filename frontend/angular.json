@@ -49,6 +49,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "doc-index.json",
+                "input": "../backend/src/main/resources/rag",
+                "output": "/rag"
               }
             ],
             "styles": [
@@ -116,6 +121,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "doc-index.json",
+                "input": "../backend/src/main/resources/rag",
+                "output": "/rag"
               }
             ],
             "styles": [

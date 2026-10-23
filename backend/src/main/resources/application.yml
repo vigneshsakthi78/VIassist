@@ -1,9 +1,16 @@
 server:
   port: ${PORT:8080}
+  tomcat:
+    max-http-form-post-size: 8MB
+    max-swallow-size: 8MB
 
 spring:
   application:
     name: langchain4j-rag-backend
+  servlet:
+    multipart:
+      max-file-size: 8MB
+      max-request-size: 8MB
 
 # Google Gemini chat + embeddings (API-based; safe for small Render memory)
 # Get a key: https://aistudio.google.com/apikey

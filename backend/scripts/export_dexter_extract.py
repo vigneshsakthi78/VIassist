@@ -4,7 +4,10 @@ Reads MACK_DB_HOST, MACK_DB_USER, MACK_DB_PASSWORD, MACK_DB_NAME from the enviro
 Does not query dmseventlog. Page Deleted and Circular Cancelled events are excluded.
 """
 
+import html
+import json
 import os
+import re
 from datetime import datetime
 from pathlib import Path
 
@@ -16,6 +19,8 @@ PUB_TO = "2026-08-28 00:00:00"
 DEL_FROM = "2025-07-25 00:00:00"
 DEL_TO = "2026-08-28 00:00:00"
 BATCH = 40
+CONTENT_LIMIT = 4000
+DAY_EXCERPT = 700
 
 
 def main():
@@ -100,11 +105,13 @@ def main():
         (DEL_FROM, DEL_TO),
     )
     deleted = cur.fetchall()
+    attachments = fetch_attachments(cur, deleted)
     conn.close()
 
     write_summary(doc_n, att_n, var_n, templates, deleted)
     write_batches(deleted)
     write_documents(deleted)
+    write_day_by_day(deleted, attachments)
     print(f"documents={doc_n} attachments={att_n} varmap={var_n} templates={len(templates)} deleted={len(deleted)}")
 
 
@@ -164,6 +171,8 @@ def write_summary(doc_n, att_n, var_n, templates, deleted):
         f"Rows: {len(deleted)} (DELE {dele}, CANC {canc}).",
         "Document ids are batched in 46-dexter-deleted-cancelled-docids.txt.",
         "Metadata and page HTML are in 47-dexter-deleted-cancelled-documents.txt.",
+        "Day-by-day records, with content text and attachment names, are in 48-dexter-day-by-day.txt.",
+        "A docid search summarizes that content and lists attachments from the same extract.",
         "",
         "Excluded on purpose",
         "dmseventlog rows for pageid DMSDOC21657 action Page Deleted were not loaded.",
@@ -230,6 +239,153 @@ def write_documents(deleted):
         lines.append(body if body else "(no page HTML)")
         lines.append("")
     path = DOCS / "47-dexter-deleted-cancelled-documents.txt"
+    path.write_text("\n".join(lines), encoding="utf-8")
+    print("WROTE", path, "chars", path.stat().st_size)
+
+
+def fetch_attachments(cur, deleted):
+    grouped = {row["docid"]: [] for row in deleted}
+    ids = list(grouped)
+    for start in range(0, len(ids), 80):
+        chunk = ids[start : start + 80]
+        placeholders = ",".join(["%s"] * len(chunk))
+        cur.execute(
+            f"""
+            SELECT docid, filename, uniquefilename, status, filesize, source, ispublished
+            FROM dmsfilemanager
+            WHERE docid IN ({placeholders})
+            ORDER BY docid, id
+            """,
+            chunk,
+        )
+        for att in cur.fetchall():
+            grouped.setdefault(att["docid"], []).append(att)
+    return grouped
+
+
+def plain_text(value, limit):
+    raw = cell(value)
+    if not raw:
+        return ""
+    text = re.sub(r"(?is)<script\b.*?>.*?</script>", " ", raw)
+    text = re.sub(r"(?is)<style\b.*?>.*?</style>", " ", text)
+    text = re.sub(r"(?i)<br\s*/?>", "\n", text)
+    text = re.sub(r"(?i)</p>", "\n", text)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = html.unescape(text)
+    text = text.replace("\xa0", " ")
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\n{3,}", "\n\n", text).strip()
+    if len(text) <= limit:
+        return text
+    cut = text[:limit].rsplit(" ", 1)[0]
+    return cut + "..."
+
+
+def attachment_names(row, attachments):
+    names = []
+    own = cell(row.get("filename"))
+    if own:
+        names.append(own)
+    listed = []
+    for att in attachments:
+        name = cell(att.get("filename")) or cell(att.get("uniquefilename"))
+        if not name or name in names:
+            continue
+        listed.append(
+            {
+                "filename": name,
+                "status": cell(att.get("status")),
+                "size": cell(att.get("filesize")),
+                "source": cell(att.get("source")),
+                "published": cell(att.get("ispublished")),
+            }
+        )
+    return own, listed
+
+
+def write_day_by_day(deleted, attachments):
+    documents = []
+    for row in deleted:
+        own, listed = attachment_names(row, attachments.get(row["docid"], []))
+        published = cell(row["publishdate"])
+        documents.append(
+            {
+                "docid": cell(row["docid"]),
+                "title": cell(row["doctitle"]),
+                "refno": cell(row["docrefno"]),
+                "version": cell(row["docversion"]),
+                "status": cell(row["docstatus"]),
+                "day": published[:10],
+                "published": published,
+                "documentFile": own,
+                "contentText": plain_text(row.get("doccontent"), CONTENT_LIMIT),
+                "attachments": listed,
+            }
+        )
+
+    index_dir = DOCS.parent / "rag"
+    index_dir.mkdir(parents=True, exist_ok=True)
+    index_path = index_dir / "doc-index.json"
+    index_path.write_text(
+        json.dumps(
+            {
+                "generated": datetime.now().strftime("%Y-%m-%d"),
+                "from": DEL_FROM,
+                "to": DEL_TO,
+                "documents": documents,
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+    print("WROTE", index_path, "docs", len(documents))
+
+    lines = [
+        "Day-by-day DMS documents for docid search.",
+        f"publishdate BETWEEN '{DEL_FROM}' AND '{DEL_TO}', verstatus A, docstatus DELE or CANC.",
+        "Grouped by publish date. A docid search summarizes Content and lists Attachments.",
+        "This file is not built from dmseventlog.",
+        "",
+    ]
+    day = None
+    for doc in documents:
+        if doc["day"] != day:
+            day = doc["day"]
+            count = sum(1 for item in documents if item["day"] == day)
+            lines.append(f"Day {day or '(no publish date)'} ({count} documents)")
+        lines.append(
+            " | ".join(
+                [
+                    doc["docid"],
+                    doc["title"],
+                    doc["refno"],
+                    "v" + doc["version"],
+                    doc["status"],
+                ]
+            )
+        )
+        lines.append("Document file: " + (doc["documentFile"] or "(none)"))
+        lines.append("Content: " + (plain_text(doc["contentText"], DAY_EXCERPT) or "(no page content)"))
+        if doc["attachments"]:
+            lines.append("Attachments:")
+            for att in doc["attachments"]:
+                lines.append(
+                    "- "
+                    + " | ".join(
+                        [
+                            att["filename"],
+                            "status " + att["status"],
+                            "size " + att["size"],
+                            "source " + att["source"],
+                        ]
+                    )
+                )
+        else:
+            lines.append("Attachments: (none)")
+        lines.append("")
+    path = DOCS / "48-dexter-day-by-day.txt"
     path.write_text("\n".join(lines), encoding="utf-8")
     print("WROTE", path, "chars", path.stat().st_size)
 

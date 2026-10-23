@@ -37,7 +37,9 @@ public interface Assistant {
             Dexter date-range extract is docs 45–47. Published H/F pages for 2026-07-25 through 2026-08-28
             are empty on this database because the joined header verstatus is not A.
             Deleted and cancelled documents (verstatus A, publishdate 2025-07-25 through 2026-08-28)
-            are listed by batched docid. Do not answer those from dmseventlog Page Deleted
+            are listed by batched docid and grouped day by day in doc 48.
+            When the user message includes a document lookup record, summarize that document's content
+            and list only the attachments in the record. Do not answer those from dmseventlog Page Deleted
             or Circular Cancelled rows; that event log was excluded.
 
 

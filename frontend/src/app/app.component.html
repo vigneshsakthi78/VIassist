@@ -3,7 +3,7 @@
   <div class="hero-copy">
     <p class="brand">Vicky Assist</p>
     <h1>Enterprise productivity + DMS coach</h1>
-    <p class="lede">Screenshot how-tos, practical playbooks, and learning from your chats over time.</p>
+    <p class="lede">Screenshot how-tos, paste a screen for help, and learning from your chats over time.</p>
   </div>
 </header>
 
@@ -14,6 +14,9 @@
         <article class="bubble" [class.user]="message.role === 'user'" [class.assistant]="message.role === 'assistant'">
           <div class="bubble-head">
             <span class="role">{{ message.role === 'user' ? 'You' : 'Vicky Assist' }}</span>
+            @if (message.responseMs != null) {
+              <span class="response-time" title="Time from prompt to answer">{{ formatResponseTime(message.responseMs) }}</span>
+            }
             <button
               type="button"
               class="copy-btn"
@@ -33,6 +36,11 @@
               }
             </button>
           </div>
+          @if (message.imageUrl) {
+            <figure class="shot user-shot">
+              <img [src]="safeImageUrl(message.imageUrl)" alt="Attached screenshot" />
+            </figure>
+          }
           @for (part of parts(displayText(message)); track $index) {
             @if (part.type === 'text') {
               <p class="md" [innerHTML]="part.html"></p>
@@ -59,28 +67,74 @@
 
       @if (loading) {
         <article class="bubble assistant pending">
-          <span class="role">Vicky Assist</span>
+          <div class="bubble-head">
+            <span class="role">Vicky Assist</span>
+            <span class="response-time" title="Time since you sent the prompt">{{ formatResponseTime(elapsedMs) }}</span>
+          </div>
           <p>Building a practical playbook…</p>
         </article>
       }
 
       @if (error) {
-        <p class="error">{{ error }}</p>
+        <p class="error">
+          {{ error }}
+          @if (errorResponseMs != null) {
+            <span class="response-time"> · {{ formatResponseTime(errorResponseMs) }}</span>
+          }
+        </p>
       }
     </div>
 
-    <form class="composer" (ngSubmit)="send()">
-      <label class="sr-only" for="message">Message</label>
-      <textarea
-        id="message"
-        name="message"
-        rows="2"
-        [(ngModel)]="draft"
-        (keydown)="onKeydown($event)"
-        placeholder="e.g. Show DMS home screenshot and steps to open Image Manager"
-        [disabled]="loading"
-      ></textarea>
-      <button type="submit" [disabled]="loading || !draft.trim()">Ask</button>
+    <form
+      class="composer-wrap"
+      (ngSubmit)="send()"
+      (dragover)="onDragOver($event)"
+      (drop)="onDrop($event)"
+    >
+      @if (pendingImage) {
+        <div class="attach-preview">
+          <img [src]="safeImageUrl(pendingImage.previewUrl)" alt="Screenshot to send" />
+          <button type="button" class="remove-attach" (click)="clearPendingImage()" [disabled]="loading">
+            Remove
+          </button>
+        </div>
+      }
+      <div class="composer">
+        <input
+          #fileInput
+          class="sr-only"
+          type="file"
+          accept="image/png,image/jpeg,image/webp,image/gif"
+          (change)="onFileSelected($event)"
+        />
+        <button
+          type="button"
+          class="attach-btn"
+          (click)="openFilePicker()"
+          [disabled]="loading"
+          title="Attach a screenshot"
+          aria-label="Attach a screenshot"
+        >
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M16.5 6.75v9.38a4.88 4.88 0 1 1-9.75 0V6.2a3.2 3.2 0 1 1 6.4 0v9.3a1.55 1.55 0 1 1-3.1 0V7.5h1.5v7.99a.05.05 0 0 0 .1 0V6.2a1.7 1.7 0 1 0-3.4 0v9.93a3.38 3.38 0 1 0 6.75 0V6.75h1.5z"
+            />
+          </svg>
+        </button>
+        <label class="sr-only" for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="2"
+          [(ngModel)]="draft"
+          (keydown)="onKeydown($event)"
+          (paste)="onPaste($event)"
+          placeholder="Ask, or paste / attach a DMS screenshot"
+          [disabled]="loading"
+        ></textarea>
+        <button type="submit" class="send-btn" [disabled]="!canSend">Ask</button>
+      </div>
     </form>
   </section>
 </main>
